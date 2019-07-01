@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66484cc0-64cb-47ad-9502-5b41deb00e96">
+  <name>Отчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчетность, справки</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звітність, довідки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Отчетность48</picture>
+  </picture>
+  <content>DataProcessor.ОбновлениеРегламентированнойОтчетности</content>
+  <content>CommonPicture.Отчетность48</content>
+  <content>CommonCommand.ОткрытьФормуУправлениеОтчетностью</content>
+  <subsystems>ОтчетностьСотрудники</subsystems>
+  <subsystems>КлассификаторыПерсучета</subsystems>
+  <parentSubsystem>Subsystem.Зарплата</parentSubsystem>
+</mdclass:Subsystem>

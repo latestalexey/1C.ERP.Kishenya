@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e90d0ad-c1b2-4b8e-b33e-ce79222c1088">
+  <producedTypes>
+    <selectionType typeId="435eec65-d216-4477-9cf1-12fc69d59f86" valueTypeId="48bd50f5-c242-4cef-b741-e1ab7a3ddb9d"/>
+    <listType typeId="c481ec49-66ae-4acb-b376-03a8ef592ec5" valueTypeId="5c964394-073c-420d-9f1e-33bfb293b3d1"/>
+    <managerType typeId="c21d2979-ed46-461f-88ab-85f4a4742775" valueTypeId="a0c9e5f4-3ace-464b-a3dd-a2b63d00969e"/>
+    <recordSetType typeId="59dc10ee-58e3-4c43-92ad-45ade473dd01" valueTypeId="9d43fbab-d635-4524-aa3f-d112f05b21f4"/>
+    <recordKeyType typeId="9b0b838f-8b20-4c42-8cd6-01df25b19805" valueTypeId="87dfece5-3e4a-4bf2-8e5d-baff8e884877"/>
+    <recordType typeId="0c291703-45e4-4675-8d99-c21a39c38b41" valueTypeId="97523e9e-92e6-4f74-8f83-be92e267883f"/>
+    <recordManagerType typeId="94f5c622-c479-49a7-8400-dacf31601c83" valueTypeId="02570566-559a-4d19-a581-15ab82524bdd"/>
+  </producedTypes>
+  <name>СведенияОПенсионерах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о пенсионерах</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відомості про пенсіонерів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4d7114f7-451a-4903-a2f8-cdc5d8dc808e">
+    <name>Пенсионер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пенсионер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пенсіонер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1e1f4ea1-a152-4f16-ae45-4de59ff47064">
+    <name>СвидетельствоСерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия свидетельства пенсионера</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Серія свідоцтва пенсіонера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d2c60e73-3ede-41e1-82b7-5e5d4c0dd9e7">
+    <name>СвидетельствоДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи свидетельства пенсионера</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата видачі свідоцтва пенсіонера</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="68131180-cbf7-43bb-993d-d80672381ab0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий по пенсионеру</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар по пенсіонеру</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="e4a31883-d274-435e-8be6-6d970d3786e1">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="66074222-5ba5-4db4-b9a7-d0c46211a4c7">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Редагування історії</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

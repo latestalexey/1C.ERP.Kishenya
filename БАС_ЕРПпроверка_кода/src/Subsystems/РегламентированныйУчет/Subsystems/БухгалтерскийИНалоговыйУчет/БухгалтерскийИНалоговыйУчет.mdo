@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60e51211-b538-4abd-9892-74ab5d77c7d6">
+  <name>БухгалтерскийИНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухгалтерский и налоговый учет</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Бухгалтерський та податковий облік</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ОперацияБух</content>
+  <content>ChartOfAccounts.Хозрасчетный</content>
+  <content>AccountingRegister.Хозрасчетный</content>
+  <content>Catalog.НаправленияИспользованияПрибыли</content>
+  <content>Document.РегламентнаяОперация</content>
+  <content>Role.ДобавлениеИзменениеДанныхРегламентированногоУчета</content>
+  <content>DataProcessor.ОтражениеДокументовВРеглУчете</content>
+  <content>Document.РегистрУчета</content>
+  <content>CommonForm.ВыборСтандартногоПериодаКвартал</content>
+  <content>CommonForm.ВыборСтандартногоПериодаКварталНарастающимИтогом</content>
+  <content>CommonForm.ВыборСтандартногоПериодаМесяц</content>
+  <content>Role.ДобавлениеИзменениеНачисленийДивидендов</content>
+  <content>Role.ЧтениеНачисленийДивидендов</content>
+  <content>Document.НачислениеДивидендов</content>
+  <content>Report.СверкаДанныхОУиБУ</content>
+  <content>CommonCommand.ПанельОтчетовСтандартныеБухгалтерскеОтчеты</content>
+  <content>DataProcessor.НастройкаОтраженияДокументовВРеглУчете</content>
+  <parentSubsystem>Subsystem.РегламентированныйУчет</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca033226-54f9-4397-8894-95ef84dd3535">
+  <name>ПроверитьУникальностьЕстественногоКлючаЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить уникальность естественного ключа зарплата кадры базовая</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити унікальність природного ключа зарплата кадри базова</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ОснованияУвольнения</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ЗарплатаКадрыСобытия.ПроверитьУникальностьЕстественногоКлюча</handler>
+</mdclass:EventSubscription>

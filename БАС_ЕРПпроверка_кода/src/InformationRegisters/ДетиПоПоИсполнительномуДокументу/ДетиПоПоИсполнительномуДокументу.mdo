@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c9e214b-ebb1-4ab0-93ca-efa830bff69e">
+  <producedTypes>
+    <selectionType typeId="990a5c66-aad2-4b34-b1d0-3ea841ef5da8" valueTypeId="5e0e606b-e760-488f-881a-7491f5855f2c"/>
+    <listType typeId="d50ea178-9560-4bf8-bf42-8611ad4c2f5e" valueTypeId="0ca4e64e-838b-4049-ba15-e46cec855f71"/>
+    <managerType typeId="f33c0fd6-028a-4e70-9d64-ee42ed767b7a" valueTypeId="74fb8fa5-dde9-49d0-80e0-95d2b55d91b6"/>
+    <recordSetType typeId="f1c72d24-04b3-47df-858b-7c90f0b7e04f" valueTypeId="89e08133-ab71-43ea-b6ea-80637b3158ea"/>
+    <recordKeyType typeId="2b4e3a7a-c526-496f-8092-d9b854460f1c" valueTypeId="8c8206f1-0b08-46b0-b42f-dbe429b377b5"/>
+    <recordType typeId="31383773-c026-41f0-a062-9f8aaacd8cf6" valueTypeId="b12a8021-3410-4646-817a-180363404e08"/>
+    <recordManagerType typeId="31aacd16-a267-4698-8235-9ff51a1c2f75" valueTypeId="3585e197-ad25-4221-8d9f-9c82fc7d0a3b"/>
+  </producedTypes>
+  <name>ДетиПоПоИсполнительномуДокументу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дети по по исполнительному документу</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Діти за виконавчим документом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cafa9603-6f59-4bba-ae87-5b2535c0dac6">
+    <name>ДатаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата народження</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="053e0c77-29d8-4c52-9cb1-c6b7ceb8d92f">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата закінчення</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0319e360-bdc7-40ad-9419-9653c02991ba">
+    <name>Нетрудоспособен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нетрудоспособен</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Непрацездатний</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ab63eea1-d27b-478e-a0f3-8ada0a4a2e0d">
+    <name>Учитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Враховувати</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e92ca5ab-4ea6-4bfa-af35-8ae49d860791">
+    <name>ИсполнительныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнительный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виконавчий документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ИсполнительныйЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f81c267a-4149-4d85-a05f-c28243c4e10d">
+    <name>Ребенок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ребенок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дитина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

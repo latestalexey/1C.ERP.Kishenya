@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b3116af-b5ac-49c9-91ae-0789128947ea">
+  <producedTypes>
+    <selectionType typeId="358c7f7b-bf96-43ed-9f0c-dafa20f141de" valueTypeId="5978547f-69cc-492d-8c76-1d7cb3699a69"/>
+    <listType typeId="513c4f9b-c49e-4563-933e-77edb5b3c556" valueTypeId="0e52f799-eefb-4de9-8f8b-1715069357c8"/>
+    <managerType typeId="655400a1-9950-4bb4-bd65-1e9d40190dc7" valueTypeId="6ad7151c-fb8a-4810-a291-33486274ebe3"/>
+    <recordSetType typeId="a66db639-5cdc-4a44-bff1-3c756360f7d8" valueTypeId="b0823dc3-c621-4bca-a2de-0dfdf80a086b"/>
+    <recordKeyType typeId="fb92023a-b01c-433e-9569-9c06164cbcde" valueTypeId="3d4391d8-0bac-44ac-a4d7-9a1b7c25bce8"/>
+    <recordType typeId="178eecc2-17b6-4908-a6d6-323e4f5e73c5" valueTypeId="9071a3c1-729f-41b0-810a-0bdadaa65ea2"/>
+    <recordManagerType typeId="e2e63cf9-dd11-4fb7-ba5e-af06914bb422" valueTypeId="84687a19-9cc7-40a3-a2d3-c14ccf1f994e"/>
+  </producedTypes>
+  <name>РабочиеМестаДляУчетаСпецстажа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочие места для учета спецстажа</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Робочі місця для обліку спецстажу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f9bc2a23-4a76-4533-b530-a51109d5ab1d">
+    <name>Актуальность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Актуальність</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0c990187-4a24-425e-b69a-4c7591ecfa5e">
+    <name>ЕдиницаВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця часу</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЕдиницыВремениУчетаСпецстажа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f4259023-567a-4496-b0d3-f658844eb8a5">
+    <name>ГрафикНормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График нормы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Графік норми</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГрафикиРаботыСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cbc77e8d-8f8d-470f-a933-c4aeb82de051">
+    <name>Сезонность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезонность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сезонність</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="928eedd7-25fe-470b-8df8-5bff34700ccf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2359b4cb-f48c-4ce5-b8cc-e7ee9490a218">
+    <name>РабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее место</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Робоче місце</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШтатноеРасписание</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8246646d-532c-44cb-ade6-1721fea5553d">
+    <name>ОснованиеСпецСтажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание спецстажа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підстава спецстажу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОснованияСпециальногоСтажа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

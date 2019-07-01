@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="urn:sap-com:document:sap:rfc:functions"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="urn:sap-com:document:sap:rfc:functions"
+		targetNamespace="urn:sap-com:document:sap:rfc:functions">
+	<types>
+		<xsd:schema xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				targetNamespace="urn:sap-com:document:sap:rfc:functions"
+				elementFormDefault="unqualified"
+				attributeFormDefault="qualified">
+			<xsd:simpleType name="char1">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="1"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char10">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="10"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char200">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="200"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="char4">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="4"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType name="numeric4">
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="4"/>
+					<xsd:pattern value="\d*"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:complexType name="ZSTR_RES_1C">
+				<xsd:sequence>
+					<xsd:element name="NUM_DOC"
+							type="xsd1:char10"/>
+					<xsd:element name="STATUS"
+							type="xsd1:char1"/>
+					<xsd:element name="TEXT_COMMENT"
+							type="xsd1:char200"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ZSTR_DOCS_STORN">
+				<xsd:sequence>
+					<xsd:element name="BUKRS"
+							type="xsd1:char4"/>
+					<xsd:element name="DOC_SAP"
+							type="xsd1:char10"/>
+					<xsd:element name="YEAR_DOC"
+							type="xsd1:numeric4"/>
+					<xsd:element name="DATE_STORNO"
+							type="xsd1:char10"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ZTT_RES_1C">
+				<xsd:sequence>
+					<xsd:element name="item"
+							minOccurs="0"
+							maxOccurs="unbounded"
+							type="xsd1:ZSTR_RES_1C"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="ZTT_DOCS_STORN">
+				<xsd:sequence>
+					<xsd:element name="item"
+							minOccurs="0"
+							maxOccurs="unbounded"
+							type="xsd1:ZSTR_DOCS_STORN"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="Z1C_STORNO_DOCS_FI">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="TE_RET_RES"
+								minOccurs="0"
+								type="xsd1:ZTT_RES_1C"/>
+						<xsd:element name="TI_DOCS_SORNO"
+								type="xsd1:ZTT_DOCS_STORN"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Z1C_STORNO_DOCS_FIResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="TE_RET_RES"
+								type="xsd1:ZTT_RES_1C"/>
+						<xsd:element name="TI_DOCS_SORNO"
+								type="xsd1:ZTT_DOCS_STORN"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</types>
+	<message name="Z1C_STORNO_DOCS_FI">
+		<part name="parameters"
+				element="tns:Z1C_STORNO_DOCS_FI"/>
+	</message>
+	<message name="Z1C_STORNO_DOCS_FIResponse">
+		<part name="parameters"
+				element="tns:Z1C_STORNO_DOCS_FIResponse"/>
+	</message>
+	<portType name="Z1C_STORNO_DOCS_FI">
+		<operation name="Z1C_STORNO_DOCS_FI">
+			<input name="Z1C_STORNO_DOCS_FIRequest"
+					message="tns:Z1C_STORNO_DOCS_FI"/>
+			<output name="Z1C_STORNO_DOCS_FIResponse"
+					message="tns:Z1C_STORNO_DOCS_FIResponse"/>
+		</operation>
+	</portType>
+	<binding name="Z1C_STORNO_DOCS_FISoapBinding"
+			type="tns:Z1C_STORNO_DOCS_FI">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="Z1C_STORNO_DOCS_FI">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="Z1C_STORNO_DOCS_FIService">
+		<port name="Z1C_STORNO_DOCS_FISoapBinding"
+				binding="tns:Z1C_STORNO_DOCS_FISoapBinding">
+			<soapbind:address location="http://erd:8000/sap/bc/srt/rfc/sap/Z1C_STORNO_DOCS_FI?sap-client=011"/>
+		</port>
+	</service>
+</definitions>

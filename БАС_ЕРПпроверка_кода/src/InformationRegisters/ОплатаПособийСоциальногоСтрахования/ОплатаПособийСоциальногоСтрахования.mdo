@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4314469-bab3-4620-8399-4e1040716b36">
+  <producedTypes>
+    <selectionType typeId="72e1aa82-9203-45dc-adda-9fcdcc47fe83" valueTypeId="e3430fe1-0f3a-425b-8800-52e3f5a6e027"/>
+    <listType typeId="250f2067-2b87-42c0-94b3-3ee2c73fada1" valueTypeId="e448f959-0e29-44af-9f12-a4e92f056ef4"/>
+    <managerType typeId="d08dcbf5-d789-4ca1-a4dd-6e41a3a1b8a0" valueTypeId="72a8a59b-70c2-412e-913b-23a4d6b705f6"/>
+    <recordSetType typeId="fd1a3c43-8995-418f-9ae8-30c425be49d9" valueTypeId="23744862-3576-49b3-b214-8fcfdf068eb4"/>
+    <recordKeyType typeId="d0e89d36-8dd4-4d1d-ab73-b4ff30218bb6" valueTypeId="acaceaec-cf19-4ec4-8fab-b42d50637e72"/>
+    <recordType typeId="448b7a1a-04f9-40cb-813c-6b9d560877bc" valueTypeId="2812efff-0bb1-4d03-a8b2-8ab83be11f98"/>
+    <recordManagerType typeId="b2c9d866-5224-4bde-a3b9-32d552f088fe" valueTypeId="e77e4922-c450-4968-a13d-ce1ac137c6cd"/>
+  </producedTypes>
+  <name>ОплатаПособийСоциальногоСтрахования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата пособий социального страхования</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Оплата допомог соціального страхування</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="e0c96bc1-143e-4593-9801-8869ac113d2b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6c723b99-6088-4431-b421-20e30fdf98cd">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ підстава</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЕдиновременноеПособиеЗаСчетФСС</types>
+      <types>DocumentRef.БольничныйЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

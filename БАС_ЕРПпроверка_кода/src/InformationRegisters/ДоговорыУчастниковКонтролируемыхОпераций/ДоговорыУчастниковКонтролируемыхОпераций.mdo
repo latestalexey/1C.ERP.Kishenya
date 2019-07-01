@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd92c4d7-b9d2-4baf-962b-96ab7fae7768">
+  <producedTypes>
+    <selectionType typeId="1f67868a-378b-464f-8fdc-cd234198e2f0" valueTypeId="61ba93c9-b215-4ef5-9cb3-abd2d2400f88"/>
+    <listType typeId="a8067f20-f377-474b-9209-814848af40e2" valueTypeId="6390f142-8ad1-4aaa-97aa-eb611d20cd7b"/>
+    <managerType typeId="f5ba2ca3-643c-4ab6-bdf4-4432afcd2837" valueTypeId="c19d936e-b71b-4982-b17d-0be67aa83646"/>
+    <recordSetType typeId="41418b3d-3bee-41df-a51b-2fcdbc843feb" valueTypeId="13dd02fa-8aeb-4b2b-bd3d-01a7c9b0f757"/>
+    <recordKeyType typeId="0d5f59a0-9aeb-4995-8f9c-63b712d945ea" valueTypeId="6fca7f73-41cb-4499-9b5e-b6a7e7edfb5c"/>
+    <recordType typeId="499c2143-9a0d-49ea-ad84-764bc9b2f891" valueTypeId="10d1477d-3a41-42e2-8327-d783bb8f5dd2"/>
+    <recordManagerType typeId="7bdb77af-2882-4834-a642-666517f5d551" valueTypeId="919c4b05-a342-4241-a048-7d7da3ac9ac0"/>
+  </producedTypes>
+  <name>ДоговорыУчастниковКонтролируемыхОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры участников контролируемых операций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Договори учасників контрольованих операцій</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ДоговорыУчастниковКонтролируемыхОпераций.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ДоговорыУчастниковКонтролируемыхОпераций.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о предемете контролируемой сделки</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Відомості про предемет контрольованої угоди</value>
+  </recordPresentation>
+  <resources uuid="235a0450-b4a1-45b8-b25c-d254f8063b4e">
+    <name>КодНаименованияОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код наименования операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код найменування операції</value>
+    </synonym>
+    <comment>Додаток 4 порядку складання звіту про контрольовані операції - 001-036</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d7c65aa-725d-4fe6-a766-30e1f2c0e128">
+    <name>ДатаКонтракта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата контракта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата контракту</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60c84f30-e8f1-4aa1-b34b-2df1d6ca6b16">
+    <name>НомерКонтракта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер контракта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер контракту</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="c080beda-3234-4907-99a3-0ed000513c59">
+    <name>КодСтороныОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код стороны операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код сторони операції</value>
+    </synonym>
+    <comment>Додаток 5 порядку складання звіту про контрольовані операції - 001-045</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d31ab946-efb2-44ad-899c-a480d5b81e66">
+    <name>УсловиеПоставкиПоИнкотермс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие поставки по инкотермс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Умова поставки за інкотермс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="a5be743e-c6cc-4000-872d-9e83b03db311">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9cc547d6-fbab-4804-9e32-ef8228e878e3">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6e329e1b-9f1d-4b91-b6c7-b48dde58320d">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>InformationRegister.ДоговорыУчастниковКонтролируемыхОпераций.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.ДоговорыУчастниковКонтролируемыхОпераций.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="94850f45-a773-493b-aa6f-8f83d91c2c42">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="17515675-13a5-437e-bdb8-01fb19f07e62">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a812b6f-05d3-40c3-b53b-8d90a9dc7184">
+  <name>ЗапретитьРедактированиеОбщихДанныхОбъектЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запретить редактирование общих данных объект зарплата кадры базовая</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Заборонити редагування загальних даних об'єкт зарплата кадри базова</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ОснованияУвольнения</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ЗарплатаКадрыСобытия.ЗапретитьРедактированиеОбщихДанныхОбъектПередЗаписью</handler>
+</mdclass:EventSubscription>

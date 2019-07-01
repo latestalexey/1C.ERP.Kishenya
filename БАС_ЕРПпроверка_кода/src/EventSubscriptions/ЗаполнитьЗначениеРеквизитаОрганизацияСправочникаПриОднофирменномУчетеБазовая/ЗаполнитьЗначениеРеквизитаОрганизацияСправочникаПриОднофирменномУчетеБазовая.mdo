@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0b76251-12e9-4cc7-8421-eae4d7f64939">
+  <name>ЗаполнитьЗначениеРеквизитаОрганизацияСправочникаПриОднофирменномУчетеБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить значение реквизита организация справочника при однофирменном учете базовая</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Заповнити значення реквізиту організація довідника при однофірменому обліку базова</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ЗарплатныеПроекты</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.ЗарплатаКадрыСобытия.ЗаполнитьЗначениеРеквизитаОрганизацияСправочникаПриОднофирменномУчетеБазоваяОбработкаЗаполнения</handler>
+</mdclass:EventSubscription>

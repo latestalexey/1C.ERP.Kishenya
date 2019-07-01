@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2e83e96-bf94-4495-97ff-e8093ad278b9">
+  <name>ПерезаполнитьВторичныеЗаписиЗначенийСовокупныхТарифныхСтавок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перезаполнить вторичные записи значений совокупных тарифных ставок</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перезаповнити вторинні запису значень сукупних тарифних ставок</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ИндексацияЗаработка</types>
+    <types>DocumentObject.НазначениеПлановогоНачисления</types>
+    <types>DocumentObject.ПрекращениеПлановогоНачисления</types>
+    <types>DocumentObject.ВозвратИзОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentObject.ИзменениеКвалификационногоРазряда</types>
+    <types>DocumentObject.ПриемНаРаботуСписком</types>
+    <types>DocumentObject.НачальнаяШтатнаяРасстановка</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.ИзменениеОплатыТруда</types>
+    <types>DocumentObject.УвольнениеСписком</types>
+    <types>DocumentObject.ИзменениеГрафикаРаботыСписком</types>
+    <types>DocumentObject.ПриказНаДоплатуДоСреднегоЗаработка</types>
+    <types>DocumentObject.НазначениеПодработки</types>
+    <types>DocumentObject.ОтменаСовмещения</types>
+    <types>DocumentObject.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentObject.КадровыйПереводСписком</types>
+    <types>DocumentObject.Совмещение</types>
+    <types>DocumentObject.ПрекращениеПодработки</types>
+    <types>DocumentObject.ИзменениеМестРаботы</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.ИзменениеПлановыхНачислений</types>
+    <types>DocumentObject.ПереносДанных</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ОтменаДоплатыДоСреднегоЗаработка</types>
+    <types>DocumentObject.ОтпускПоУходуЗаРебенком</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ЗарплатаКадрыРасширенныйСобытия.ПерезаполнитьВторичныеЗаписиЗначенийСовокупныхТарифныхСтавокПриЗаписи</handler>
+</mdclass:EventSubscription>

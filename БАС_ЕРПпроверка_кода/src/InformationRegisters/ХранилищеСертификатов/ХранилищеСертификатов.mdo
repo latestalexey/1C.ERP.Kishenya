@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33319441-513a-4e89-8d15-6533c6e2d612">
+  <producedTypes>
+    <selectionType typeId="9bf0597c-9dc7-42b7-8c90-cee529f5bc92" valueTypeId="0f88f0e5-f3fd-4d42-bb2b-beaff4b9cc2d"/>
+    <listType typeId="bfb11d4e-183a-4945-9039-dfb4c81098ab" valueTypeId="a5126bad-932b-4dd4-8c39-ff93c529b437"/>
+    <managerType typeId="52b347b3-2767-48f6-8dfd-48eb1a66bf57" valueTypeId="c1b8e4bb-41ff-44ed-a6c2-999891065027"/>
+    <recordSetType typeId="978caf8e-3b0d-4294-820c-4c8a8fd44f3e" valueTypeId="f800d175-fc3d-40ef-b0ed-2ee03c8db967"/>
+    <recordKeyType typeId="0ce72240-05ff-4ab2-9271-7a8ab7d10bcb" valueTypeId="ca84a051-fdf7-4ff6-87ea-97a35482183a"/>
+    <recordType typeId="e2d07b54-ca20-401d-aa18-3ec7da1bf863" valueTypeId="2a4ee7f7-69c4-4d3c-b1fc-13fed3c45aff"/>
+    <recordManagerType typeId="c2bd4d6e-e322-4b3b-8649-85d1b57e4b7b" valueTypeId="51575b8c-8e06-4ea9-85cc-725dbf4d47a1"/>
+  </producedTypes>
+  <name>ХранилищеСертификатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранилище сертификатов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Сховище сертифікатів</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ХранилищеСертификатов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ee689244-391a-441a-84ab-73aa4b4739aa">
+    <name>Сертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сертифікат</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8946d167-b77b-40d2-ba60-9ba8f12219c2">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Версія</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a046a447-deaa-4d22-9419-5ae4bff0f198">
+    <name>ДействителенС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действителен с</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дійсний з</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="104afa9c-f8ca-4606-aa42-e34721584b59">
+    <name>ДействителенДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действителен до</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дійсний до</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5eab5a5e-847b-49df-97d9-2e79b5937033">
+    <name>Издатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Издатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Видавець</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="de170c36-f0ff-4426-bc37-a4eebfc71f58">
+    <name>СерийныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийный номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Серійний номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5bb99bea-6563-4525-ad20-0082f9cc8971">
+    <name>Субъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субъект</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Суб'єкт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="6e36a5af-db1c-4664-9eb4-3b744da24285">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Найменування</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="0b0aa70b-ef51-4f60-ae31-c07fe943eae6">
+    <name>ИспользоватьДляПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать для подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати для підпису</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f943d356-c625-4dc4-8e00-b68c6ce3ff2e">
+    <name>ИспользоватьДляШифрования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать для шифрования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати для шифрування</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="31566558-61ee-45e5-8ab4-66bccfb24b92">
+    <name>ЛогическоеХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логическое хранилище</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Логічне сховище</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЛогическиеХранилищаСертификатов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="53ea2e2d-a7d8-44d6-a1d3-29beab44e81a">
+    <name>Отпечаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпечаток</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відбиток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e430e319-6f57-4d24-9fef-29395a54b6bc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

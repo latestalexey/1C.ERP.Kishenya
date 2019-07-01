@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a5b350e-776a-4021-b3a8-a78626c58747">
+  <producedTypes>
+    <objectType typeId="bc653f47-c701-4616-a25f-30708bf792c7" valueTypeId="3335a3ca-5977-4ba1-b1fa-46060630e434"/>
+    <managerType typeId="5022b206-b106-4cc6-8692-9420b81f01a4" valueTypeId="40e17fc2-d862-4ea9-9f63-026074074557"/>
+  </producedTypes>
+  <name>ОперацииЗакрытияМесяцаМеждународныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции закрытия месяца (международный учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Операції закриття місяця (міжнародний облік)</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОперацииЗакрытияМесяцаМеждународныйУчет.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Регламентные операции по закрытию месяца международного учета</value>
+  </extendedPresentation>
+  <extendedPresentation>
+    <key>uk</key>
+    <value>Регламентні операції з закриття місяця міжнародного обліку</value>
+  </extendedPresentation>
+  <attributes uuid="50777e9e-95c9-4449-8acd-79ea2a391166">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e7c55fd9-2046-40f1-8143-aad97ccbf7de">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період реєстрації</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="92887c94-4caa-4f31-96ca-b702dbdcf68e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="13f786a0-5e7f-44c0-9f37-d3e1328161c4">
+    <name>ОперацииЗакрытияМесяцаМеждународныйУчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие месяца</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Закриття місяця</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

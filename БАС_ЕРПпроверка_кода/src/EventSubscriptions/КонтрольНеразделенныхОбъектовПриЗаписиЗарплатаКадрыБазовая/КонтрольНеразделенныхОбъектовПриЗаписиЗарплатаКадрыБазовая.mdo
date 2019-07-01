@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0dec0047-6770-408e-bc22-6ebe69bf0de5">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи зарплата кадры базовая</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Контроль неподілених об'єктів при запису зарплата кадри базова</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ОснованияЗаключенияСрочныхТрудовыхДоговоров</types>
+    <types>CatalogObject.ОснованияУвольнения</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

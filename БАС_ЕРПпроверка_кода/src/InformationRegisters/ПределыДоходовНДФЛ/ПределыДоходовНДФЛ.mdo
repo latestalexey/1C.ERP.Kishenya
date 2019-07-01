@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="173e79ca-12de-44d1-a8ef-2304ddd1757d">
+  <producedTypes>
+    <selectionType typeId="fce0107f-830c-4a13-b34e-8a46598b9715" valueTypeId="bfad27b9-b76a-4ce4-adb8-529ab7a6b38c"/>
+    <listType typeId="9a6a5cf7-b630-4528-8df6-2dbce0fd9fbf" valueTypeId="74d02aa2-bd3e-4791-bbc7-de2062d96bcb"/>
+    <managerType typeId="ef83300f-1203-4b16-8b0f-944ccd84b9a4" valueTypeId="64ed17f8-1b39-4ae9-b2f7-13afc00730d1"/>
+    <recordSetType typeId="831c45a5-4227-442f-bdf0-d34bd482ef47" valueTypeId="05c20e4d-e0a7-462b-99b7-ce533a8a4a33"/>
+    <recordKeyType typeId="c12b8760-d088-47ea-bec1-a7e773226bf2" valueTypeId="9de31d61-71fb-4bae-a946-436dee77488c"/>
+    <recordType typeId="6cb84938-6700-428a-9050-e99640c463da" valueTypeId="fbdade1c-a4ea-4c82-8733-c8a596fed936"/>
+    <recordManagerType typeId="29c2a724-1643-45fa-9f46-b2004bad1c8b" valueTypeId="ff0d6c70-13cb-448e-b06e-1ca4dfd4388a"/>
+  </producedTypes>
+  <name>ПределыДоходовНДФЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пределы доходов НДФЛ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Межі доходів ПДФО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="c0c49f38-0c08-4211-8842-09da4af65ed2">
+    <name>Предел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предел</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Межа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd69a3de-728c-4dad-a5e0-da6da5568d39">
+    <name>ВидПредела</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид предела</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид межі</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПределовДоходовНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыПределовДоходовНДФЛ.EnumValue.Годовой</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="fd4f64ca-6f1d-4ab2-9c60-4dcdfb4556b9">
+    <name>КодДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код дохода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код доходу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыДоходовНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="7d1a3634-5262-4304-bb9b-60997549aa2c">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

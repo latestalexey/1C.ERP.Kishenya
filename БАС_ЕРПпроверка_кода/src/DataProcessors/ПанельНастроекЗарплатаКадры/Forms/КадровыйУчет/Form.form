@@ -1,0 +1,2754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Button">
+    <name>НастройкиКадровогоУчета</name>
+    <id>199</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>НастройкиКадровогоУчетаРасширеннаяПодсказка</name>
+      <id>200</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualButton</type>
+    <commandName>Form.Command.НастройкиКадровогоУчета</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаЗаголовок</name>
+    <id>131</id>
+    <items xsi:type="form:Decoration">
+      <name>ОписаниеРаздела</name>
+      <id>14</id>
+      <title>
+        <key>ru</key>
+        <value>Настройки кадрового учета и штатного расписания</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Настройки кадрового обліку та штатного розкладу</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ОписаниеРазделаExtendedTooltip</name>
+        <id>82</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОписаниеРазделаКонтекстноеМеню</name>
+        <id>15</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСправка</name>
+      <id>154</id>
+      <items xsi:type="form:Button">
+        <name>Справка</name>
+        <id>141</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СправкаРасширеннаяПодсказка</name>
+          <id>142</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Picture</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа справка</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Група довідка</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа справка</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група довідка</value>
+      </toolTip>
+      <horizontalStretch>false</horizontalStretch>
+      <verticalStretch>false</verticalStretch>
+      <extendedTooltip>
+        <name>ГруппаСправкаРасширеннаяПодсказка</name>
+        <id>155</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа заголовок</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Група заголовок</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа заголовок</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група заголовок</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаЗаголовокРасширеннаяПодсказка</name>
+      <id>132</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаИспользоватьКадровыйУчетИРасчетЗарплаты</name>
+    <id>143</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьКадровыйУчетИРасчетЗарплаты</name>
+      <id>151</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ИспользоватьКадровыйУчетИРасчетЗарплаты</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьКадровыйУчетИРасчетЗарплатыПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьКадровыйУчетИРасчетЗарплатыРасширеннаяПодсказка</name>
+        <id>153</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьКадровыйУчетИРасчетЗарплатыКонтекстноеМеню</name>
+        <id>152</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеИспользоватьКадровыйУчетИРасчетЗарплаты</name>
+      <id>148</id>
+      <title>
+        <key>ru</key>
+        <value>Снимите этот флажок, если не планируется использовать программу для начисления зарплаты и/или ведения кадрового учета.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Зніміть цей прапорець, якщо ви не плануєте використовувати програму для нарахування зарплати та/або ведення кадрового обліку.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьКадровыйУчетИРасчетЗарплатыРасширеннаяПодсказка</name>
+        <id>150</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьКадровыйУчетИРасчетЗарплатыКонтекстноеМеню</name>
+        <id>149</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <width>70</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>2</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа использовать кадровый учет и расчет зарплаты</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Група використовувати кадровий облік і розрахунок зарплати</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа использовать кадровый учет и расчет зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група використовувати кадровий облік і розрахунок зарплати</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаИспользоватьКадровыйУчетИРасчетЗарплатыРасширеннаяПодсказка</name>
+      <id>144</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаКонтролироватьУникальностьТабельныхНомеров</name>
+    <id>191</id>
+    <items xsi:type="form:FormField">
+      <name>НастройкиКадровогоУчетаКонтролироватьУникальностьТабельныхНомеров</name>
+      <id>193</id>
+      <title>
+        <key>ru</key>
+        <value>Контролируется уникальность табельных номеров</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Контролюється унікальність табельних номерів</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиКадровогоУчета.КонтролироватьУникальностьТабельныхНомеров</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>НастройкиКадровогоУчетаКонтролироватьУникальностьТабельныхНомеровПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>НастройкиКадровогоУчетаКонтролироватьУникальностьТабельныхНомеровРасширеннаяПодсказка</name>
+        <id>195</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкиКадровогоУчетаКонтролироватьУникальностьТабельныхНомеровКонтекстноеМеню</name>
+        <id>194</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеКонтролироватьУникальностьТабельныхНомеров</name>
+      <id>196</id>
+      <title>
+        <key>ru</key>
+        <value>При назначении табельного номера производится проверка его уникальности.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>При призначенні табельного номера проводиться перевірка його унікальності.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеКонтролироватьУникальностьТабельныхНомеровРасширеннаяПодсказка</name>
+        <id>198</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеКонтролироватьУникальностьТабельныхНомеровКонтекстноеМеню</name>
+        <id>197</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ГруппаКонтролироватьУникальностьТабельныхНомеровРасширеннаяПодсказка</name>
+      <id>192</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаНеполнаяСтавка</name>
+    <id>78</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьРаботуНаНеполнуюСтавку</name>
+      <id>67</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиКадровогоУчета.ИспользоватьРаботуНаНеполнуюСтавку</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьРаботуНаНеполнуюСтавкуПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьРаботуНаНеполнуюСтавкуExtendedTooltip</name>
+        <id>100</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьРаботуНаНеполнуюСтавкуКонтекстноеМеню</name>
+        <id>68</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеИспользоватьРаботуНаНеполнуюСтавку</name>
+      <id>69</id>
+      <title>
+        <key>ru</key>
+        <value>На предприятии применяется практика работы сотрудников на неполной ставке.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>На підприємстві застосовується практика роботи співробітників на неповній ставці.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьРаботуНаНеполнуюСтавкуExtendedTooltip</name>
+        <id>101</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьРаботуНаНеполнуюСтавкуКонтекстноеМеню</name>
+        <id>70</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Работа на неполную ставку</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Робота на неповну ставку</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаНеполнаяСтавкаExtendedTooltip</name>
+      <id>99</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаИспользоватьПодработки</name>
+    <id>183</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьПодработки</name>
+      <id>185</id>
+      <title>
+        <key>ru</key>
+        <value>Используются подработки</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Використовуються підробітки</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ИспользоватьПодработки</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьПодработкиПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьПодработкиРасширеннаяПодсказка</name>
+        <id>187</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьПодработкиКонтекстноеМеню</name>
+        <id>186</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеИспользоватьПодработки</name>
+      <id>188</id>
+      <title>
+        <key>ru</key>
+        <value>Краткосрочное расширение должностных обязанностей сотрудников без оформления приказов о приеме на работу по совместительству. 
+В отличие от доплаты за совмещение, при оформлении подработки учитываются все особенности оплаты труда и рабочее время, обусловленные позицией штатного расписания, по которой оформляется подработка.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Короткострокове розширення посадових обов'язків працівників без оформлення наказів про прийняття на роботу за сумісництвом. 
+На відміну від доплати за сумісництво, при оформленні підробітку враховуються всі особливості оплати праці та робочий час, обумовлені позицією штатного розкладу, по якій оформлюється підробіток.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьПодработкиРасширеннаяПодсказка</name>
+        <id>190</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьПодработкиКонтекстноеМеню</name>
+        <id>189</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ГруппаИспользоватьПодработкиРасширеннаяПодсказка</name>
+      <id>184</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаИспользоватьУчетСпецстажа</name>
+    <id>214</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьУчетСпецстажа</name>
+      <id>216</id>
+      <title>
+        <key>ru</key>
+        <value>Используется учет спецстажа</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Використовується облік спецстажу</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ИспользоватьУчетСпецстажа</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьУчетСпецстажаПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьУчетСпецстажаРасширеннаяПодсказка</name>
+        <id>218</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьУчетСпецстажаКонтекстноеМеню</name>
+        <id>217</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеИспользоватьУчетСпецстажа</name>
+      <id>219</id>
+      <title>
+        <key>ru</key>
+        <value>Используется учет спецстажа с целью формирования отчетности по ЕСВ.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Використовується облік спецстажу з метою формування звітності з ЄСВ.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьУчетСпецстажаРасширеннаяПодсказка</name>
+        <id>221</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьУчетСпецстажаКонтекстноеМеню</name>
+        <id>220</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа использовать учет спецстажа</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Група використовувати облік спецстажу</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа использовать учет спецстажа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група використовувати облік спецстажу</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаИспользоватьУчетСпецстажаРасширеннаяПодсказка</name>
+      <id>215</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаПечататьТ6ДляОтпусковПоБеременностиИРодам</name>
+    <id>206</id>
+    <items xsi:type="form:FormField">
+      <name>НастройкиКадровогоУчетаПечататьТ6ДляОтпусковПоБеременностиИРодам</name>
+      <id>208</id>
+      <title>
+        <key>ru</key>
+        <value>П-3 для отпусков по беременности и родам </value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>П-3 для відпусток по вагітності і пологах </value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиКадровогоУчета.ПечататьТ6ДляОтпусковПоБеременностиИРодам</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>НастройкиКадровогоУчетаПечататьТ6ДляОтпусковПоБеременностиИРодамПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>НастройкиКадровогоУчетаПечататьТ6ДляОтпусковПоБеременностиИРодамРасширеннаяПодсказка</name>
+        <id>210</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкиКадровогоУчетаПечататьТ6ДляОтпусковПоБеременностиИРодамКонтекстноеМеню</name>
+        <id>209</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеПечататьТ6ДляОтпусковПоБеременностиИРодам</name>
+      <id>211</id>
+      <title>
+        <key>ru</key>
+        <value>Печать приказа о предоставлении отпуска работнику (П-3) для больничных листов в случае отпуска по беременности и родам и их отображение в личной карточке (П-2).</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Друк наказу про надання відпустки працівнику (П-3) для лікарняних листів у випадку відпустки по вагітності та пологах та їх відображення в особистій картці (П-2).</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеПечататьТ6ДляОтпусковПоБеременностиИРодамРасширеннаяПодсказка</name>
+        <id>213</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеПечататьТ6ДляОтпусковПоБеременностиИРодамКонтекстноеМеню</name>
+        <id>212</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ГруппаПечататьТ6ДляОтпусковПоБеременностиИРодамРасширеннаяПодсказка</name>
+      <id>207</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаШтатноеРасписание</name>
+    <id>33</id>
+    <items xsi:type="form:Button">
+      <name>НастройкаШтатногоРасписания</name>
+      <id>115</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>НастройкаШтатногоРасписанияРасширеннаяПодсказка</name>
+        <id>116</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Hyperlink</type>
+      <commandName>Form.Command.НастройкаШтатногоРасписания</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ОписаниеНастроекШтатногоРасписания</name>
+      <id>120</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ОписаниеНастроекШтатногоРасписания</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>ОписаниеНастроекШтатногоРасписанияРасширеннаяПодсказка</name>
+        <id>122</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОписаниеНастроекШтатногоРасписанияКонтекстноеМеню</name>
+        <id>121</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>70</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>6</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <verticalStretch>false</verticalStretch>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Штатное расписание</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Штатний розклад</value>
+    </title>
+    <width>86</width>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаШтатноеРасписаниеExtendedTooltip</name>
+      <id>83</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаПереносОстатковОтпуска</name>
+    <id>123</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьПереносОстатковОтпускаПриУвольненииПереводом</name>
+      <id>125</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиКадровогоУчета.ИспользоватьПереносОстатковОтпускаПриУвольненииПереводом</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьРаботуНаНеполнуюСтавкуПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьПереносОстатковОтпускаПриУвольненииПереводомРасширеннаяПодсказка</name>
+        <id>127</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьПереносОстатковОтпускаПриУвольненииПереводомКонтекстноеМеню</name>
+        <id>126</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ПояснениеИспользоватьПереносОстатковОтпускаПриУвольненииПереводом</name>
+      <id>128</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ПояснениеИспользоватьПереносОстатковОтпускаПриУвольненииПереводом</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьПереносОстатковОтпускаПриУвольненииПереводомРасширеннаяПодсказка</name>
+        <id>130</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьПереносОстатковОтпускаПриУвольненииПереводомКонтекстноеМеню</name>
+        <id>129</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>75</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>2</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ПоясняющийТекст</color>
+        </textColor>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Перенос остатков отпуска при увольнении переводом</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Перенесення залишків відпустки при звільненні переведенням</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаПереносОстатковОтпускаРасширеннаяПодсказка</name>
+      <id>124</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаВоинскийУчет</name>
+    <id>21</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьВоинскийУчет</name>
+      <id>3</id>
+      <title>
+        <key>ru</key>
+        <value>Ведется воинский учет</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Ведеться військовий облік</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиВоинскогоУчета.ИспользоватьВоинскийУчет</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьВоинскийУчетПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьВоинскийУчетExtendedTooltip</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьВоинскийУчетКонтекстноеМеню</name>
+        <id>4</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>ПояснениеИспользоватьВоинскийУчет</name>
+      <id>25</id>
+      <title>
+        <key>ru</key>
+        <value>Ведение учета всех категорий сотрудников, подлежащих воинскому учету и сотрудников пребывающих в запасе. Подготовка отчетов для военных комиссариатов, извещений о приеме на работу граждан подлежащих воинскому учету, карточки учета организации и т.д.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Ведення обліку всіх категорій працівників, які підлягають військовому обліку та працівників, що перебувають у запасі. Підготовка звітів для військових комісаріатів, сповіщень про прийом на роботу громадян, які підлягають військовому обліку, картки обліку організації та ін.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ПояснениеИспользоватьВоинскийУчетExtendedTooltip</name>
+        <id>104</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПояснениеИспользоватьВоинскийУчетКонтекстноеМеню</name>
+        <id>26</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <width>70</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>3</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаНастройкиВоинскогоУчета</name>
+      <id>27</id>
+      <items xsi:type="form:FormField">
+        <name>ИспользоватьБронированиеГраждан</name>
+        <id>5</id>
+        <title>
+          <key>ru</key>
+          <value>Ведется учет бронирования граждан на период мобилизации и на военное время</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Ведеться облік бронювання громадян на період мобілізації і на воєнний час</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:MultiLanguageDataPath">
+          <paths xsi:type="form:DataPath">
+            <segments>НастройкиВоинскогоУчета.ИспользоватьБронированиеГраждан</segments>
+          </paths>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ИспользоватьБронированиеГражданПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ИспользоватьБронированиеГражданExtendedTooltip</name>
+          <id>106</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИспользоватьБронированиеГражданКонтекстноеМеню</name>
+          <id>6</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ПояснениеИспользоватьБронированиеГраждан</name>
+        <id>30</id>
+        <title>
+          <key>ru</key>
+          <value>Ведение учета граждан стоящих на специальном воинском учете, забронированных за органами государственной власти, местного самоуправления или организациями на период мобилизации и на военное время или положение.</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Ведення обліку громадян, які стоять на спеціальному військовому обліку, заброньовані за органами державної влади, місцевого самоврядування чи організаціями на період мобілізації та на воєнний час або положення.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ПояснениеИспользоватьБронированиеГражданExtendedTooltip</name>
+          <id>107</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПояснениеИспользоватьБронированиеГражданКонтекстноеМеню</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <width>70</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>3</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ПоясняющийТекст</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ГруппаНастройкиВоинскогоУчетаExtendedTooltip</name>
+        <id>105</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>DontUse</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Воинский учет</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Військовий облік</value>
+    </title>
+    <width>86</width>
+    <horizontalStretch>false</horizontalStretch>
+    <verticalStretch>false</verticalStretch>
+    <extendedTooltip>
+      <name>ГруппаВоинскийУчетExtendedTooltip</name>
+      <id>102</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаАттестацииСотрудников</name>
+    <id>156</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаИспользуетсяАттестация</name>
+      <id>170</id>
+      <items xsi:type="form:FormField">
+        <name>ИспользоватьАттестацииСотрудников</name>
+        <id>158</id>
+        <title>
+          <key>ru</key>
+          <value>Проводятся аттестации сотрудников</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Проводяться атестації співробітників</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:MultiLanguageDataPath">
+          <paths xsi:type="form:DataPath">
+            <segments>ИспользоватьАттестацииСотрудников</segments>
+          </paths>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Компания проводит аттестацию персонала либо ведет учет внешних аттестаций(подтверждений квалификации, специальных прав и т.п.) сотрудников</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Компанія проводить атестацію персоналу або веде облік зовнішніх атестацій(підтверджень кваліфікації, спеціальних прав тощо) співробітників</value>
+        </toolTip>
+        <toolTipRepresentation>None</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ИспользоватьАттестацииСотрудниковПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ИспользоватьАттестацииСотрудниковРасширеннаяПодсказка</name>
+          <id>160</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИспользоватьАттестацииСотрудниковКонтекстноеМеню</name>
+          <id>159</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ПояснениеАттестацииСотрудников</name>
+        <id>172</id>
+        <title>
+          <key>ru</key>
+          <value>Компания проводит аттестации сотрудников либо ведет учет внешних аттестаций (подтверждений квалификации, специальных прав и т.п.)</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Компанія проводить атестацію працівників або веде облік зовнішніх атестацій (підтверджень кваліфікації, спеціальних прав тощо)</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ПояснениеАттестацииСотрудниковРасширеннаяПодсказка</name>
+          <id>174</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПояснениеАттестацииСотрудниковКонтекстноеМеню</name>
+          <id>173</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>2</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ПоясняющийТекст</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ГруппаИспользуетсяАттестацияРасширеннаяПодсказка</name>
+        <id>171</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>DontUse</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьОтдельныйДокументДляФормированияАттестационнойКомиссии</name>
+      <id>167</id>
+      <title>
+        <key>ru</key>
+        <value>График аттестации и комиссия утверждаются</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Графік атестації та комісія затверджуються</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ИспользоватьОтдельныйДокументДляФормированияАттестационнойКомиссии</segments>
+        </paths>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользованиеДокументаФормированиеАттестационнойКомиссииПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьОтдельныйДокументДляФормированияАттестационнойКомиссииРасширеннаяПодсказка</name>
+        <id>169</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьОтдельныйДокументДляФормированияАттестационнойКомиссииКонтекстноеМеню</name>
+        <id>168</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <radioButtonsType>RadioButtons</radioButtonsType>
+        <columnsCount>1</columnsCount>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>одним документом</value>
+          </presentation>
+          <presentation>
+            <key>uk</key>
+            <value>одним документом</value>
+          </presentation>
+          <value xsi:type="core:NumberValue">
+            <value>0</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>разными документами</value>
+          </presentation>
+          <presentation>
+            <key>uk</key>
+            <value>різними документами</value>
+          </presentation>
+          <value xsi:type="core:NumberValue">
+            <value>1</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Аттестации сотрудников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Атестації співробітників</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаАттестацииСотрудниковРасширеннаяПодсказка</name>
+      <id>157</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаИспользоватьСпециальностиФизическихЛиц</name>
+    <id>175</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьСпециальностиФизическихЛиц</name>
+      <id>177</id>
+      <title>
+        <key>ru</key>
+        <value>Вести учет специальностей сотрудников</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Вести облік спеціальностей співробітників</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>ИспользоватьСпециальностиФизическихЛиц</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьСпециальностиФизическихЛицПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьСпециальностиФизическихЛицРасширеннаяПодсказка</name>
+        <id>179</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьСпециальностиФизическихЛицКонтекстноеМеню</name>
+        <id>178</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>Декорация1</name>
+      <id>180</id>
+      <title>
+        <key>ru</key>
+        <value>Должность (позиция) может подразумевать одну или несколько специальностей, которыми должен владеть работник, занимающий эту должность. По разным специальностям у сотрудника может быть своя квалификационная категория. С помощью функционала Специальности сотрудников можно задать такую информацию с периодом действия той или иной категории по специальности сотрудника.</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Посада (позиція) може мати на увазі одну або кілька спеціальностей, якими повинен володіти працівник, що займає цю посаду. За різними спеціальностями у співробітника може бути своя кваліфікаційна категорія. За допомогою функціоналу Спеціальності співробітників можна вказати таку інформацію з періодом дії тієї чи іншої категорії за спеціальністю співробітника.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Декорация1РасширеннаяПодсказка</name>
+        <id>182</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Декорация1КонтекстноеМеню</name>
+        <id>181</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <width>75</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ПоясняющийТекст</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Специальности сотрудников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Спеціальності співробітників</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаИспользоватьСпециальностиФизическихЛицРасширеннаяПодсказка</name>
+      <id>176</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаНастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудники</name>
+    <id>204</id>
+    <items xsi:type="form:FormField">
+      <name>НастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудники</name>
+      <id>201</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>НастройкиКадровогоУчета.ПравилоФормированияПредставленияЭлементовСправочникаСотрудники</segments>
+        </paths>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <handlers>
+        <event>OnChange</event>
+        <name>НастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудникиПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>НастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудникиРасширеннаяПодсказка</name>
+        <id>203</id>
+        <title>
+          <key>ru</key>
+          <value>Изменив правила формирования представления сотрудника в отчетах и документах можно добиться вывода фамилии и инициалов, а так же указания вида занятости (&quot;вн.совм.&quot; - для внутренних совместителей, &quot;дог.&quot; - для договорников ГПХ с которыми нет оформленных трудовых договоров), вывода признака того, что сотрудник уволен (&quot;ув.&quot;).</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Змінивши правила формування представлення співробітника в звітах і документах можна домогтися виведення прізвища та ініціалів, а також зазначення виду зайнятості (&quot;вн.сум.&quot; - для внутрішніх сумісників, &quot;дог.&quot; - для договірників ЦПХ з якими немає оформлених трудових договорів), виведення ознаки того, що співробітник звільнений (&quot;зв.&quot;).</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <width>78</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудникиКонтекстноеМеню</name>
+        <id>202</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Правило формирования представления элементов справочника сотрудники в отчетах и документах</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Правило формування представлення елементів довідника співробітники в звітах і документах</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаНастройкиКадровогоУчетаПравилоФормированияПредставленияЭлементовСправочникаСотрудникиРасширеннаяПодсказка</name>
+      <id>205</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>НастройкиВоинскогоУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки воинского учета</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки військового обліку</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиВоинскогоУчета</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкиШтатногоРасписания</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки штатного расписания</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки штатного розкладу</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиШтатногоРасписания</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкиВоинскогоУчетаПрежняя</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки воинского учета прежняя</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки військового обліку колишня</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиВоинскогоУчета</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ТребуетсяОбновлениеИнтерфейса</name>
+    <title>
+      <key>ru</key>
+      <value>Требуется обновление интерфейса</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Потрібне оновлення інтерфейсу</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>АдресХранилища</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес хранилища</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Адреса сховища</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИдентификаторЗадания</name>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Ідентифікатор завдання</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>UUID</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкиКадровогоУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки кадрового учета</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки кадрового обліку</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиКадровогоУчета</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкиКадровогоУчетаПрежняя</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки кадрового учета прежняя</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки кадрового обліку колишня</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиКадровогоУчета</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОписаниеНастроекШтатногоРасписания</name>
+    <title>
+      <key>ru</key>
+      <value>Описание настроек штатного расписания</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Опис настройок штатного розкладу</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>РаботаВБюджетномУчреждении</name>
+    <title>
+      <key>ru</key>
+      <value>Работа в бюджетном учреждении</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Робота в бюджетній установі</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПояснениеИспользоватьПереносОстатковОтпускаПриУвольненииПереводом</name>
+    <title>
+      <key>ru</key>
+      <value>Пояснение использовать перенос остатков отпуска при увольнении переводом</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Пояснення використовувати перенесення залишків відпустки при звільненні переведенням</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.РаботаВНесколькихХозрасчетныхОрганизациях</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьКадровыйУчетИРасчетЗарплаты</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать программу для кадрового учета и расчета заработной платы</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати програму для кадрового обліку і розрахунку заробітної плати</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьНачислениеЗарплаты</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать программу для расчета заработной платы</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати програму для розрахунку заробітної плати</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьКадровыйУчет</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать кадровый учет</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати кадровий облік</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьАттестацииСотрудников</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать аттестации сотрудников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати атестації співробітників</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьОтдельныйДокументДляФормированияАттестационнойКомиссии</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать отдельный документ для формирования аттестационной комиссии</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати окремий документ для формування атестаційної комісії</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьСпециальностиФизическихЛиц</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать специальности физических лиц</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати спеціальності фізичних осіб</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьПодработки</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать подработки</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати підробітки</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ШтатноеРасписаниеВсегдаИспользуется</name>
+    <title>
+      <key>ru</key>
+      <value>Штатное расписание всегда используется</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Штатний розклад завжди використовується</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьПроизвольныеКадровыеПриказы</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать произвольные кадровые приказы</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати довільні кадрові накази</value>
+    </title>
+    <id>21</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОбновитьПравилоФормированияПредставленияЭлементовСправочникаСотрудники</name>
+    <title>
+      <key>ru</key>
+      <value>Обновить правило формирования представления элементов справочника сотрудники</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Оновити правило формування представлення елементів довідника співробітники</value>
+    </title>
+    <id>22</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьУчетСпецстажа</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать учет спецстажа</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати облік спецстажу</value>
+    </title>
+    <id>23</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>НастройкаШтатногоРасписания</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка штатного расписания</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройка штатного розкладу</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастройкаШтатногоРасписания</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>НастройкиКадровогоУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Настройки кадрового учета</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройки кадрового обліку</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастройкиКадровогоУчета</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

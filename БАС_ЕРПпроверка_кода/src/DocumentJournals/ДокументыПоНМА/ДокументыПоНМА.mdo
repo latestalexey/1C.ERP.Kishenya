@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c08fc30-cdf4-4157-b342-de9e5fee730d">
+  <producedTypes>
+    <selectionType typeId="05acc415-eb19-442f-acb4-d0e393d95dbd" valueTypeId="6449289d-12ce-414d-bd89-fcdde5916cb0"/>
+    <listType typeId="20cb56fe-6377-41b0-8538-d65c1a0a9bf8" valueTypeId="3511bae4-9191-4248-99e6-ade4960cb9ca"/>
+    <managerType typeId="71168a5b-879f-41ff-aba1-2843eff814a0" valueTypeId="06dbfcd3-bac2-4e6a-a8ec-8e5c1beb4a60"/>
+  </producedTypes>
+  <name>ДокументыПоНМА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по НМА</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи по НМА</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоНМА.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПринятиеКУчетуНМА</registeredDocuments>
+  <registeredDocuments>Document.СписаниеНМА</registeredDocuments>
+  <registeredDocuments>Document.ВыработкаНМА</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеПараметровНМА</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеУслугПрочихАктивов</registeredDocuments>
+  <registeredDocuments>Document.РеализацияУслугПрочихАктивов</registeredDocuments>
+  <registeredDocuments>Document.ВнутреннееПотреблениеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ПодготовкаКПередачеНМА</registeredDocuments>
+  <registeredDocuments>Document.ПереоценкаНМА</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеНМА</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияНМА</registeredDocuments>
+  <registeredDocuments>Document.МодернизацияНМА</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы по НМА</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Документи по НМА</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы по нематериальным активам</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Документи по нематеріальних активах</value>
+  </extendedListPresentation>
+  <columns uuid="72a7f3a1-e169-41b4-8a07-75b44fa0ea5d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.СписаниеНМА.Attribute.Организация</references>
+    <references>Document.ПринятиеКУчетуНМА.Attribute.Организация</references>
+    <references>Document.ВыработкаНМА.Attribute.Организация</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.Организация</references>
+    <references>Document.РеализацияУслугПрочихАктивов.Attribute.Организация</references>
+    <references>Document.ИзменениеПараметровНМА.Attribute.Организация</references>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Организация</references>
+    <references>Document.ПодготовкаКПередачеНМА.Attribute.Организация</references>
+    <references>Document.ПереоценкаНМА.Attribute.Организация</references>
+    <references>Document.ПеремещениеНМА.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Организация</references>
+    <references>Document.МодернизацияНМА.Attribute.Организация</references>
+  </columns>
+  <columns uuid="dfc45cda-3d7e-4009-9c23-5ca5c8fc2f66">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <references>Document.СписаниеНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.ПринятиеКУчетуНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.ПодготовкаКПередачеНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.ПереоценкаНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.ПеремещениеНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.МодернизацияНМА.Attribute.НематериальныйАктив</references>
+    <references>Document.ИзменениеПараметровНМА.Attribute.НематериальныйАктив</references>
+  </columns>
+  <columns uuid="7ad36e01-ea9a-4177-b49d-fd319d7febc8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <references>Document.СписаниеНМА.Attribute.Комментарий</references>
+    <references>Document.ПринятиеКУчетуНМА.Attribute.Комментарий</references>
+    <references>Document.ВыработкаНМА.Attribute.Комментарий</references>
+    <references>Document.ИзменениеПараметровНМА.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.Комментарий</references>
+    <references>Document.РеализацияУслугПрочихАктивов.Attribute.Комментарий</references>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Комментарий</references>
+    <references>Document.ПодготовкаКПередачеНМА.Attribute.Комментарий</references>
+    <references>Document.ПереоценкаНМА.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Комментарий</references>
+    <references>Document.МодернизацияНМА.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="53a1d794-e953-4110-9593-8088aaa32455">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <references>Document.СписаниеНМА.Attribute.Ответственный</references>
+    <references>Document.ПринятиеКУчетуНМА.Attribute.Ответственный</references>
+    <references>Document.ВыработкаНМА.Attribute.Ответственный</references>
+    <references>Document.ИзменениеПараметровНМА.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.Менеджер</references>
+    <references>Document.РеализацияУслугПрочихАктивов.Attribute.Менеджер</references>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Ответственный</references>
+    <references>Document.ПодготовкаКПередачеНМА.Attribute.Ответственный</references>
+    <references>Document.ПереоценкаНМА.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеНМА.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияНМА.Attribute.Ответственный</references>
+    <references>Document.МодернизацияНМА.Attribute.Ответственный</references>
+  </columns>
+  <forms uuid="9e44572d-b5d1-4aca-9850-35c91d344e70">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

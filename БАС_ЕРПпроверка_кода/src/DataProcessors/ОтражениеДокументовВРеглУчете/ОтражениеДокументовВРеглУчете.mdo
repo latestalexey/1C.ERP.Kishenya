@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ad90e2c-13b0-40db-a1fc-aa99d41acd71">
+  <producedTypes>
+    <objectType typeId="2e9fdfb9-9e07-417f-a50f-18d460497ac4" valueTypeId="c3c9c6a3-58e5-4296-bcdb-90af6a92b74a"/>
+    <managerType typeId="1777c8ab-f624-46e7-8995-02b6fc0983ad" valueTypeId="439c336e-beeb-4951-a2ae-0e56b3371a56"/>
+  </producedTypes>
+  <name>ОтражениеДокументовВРеглУчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отражение документов в регламентированном учете</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відображення документів в регламентованому обліку</value>
+  </synonym>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="214a3d27-c4ee-4002-a694-f796b8011cd9">
+    <name>РучнаяКорректировкаПроводок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка проводок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування проводок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включить возможность ручной корректировки проводок для данного документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Включити можливість ручного коригування проводок для даного документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6d466252-2132-4992-a614-5a7f2e9f29b2">
+    <name>ПроводкиРегламентированногоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки регламентированного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки регламентованого обліку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9159da32-1a6b-432c-a2bd-ea3a6b3f04c0">
+    <name>ФормаКомментария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма комментария</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма коментаря</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="81181aa8-aba2-480c-8542-70bb5a7f1227">
+    <name>ФормаРасшифровкиСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы отражения документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статуси відображення документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6594365b-71a7-4ea4-b947-d2b469254005">
+    <name>ПроводкиРеглУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки регламентированного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки регламентованого обліку</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+      <types>DocumentRef.ПодготовкаКПередачеНМА</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.ПеремещениеВЭксплуатации</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.ПередачаДавальцу</types>
+      <types>DocumentRef.ПеремещениеМатериаловВПроизводстве</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ПередачаОСАрендатору</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОперацияПоПлатежнойКарте</types>
+      <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+      <types>DocumentRef.ПоступлениеУслугПоЛизингу</types>
+      <types>DocumentRef.ПерерасчетПропорциональногоНДСпоТоварамИОС</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияЗапасов</types>
+      <types>DocumentRef.ОтчетДавальцу</types>
+      <types>DocumentRef.ПринятиеКУчетуОС</types>
+      <types>DocumentRef.АмортизацияНМА</types>
+      <types>DocumentRef.ПереоценкаВалютныхСредств</types>
+      <types>DocumentRef.ПоступлениеСырьяОтДавальца</types>
+      <types>DocumentRef.НачислениеОценочныхОбязательствПоОтпускам</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.РаспределениеПроизводственныхЗатрат</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.ВводОстатков</types>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.ПрочиеДоходыРасходы</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.РаспределениеРасходовБудущихПериодов</types>
+      <types>DocumentRef.МодернизацияОС</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.СписаниеНедостачТоваров</types>
+      <types>DocumentRef.РаспределениеПрочихЗатрат</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.ВозвратСырьяДавальцу</types>
+      <types>DocumentRef.ИзменениеПараметровНМА</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.ПеремещениеНМА</types>
+      <types>DocumentRef.РемонтОС</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.АмортизацияОС</types>
+      <types>DocumentRef.ПодготовкаКПередачеОС</types>
+      <types>DocumentRef.ПоступлениеАрендованныхОС</types>
+      <types>DocumentRef.ОтражениеЗарплатыВФинансовомУчете</types>
+      <types>DocumentRef.ПереоценкаНМА</types>
+      <types>DocumentRef.ПередачаСырьяПереработчику</types>
+      <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+      <types>DocumentRef.ВводОстатковВнеоборотныхАктивов</types>
+      <types>DocumentRef.КорректировкаНазначенияТоваров</types>
+      <types>DocumentRef.ПересортицаТоваров</types>
+      <types>DocumentRef.ВыбытиеДенежныхДокументов</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+      <types>DocumentRef.ПоступлениеДенежныхДокументов</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.НачислениеДивидендов</types>
+      <types>DocumentRef.КорректировкаПоступления</types>
+      <types>DocumentRef.ОтчетКомитентуОСписании</types>
+      <types>DocumentRef.ОтчетПереработчика</types>
+      <types>DocumentRef.ПереоценкаОС</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.АннулированиеПодарочныхСертификатов</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ИнвентаризацияНаличныхДенежныхСредств</types>
+      <types>DocumentRef.ИзменениеПараметровОС</types>
+      <types>DocumentRef.ОприходованиеИзлишковТоваров</types>
+      <types>DocumentRef.ВозвратСырьяОтПереработчика</types>
+      <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+      <types>DocumentRef.СписаниеЗадолженности</types>
+      <types>DocumentRef.ВыпускПродукции</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СборкаТоваров</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>DocumentRef.МодернизацияНМА</types>
+      <types>DocumentRef.ВозвратМатериаловИзПроизводства</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияОС</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ВозвратОСОтАрендатора</types>
+      <types>DocumentRef.ВыкупВозвратнойТарыУПоставщика</types>
+      <types>DocumentRef.СписаниеИзЭксплуатации</types>
+      <types>DocumentRef.РегламентнаяОперация</types>
+      <types>DocumentRef.ВзаимозачетЗадолженности</types>
+      <types>DocumentRef.ДепонированиеЗарплаты</types>
+      <types>DocumentRef.ОтражениеРасхожденийПриИнкассацииДенежныхСредств</types>
+      <types>DocumentRef.РасчетСебестоимостиТоваров</types>
+      <types>DocumentRef.ПрочееОприходованиеТоваров</types>
+      <types>DocumentRef.НачисленияКредитовИДепозитов</types>
+      <types>DocumentRef.РеализацияПодарочныхСертификатов</types>
+      <types>DocumentRef.ПеремещениеОС</types>
+      <types>DocumentRef.ВозвратПодарочныхСертификатов</types>
+      <types>DocumentRef.ПоступлениеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.ПередачаМатериаловВПроизводство</types>
+      <types>DocumentRef.ПринятиеКУчетуНМА</types>
+      <types>DocumentRef.ПорчаТоваров</types>
+      <types>DocumentRef.ПоступлениеОтПереработчика</types>
+      <types>DocumentRef.СписаниеНМА</types>
+      <types>DocumentRef.ВыбытиеАрендованныхОС</types>
+      <types>DocumentRef.ПоступлениеПредметовЛизинга</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияКапитальныхИнвестиций</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Проводки регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Проводки регламентованого обліку</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЖурналПроводок</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

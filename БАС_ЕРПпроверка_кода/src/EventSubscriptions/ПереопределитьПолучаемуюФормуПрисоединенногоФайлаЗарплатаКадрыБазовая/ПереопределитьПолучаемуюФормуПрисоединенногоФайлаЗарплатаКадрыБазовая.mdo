@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="905c24f8-ba88-458c-bc02-7c18d5bf191a">
+  <name>ПереопределитьПолучаемуюФормуПрисоединенногоФайлаЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму присоединенного файла (Зарплата кадры базовая)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевизначити одержувану форму приєднаного файлу (Зарплата кадри базова)</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлы</types>
+    <types>CatalogManager.ВедомостьНаВыплатуЗарплатыВБанкПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаявкаНаЗакрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаявкаНаОткрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.ПрисоединенныеФайлыКлиентСервер.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

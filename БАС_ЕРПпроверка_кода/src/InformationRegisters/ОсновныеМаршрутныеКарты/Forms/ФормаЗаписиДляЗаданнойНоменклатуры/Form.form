@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаСвойства</name>
+    <id>72</id>
+    <items xsi:type="form:FormField">
+      <name>Номенклатура</name>
+      <id>73</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Запись.Номенклатура</segments>
+        </paths>
+      </dataPath>
+      <extendedTooltip>
+        <name>НоменклатураExtendedTooltip</name>
+        <id>114</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НоменклатураКонтекстноеМеню</name>
+        <id>74</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>МаршрутнаяКарта</name>
+      <id>68</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:MultiLanguageDataPath">
+        <paths xsi:type="form:DataPath">
+          <segments>Запись.МаршрутнаяКарта</segments>
+        </paths>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>МаршрутнаяКартаПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>МаршрутнаяКартаExtendedTooltip</name>
+        <id>115</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>МаршрутнаяКартаКонтекстноеМеню</name>
+        <id>69</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceForm>Catalog.РесурсныеСпецификации.Form.ВыборДействующихСпецификаций</choiceForm>
+        <choiceParameterLinks>
+          <name>Номенклатура</name>
+          <changeMode>DontChange</changeMode>
+          <datapath xsi:type="form:DataPath">
+            <segments>10/0:5d108a53-ebee-4d50-bf1e-0fcb2c156bf4</segments>
+          </datapath>
+        </choiceParameterLinks>
+        <choiceParameters>
+          <name>ПолучитьСписокДействующихСпецификаций</name>
+          <value xsi:type="form:FormChoiceListDesTimeValue">
+            <value xsi:type="core:BooleanValue">
+              <value>true</value>
+            </value>
+          </value>
+        </choiceParameters>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаНастройка</name>
+      <id>111</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаМаршрутнаяКартаВыбрана</name>
+        <id>112</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаХарактеристика</name>
+          <id>89</id>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаСтраницыНастройкиХарактеристики</name>
+            <id>97</id>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСтраницаХарактеристикиНеИспользуются</name>
+              <id>98</id>
+              <items xsi:type="form:Decoration">
+                <name>ДекорацияХарактеристикиНеИспользуются</name>
+                <id>99</id>
+                <title>
+                  <key>ru</key>
+                  <value>Характеристики не используются</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Характеристики не використовуються</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ДекорацияХарактеристикиНеИспользуютсяExtendedTooltip</name>
+                  <id>121</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ДекорацияХарактеристикиНеИспользуютсяКонтекстноеМеню</name>
+                  <id>100</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.ПоясняющийТекст</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа страница характеристики не используются</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група сторінка характеристики не використовуються</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа страница характеристики не используются</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група сторінка характеристики не використовуються</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСтраницаХарактеристикиНеИспользуютсяExtendedTooltip</name>
+                <id>120</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Page</type>
+              <extInfo xsi:type="form:PageGroupExtInfo">
+                <group>Vertical</group>
+                <showTitle>true</showTitle>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСтраницаХарактеристикаНастраивается</name>
+              <id>101</id>
+              <items xsi:type="form:FormField">
+                <name>СпособУказанияХарактеристики</name>
+                <id>90</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:MultiLanguageDataPath">
+                  <paths xsi:type="form:DataPath">
+                    <segments>СпособУказанияХарактеристики</segments>
+                  </paths>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>СпособУказанияХарактеристикиПриИзменении</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>СпособУказанияХарактеристикиExtendedTooltip</name>
+                  <id>123</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>СпособУказанияХарактеристикиКонтекстноеМеню</name>
+                  <id>91</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>1</columnsCount>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>для любой характеристики</value>
+                    </presentation>
+                    <presentation>
+                      <key>uk</key>
+                      <value>для будь-якої характеристики</value>
+                    </presentation>
+                    <value xsi:type="core:NumberValue">
+                      <value>0</value>
+                    </value>
+                  </choiceList>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>для указанной характеристики</value>
+                    </presentation>
+                    <presentation>
+                      <key>uk</key>
+                      <value>для зазначеної характеристики</value>
+                    </presentation>
+                    <value xsi:type="core:NumberValue">
+                      <value>1</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>Группа1</name>
+                <id>102</id>
+                <items xsi:type="form:FormField">
+                  <name>Характеристика</name>
+                  <id>103</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>ХарактеристикаExtendedTooltip</name>
+                    <id>125</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ХарактеристикаКонтекстноеМеню</name>
+                    <id>104</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <autoMarkIncomplete>true</autoMarkIncomplete>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>Группа1ExtendedTooltip</name>
+                  <id>124</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>Vertical</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <showTitle>true</showTitle>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>DontUse</currentRowUse>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа страница характеристика настраивается</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група сторінка характеристика налаштовується</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа страница характеристика настраивается</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група сторінка характеристика налаштовується</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСтраницаХарактеристикаНастраиваетсяExtendedTooltip</name>
+                <id>122</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Page</type>
+              <extInfo xsi:type="form:PageGroupExtInfo">
+                <showTitle>true</showTitle>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСтраницаХарактеристикаУказанаВМаршрутнойКарте</name>
+              <id>105</id>
+              <items xsi:type="form:FormField">
+                <name>ХарактеристикаУказанаВМаршрутнойКарте</name>
+                <id>106</id>
+                <title>
+                  <key>ru</key>
+                  <value>Указана в маршрутной карте</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Зазначена в маршрутній карті</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ХарактеристикаУказанаВМаршрутнойКартеExtendedTooltip</name>
+                  <id>127</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ХарактеристикаУказанаВМаршрутнойКартеКонтекстноеМеню</name>
+                  <id>107</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>LabelField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:LabelFieldExtInfo">
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <textColor xsi:type="core:ColorRef">
+                    <color>Style.ПоясняющийТекст</color>
+                  </textColor>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа страница характеристика указана в маршрутной карте</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група сторінка характеристика вказана в маршрутній карті</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа страница характеристика указана в маршрутной карте</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група сторінка характеристика вказана в маршрутній карті</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСтраницаХарактеристикаУказанаВМаршрутнойКартеExtendedTooltip</name>
+                <id>126</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Page</type>
+              <extInfo xsi:type="form:PageGroupExtInfo">
+                <group>Vertical</group>
+                <showTitle>true</showTitle>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа страницы настройки характеристики</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Група сторінки налаштування характеристики</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа страницы настройки характеристики</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група сторінки налаштування характеристики</value>
+            </toolTip>
+            <enableContentChange>true</enableContentChange>
+            <extendedTooltip>
+              <name>ГруппаСтраницыНастройкиХарактеристикиExtendedTooltip</name>
+              <id>119</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Pages</type>
+            <extInfo xsi:type="form:PagesGroupExtInfo">
+              <currentRowUse>DontUse</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Характеристика</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Характеристика</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа характеристика</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група характеристика</value>
+          </toolTip>
+          <horizontalStretch>true</horizontalStretch>
+          <extendedTooltip>
+            <name>ГруппаХарактеристикаExtendedTooltip</name>
+            <id>118</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>StrongSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>DontUse</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница маршрутная карта выбрана</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка маршрутна карта вибрано</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница маршрутная карта выбрана</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка маршрутна карта вибрано</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницаМаршрутнаяКартаВыбранаExtendedTooltip</name>
+          <id>117</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаМаршрутнаяКартаНеВыбрана</name>
+        <id>108</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияНеВыбранаМаршрутнаяКарта</name>
+          <id>109</id>
+          <title>
+            <key>ru</key>
+            <value>&lt;Для настройки необходимо выбрать маршрутную карту></value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>&lt;Для настройки необхідно вибрати маршрутну карту></value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияНеВыбранаМаршрутнаяКартаExtendedTooltip</name>
+            <id>129</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияНеВыбранаМаршрутнаяКартаКонтекстноеМеню</name>
+            <id>110</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.ПоясняющийТекст</color>
+          </textColor>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница маршрутная карта не выбрана</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка маршрутна карта не вибрано</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница маршрутная карта не выбрана</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка маршрутна карта не вибрано</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницаМаршрутнаяКартаНеВыбранаExtendedTooltip</name>
+          <id>128</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа настройка</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Група настройка</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа настройка</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група настройка</value>
+      </toolTip>
+      <enableContentChange>true</enableContentChange>
+      <extendedTooltip>
+        <name>ГруппаНастройкаExtendedTooltip</name>
+        <id>116</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>DontUse</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа свойства</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Група властивості</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа свойства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група властивості</value>
+    </toolTip>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаСвойстваExtendedTooltip</name>
+      <id>113</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>DontUse</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <excludedCommands>Copy</excludedCommands>
+  <excludedCommands>CustomizeForm</excludedCommands>
+  <excludedCommands>Delete</excludedCommands>
+  <excludedCommands>Help</excludedCommands>
+  <excludedCommands>Reread</excludedCommands>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Запись</name>
+    <id>10</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.ОсновныеМаршрутныеКарты</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ХарактеристикиИспользуются</name>
+    <title>
+      <key>ru</key>
+      <value>Характеристики используются</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Характеристики використовуються</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособУказанияХарактеристики</name>
+    <title>
+      <key>ru</key>
+      <value>Способ указания характеристики</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Спосіб зазначення характеристики</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:InformationRegisterManagerFormExtInfo">
+    <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
+    <handlers>
+      <event>BeforeWriteAtServer</event>
+      <name>ПередЗаписьюНаСервере</name>
+    </handlers>
+  </extInfo>
+</form:Form>

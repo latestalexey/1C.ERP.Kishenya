@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6aa968fc-5608-47ff-abc3-62f01a75ddd7">
+  <name>ПроверитьДатуЗапретаПередУдалениемЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета перед удалением</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити дату заборони перед вилученням</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПодтверждениеОплатыЗаявленияРасчетаВФСС</types>
+    <types>DocumentObject.ПерерасчетНДФЛ</types>
+    <types>DocumentObject.ИсполнительныйЛист</types>
+    <types>DocumentObject.ПрекращениеЛьготПоНДФЛ</types>
+    <types>DocumentObject.АктПроверкиСтраховыхВзносов</types>
+    <types>DocumentObject.ОперацияНалоговогоУчетаПоНДФЛ</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.ЗаявлениеРасчетВФСС</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentObject.ВходящаяСправкаОРасчетеБольничного</types>
+    <types>DocumentObject.ПодтверждениеОткрытияЛицевыхСчетовСотрудников</types>
+    <types>DocumentObject.ОперацияУчетаПоСтраховымВзносам</types>
+    <types>DocumentObject.РасчетСпецстажаСотрудников</types>
+    <types>DocumentObject.ЗаявкаНаОткрытиеЛицевыхСчетовСотрудников</types>
+    <types>DocumentObject.ЗаявлениеНаПредоставлениеЛьготыПоНДФЛ</types>
+    <types>DocumentObject.БольничныйЛист</types>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.Отпуск</types>
+    <types>DocumentObject.ЗаявкаНаЗакрытиеЛицевыхСчетовСотрудников</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ПодтверждениеЗачисленияЗарплаты</types>
+    <types>DocumentObject.НачислениеОценочныхОбязательствПоОтпускам</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentObject.ПодтверждениеВыплатЗаСчетФСС</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередУдалением</handler>
+</mdclass:EventSubscription>

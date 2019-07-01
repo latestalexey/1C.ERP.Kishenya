@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a7417ff-ea4a-4e60-b862-46b02cef579f">
+  <producedTypes>
+    <selectionType typeId="1c3399fe-e312-44d0-8bee-e5232658a8fc" valueTypeId="27e3c752-e8ec-42f5-a710-9eeca5410b10"/>
+    <listType typeId="55985785-a0ee-4a4c-8243-a897b0d8e5e8" valueTypeId="1f4eb421-6244-49c1-90ad-c052dd425cb9"/>
+    <managerType typeId="07119479-2aa7-46ef-98d2-916a5cb4158e" valueTypeId="f322e706-71b3-41ef-9ddb-c266c0db35e0"/>
+  </producedTypes>
+  <name>ДокументыПоОСМеждународныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по ОС (международный учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи з ОЗ (міжнародний облік)</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоОСМеждународныйУчет.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПринятиеКУчетуОСМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.СписаниеОСМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.АмортизацияОСМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеПараметровОСМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеОСМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ПереводОсновныхСредствИнвестиционногоИмуществаМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.РегистрацияНаработок</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы по ОС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Документи по ОЗ</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы по ОС (международный учет)</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Документи з ОЗ (міжнародний облік)</value>
+  </extendedListPresentation>
+  <columns uuid="c5e2c42e-3c7e-4401-96a5-23e6aa63b646">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуОСМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.СписаниеОСМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.АмортизацияОСМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ПеремещениеОСМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ИзменениеПараметровОСМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ПереводОсновныхСредствИнвестиционногоИмуществаМеждународныйУчет.Attribute.Организация</references>
+  </columns>
+  <columns uuid="e9909ca6-9277-436e-a971-85476c1c3af7">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуОСМеждународныйУчет.Attribute.Подразделение</references>
+    <references>Document.СписаниеОСМеждународныйУчет.Attribute.Подразделение</references>
+    <references>Document.ПеремещениеОСМеждународныйУчет.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="244d235f-142c-46cf-a757-04bb8b0bb34a">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуОСМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.СписаниеОСМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.АмортизацияОСМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеОСМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ИзменениеПараметровОСМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ПереводОсновныхСредствИнвестиционногоИмуществаМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.РегистрацияНаработок.Attribute.Ответственный</references>
+  </columns>
+  <forms uuid="66018d18-c944-48da-acf1-6231d0fa05e7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,847 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://pilot.fss.ru/1.7">
+	<property name="ROWSET">
+		<typeDef xsi:type="ObjectType">
+			<property name="version" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10"/>
+			</property>
+			<property name="software" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="255"/>
+			</property>
+			<property name="version_software" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="15"/>
+			</property>
+			<property name="author" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="120"/>
+			</property>
+			<property name="phone" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+			</property>
+			<property name="email" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="40"/>
+			</property>
+			<property name="EMPL_KPP" lowerBound="0" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+			</property>
+			<property name="EMPL_INN" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+			</property>
+			<property name="EMPL_OGRN" lowerBound="0" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="15"/>
+			</property>
+			<property name="EMPL_REG_NO" lowerBound="1" form="Attribute">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10"/>
+			</property>
+			<property name="ROW" upperBound="-1">
+				<typeDef xsi:type="ObjectType">
+					<property name="BATCH_NO">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+					</property>
+					<property name="TYPE_INFO">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1">
+							<enumeration>0</enumeration>
+							<enumeration>1</enumeration>
+						</typeDef>
+					</property>
+					<property xmlns:d6p1="http://pilot.fss.ru/1.7" name="RECALC_REASON_CODE" type="d6p1:nilinteger1" lowerBound="0"/>
+					<property name="DOC_TYPE">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic">
+							<enumeration>1</enumeration>
+							<enumeration>2</enumeration>
+							<enumeration>3</enumeration>
+							<enumeration>4</enumeration>
+							<enumeration>5</enumeration>
+							<enumeration>6</enumeration>
+							<enumeration>7</enumeration>
+							<enumeration>8</enumeration>
+							<enumeration>9</enumeration>
+							<enumeration>10</enumeration>
+							<enumeration>13</enumeration>
+							<enumeration>76</enumeration>
+						</typeDef>
+					</property>
+					<property name="DOC_DT1">
+						<typeDef xsi:type="ValueType" base="xs:date" variety="Atomic"/>
+					</property>
+					<property name="SNILS">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="11"/>
+					</property>
+					<property name="INN_PERSON" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="SURNAME">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="NAME">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="PATRONIMIC" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="RESIDENT_FLAG">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1"/>
+					</property>
+					<property name="RESIDENT_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="ID_TYPE">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration>01</enumeration>
+							<enumeration>02</enumeration>
+							<enumeration>03</enumeration>
+							<enumeration>04</enumeration>
+							<enumeration>05</enumeration>
+							<enumeration>06</enumeration>
+							<enumeration>07</enumeration>
+							<enumeration>08</enumeration>
+							<enumeration>09</enumeration>
+							<enumeration>10</enumeration>
+							<enumeration>11</enumeration>
+							<enumeration>12</enumeration>
+							<enumeration>13</enumeration>
+							<enumeration>14</enumeration>
+							<enumeration>15</enumeration>
+							<enumeration>18</enumeration>
+							<enumeration>21</enumeration>
+							<enumeration>22</enumeration>
+							<enumeration>23</enumeration>
+							<enumeration>24</enumeration>
+							<enumeration>26</enumeration>
+							<enumeration>27</enumeration>
+							<enumeration>60</enumeration>
+							<enumeration>61</enumeration>
+							<enumeration>62</enumeration>
+							<enumeration>63</enumeration>
+							<enumeration>81</enumeration>
+							<enumeration>91</enumeration>
+						</typeDef>
+					</property>
+					<property name="ID_NO">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="ID_DT">
+						<typeDef xsi:type="ValueType" base="xs:date" variety="Atomic"/>
+					</property>
+					<property name="ID_DEPT">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_KLADR" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_A1" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_A2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_A3" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_A4" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_A5" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR_HOUSE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="ADDR_BUILDING" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="ADDR_FLAT" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="POST_INDEX" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="6"/>
+					</property>
+					<property name="OWNER_FLAG">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1"/>
+					</property>
+					<property name="PAYMENT_TYPE">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1"/>
+					</property>
+					<property name="ACCOUNT_BIC" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+					</property>
+					<property name="ACCOUNT_NAME" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="80"/>
+					</property>
+					<property name="ACCOUNT" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="SURNAME2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="NAME2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="PATRONIMIC2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="ID2_TYPE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2"/>
+					</property>
+					<property name="ID2_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="ID2_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="ID2_DEPT" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2000"/>
+					</property>
+					<property name="ADDR2_KLADR" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_A1" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_A2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_A3" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_A4" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_A5" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+					</property>
+					<property name="ADDR2_HOUSE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="ADDR2_BUILDING" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="ADDR2_FLAT" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="POST_INDEX2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="6"/>
+					</property>
+					<property name="EMPLOYER">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="255"/>
+					</property>
+					<property name="EMPL_FLAG">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1"/>
+					</property>
+					<property name="EMPL_OGRN" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="15"/>
+					</property>
+					<property name="EMPL_REG_NO">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10"/>
+					</property>
+					<property name="EMPL_PARENT_NO">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10"/>
+					</property>
+					<property name="EMPL_KPP" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+					</property>
+					<property name="EMPL_INN">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="APPROVE1">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="APPROVE1_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="APPROVE2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="WORK_CONTRACT_START_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="WORK_CONTRACT_FINISH_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="ROLE_WAGE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="BASE_CALC_DAYS" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="BASE_AVG_SAL" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="AVG_SAL" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MULTPATR" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="BASE_AVG_DAILY_SAL" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="YEAR_CHANGE_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="YEAR1_OLD" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="YEAR2_OLD" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="YEAR1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="YEAR2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="BASE_SUM1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="BASE_SUM2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="KF_REG">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="3">
+							<enumeration/>
+							<enumeration>300</enumeration>
+							<enumeration>200</enumeration>
+							<enumeration>180</enumeration>
+							<enumeration>170</enumeration>
+							<enumeration>160</enumeration>
+							<enumeration>150</enumeration>
+							<enumeration>140</enumeration>
+							<enumeration>130</enumeration>
+							<enumeration>125</enumeration>
+							<enumeration>120</enumeration>
+							<enumeration>115</enumeration>
+							<enumeration xsi:type="xs:string">110</enumeration>
+							<enumeration>100</enumeration>
+						</typeDef>
+					</property>
+					<property name="KF_SHORT_DAY" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="LIVE_COND_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="LIVE_COND" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CALC_MH_PERIOD_START" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CALC_MH_PERIOD_FINISH" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="INSUR_YY" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="INSUR_MM" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="NOT_INSUR_YY" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="NOT_INSUR_MM" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="LN_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="PREV_LN_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="PRIMARY_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="DUPLICATE_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="LN_DATE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="LPU_NAME" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="LPU_ADDRESS" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2000"/>
+					</property>
+					<property name="LPU_OGRN" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="15"/>
+					</property>
+					<property name="BIRTHDAY">
+						<typeDef xsi:type="ValueType" base="xs:date" variety="Atomic"/>
+					</property>
+					<property name="GENDER">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="1"/>
+					</property>
+					<property name="REASON1" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>01</enumeration>
+							<enumeration>02</enumeration>
+							<enumeration>03</enumeration>
+							<enumeration>04</enumeration>
+							<enumeration>05</enumeration>
+							<enumeration>06</enumeration>
+							<enumeration>07</enumeration>
+							<enumeration>08</enumeration>
+							<enumeration>09</enumeration>
+							<enumeration>10</enumeration>
+							<enumeration>11</enumeration>
+							<enumeration>12</enumeration>
+							<enumeration>13</enumeration>
+							<enumeration>14</enumeration>
+							<enumeration>15</enumeration>
+						</typeDef>
+					</property>
+					<property name="REASON2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="3">
+							<enumeration/>
+							<enumeration>017</enumeration>
+							<enumeration>018</enumeration>
+							<enumeration>019</enumeration>
+							<enumeration>020</enumeration>
+							<enumeration>021</enumeration>
+						</typeDef>
+					</property>
+					<property name="REASON3" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>01</enumeration>
+							<enumeration>02</enumeration>
+							<enumeration>03</enumeration>
+							<enumeration>04</enumeration>
+							<enumeration>05</enumeration>
+							<enumeration>06</enumeration>
+							<enumeration>07</enumeration>
+							<enumeration>08</enumeration>
+							<enumeration>09</enumeration>
+							<enumeration>10</enumeration>
+							<enumeration>11</enumeration>
+							<enumeration>12</enumeration>
+							<enumeration>13</enumeration>
+							<enumeration>14</enumeration>
+							<enumeration>15</enumeration>
+						</typeDef>
+					</property>
+					<property name="PARENT_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="DATE1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="DATE2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="VOUCHER_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="10"/>
+					</property>
+					<property name="VOUCHER_OGRN" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="15"/>
+					</property>
+					<property name="SERV1_AGE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="SERV1_MM" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="SERV1_RELATION_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>38</enumeration>
+							<enumeration>39</enumeration>
+							<enumeration>40</enumeration>
+							<enumeration>41</enumeration>
+							<enumeration>42</enumeration>
+						</typeDef>
+					</property>
+					<property name="SERV1_FIO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="SERV1_DAYS" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="SERV2_AGE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="SERV2_MM" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="SERV2_RELATION_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>38</enumeration>
+							<enumeration>39</enumeration>
+							<enumeration>40</enumeration>
+							<enumeration>41</enumeration>
+							<enumeration>42</enumeration>
+						</typeDef>
+					</property>
+					<property name="SERV2_FIO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="SERV2_DAYS" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="PREGN12W_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOSPITAL_DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOSPITAL_DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOSPITAL_BREACH_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>23</enumeration>
+							<enumeration>24</enumeration>
+							<enumeration>25</enumeration>
+							<enumeration>26</enumeration>
+							<enumeration>27</enumeration>
+							<enumeration>28</enumeration>
+						</typeDef>
+					</property>
+					<property name="HOSPITAL_BREACH_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_DT3" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_INVALID_GROUP" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_INVALID_DAYS" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MSE_RESULT" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>31</enumeration>
+							<enumeration>32</enumeration>
+							<enumeration>33</enumeration>
+							<enumeration>34</enumeration>
+							<enumeration>35</enumeration>
+							<enumeration>36</enumeration>
+							<enumeration>37</enumeration>
+						</typeDef>
+					</property>
+					<property name="TREAT1_DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT1_DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT1_DOCTOR_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT1_DOCTOR" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT1_DOC_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="TREAT1_DOCTOR2_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT1_CHAIRMAN_VK" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT1_DOC2_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="TREAT2_DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT2_DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT2_DOCTOR_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT2_DOCTOR" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT2_DOC_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="TREAT2_DOCTOR2_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT2_CHAIRMAN_VK" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT2_DOC2_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="TREAT3_DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT3_DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="TREAT3_DOCTOR_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT3_DOCTOR" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT3_DOC_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="TREAT3_DOCTOR2_ROLE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="300"/>
+					</property>
+					<property name="TREAT3_CHAIRMAN_VK" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="90"/>
+					</property>
+					<property name="TREAT3_DOC2_ID" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14"/>
+					</property>
+					<property name="OTHER_STATE_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="RETURN_DATE_LPU" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="NEXT_LN_CODE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+					</property>
+					<property name="CALC_METHOD">
+						<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic">
+							<enumeration>0</enumeration>
+							<enumeration>1</enumeration>
+						</typeDef>
+					</property>
+					<property name="CALC_CONDITION1" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>43</enumeration>
+							<enumeration>44</enumeration>
+							<enumeration>45</enumeration>
+							<enumeration>46</enumeration>
+							<enumeration>47</enumeration>
+							<enumeration>48</enumeration>
+							<enumeration>49</enumeration>
+							<enumeration>50</enumeration>
+							<enumeration>51</enumeration>
+						</typeDef>
+					</property>
+					<property name="CALC_CONDITION2" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>43</enumeration>
+							<enumeration>44</enumeration>
+							<enumeration>45</enumeration>
+							<enumeration>46</enumeration>
+							<enumeration>47</enumeration>
+							<enumeration>48</enumeration>
+							<enumeration>49</enumeration>
+							<enumeration>50</enumeration>
+							<enumeration>51</enumeration>
+						</typeDef>
+					</property>
+					<property name="CALC_CONDITION3" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>43</enumeration>
+							<enumeration>44</enumeration>
+							<enumeration>45</enumeration>
+							<enumeration>46</enumeration>
+							<enumeration>47</enumeration>
+							<enumeration>48</enumeration>
+							<enumeration>49</enumeration>
+							<enumeration>50</enumeration>
+							<enumeration>51</enumeration>
+						</typeDef>
+					</property>
+					<property name="CODE_NUCLEAR" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="FORM1_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="RETURN_DATE_EMPL" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="FSS_PAYMENT_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="DT1" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="DT2" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CALC_DAYS" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="DT2_FACT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="EMPL_PAYMENT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="FSS_PAYMENT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="PAYMENT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_TYPE" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="2">
+							<enumeration/>
+							<enumeration>24</enumeration>
+							<enumeration>25</enumeration>
+							<enumeration>26</enumeration>
+						</typeDef>
+					</property>
+					<property name="CERT_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="CERT_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CERT_BR" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CERT_DT_DATE" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CERT_SURNAME" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="CERT_NAME" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="CERT_PATRONIMIC" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="30"/>
+					</property>
+					<property name="REF_24_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_24_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="O_CERT_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="O_CERT_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="CHILD_SER" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="MH_OUT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOLID_ORD_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="HOLID_ORD_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOLID_DT_ST" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOLID_DT_FN" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="HOLID_CH_ORD_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="HOLID_CH_ORD_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_NPAY_OTHER_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_NPAY_OTHER_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="WARD_FLAG" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="WARD_REF_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="WARD_REF_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_FAMILY_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_FAMILY_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="OTHER_CHILD_FLAG_BR" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="OTHER_CHILD_FLAG_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_NPAY_FATHER_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_NPAY_FATHER_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_NPAY_MOTHER_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_NPAY_MOTHER_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REF_12WEEK_NO" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+					</property>
+					<property name="REF_12WEEK_DT" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="REASON_EMPL" lowerBound="0">
+						<typeDef xsi:type="ValueType"/>
+					</property>
+					<property name="PERIODS">
+						<typeDef xsi:type="ObjectType">
+							<property name="PERIOD" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="START_DATE">
+										<typeDef xsi:type="ValueType" base="xs:date" variety="Atomic"/>
+									</property>
+									<property name="END_DATE">
+										<typeDef xsi:type="ValueType" base="xs:date" variety="Atomic"/>
+									</property>
+									<property name="IDLE_AVERAGE">
+										<typeDef xsi:type="ValueType"/>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+		</typeDef>
+	</property>
+	<valueType name="empty" base="xs:string" variety="Atomic">
+		<enumeration/>
+	</valueType>
+	<valueType name="integer1" base="xs:int" variety="Atomic" totalDigits="1"/>
+	<valueType name="integer2" base="xs:int" variety="Atomic" totalDigits="2"/>
+	<valueType name="integer22" base="xs:int" variety="Atomic" totalDigits="22"/>
+	<valueType name="integer3" base="xs:int" variety="Atomic" totalDigits="3"/>
+	<valueType name="integer4" base="xs:int" variety="Atomic" totalDigits="4"/>
+	<valueType name="nildate" variety="Union" memberTypes="xs:date"/>
+	<valueType name="nildouble" variety="Union" memberTypes="xs:double"/>
+	<valueType name="nilinteger" variety="Union" memberTypes="xs:int"/>
+	<valueType name="nilinteger1"/>
+	<valueType name="nilinteger2"/>
+	<valueType name="nilinteger22"/>
+	<valueType name="nilinteger3"/>
+	<valueType name="nilinteger4"/>
+</package>
