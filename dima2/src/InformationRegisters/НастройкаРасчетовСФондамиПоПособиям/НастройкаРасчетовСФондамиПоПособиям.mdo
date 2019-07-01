@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4647b041-64bc-46ff-bfb2-b17efadf0d60">
+  <producedTypes>
+    <selectionType typeId="552df187-ca63-4509-9c83-94e91d25e49e" valueTypeId="09d3333e-71b3-40f6-8f1a-32956c1eda97"/>
+    <listType typeId="77347574-ba86-416c-ae45-83a79c84d04b" valueTypeId="806a7420-ee80-4565-936c-525306e86c76"/>
+    <managerType typeId="3ee2f452-86b4-4cea-bddb-9a1dbc752b43" valueTypeId="dea6bffe-9407-490e-af1b-a5c9ad955849"/>
+    <recordSetType typeId="87b8766b-40f0-4366-9e2c-a0091d355090" valueTypeId="d9cf3c84-1848-4489-9ee7-ee7166203a4c"/>
+    <recordKeyType typeId="4c039e82-e6c1-4f6a-bc36-1d00c8616ba9" valueTypeId="dec88516-4bd6-4c78-9367-f663b40f3f42"/>
+    <recordType typeId="056701fe-4c48-4c6a-8c71-37992b95bcaa" valueTypeId="04c30e70-f20b-4888-823d-87ea1342e4f3"/>
+    <recordManagerType typeId="7736fbb8-bc9e-42b7-9f7f-6dca332b544a" valueTypeId="bb6c369e-1e3b-4181-8314-d3aca461daf1"/>
+  </producedTypes>
+  <name>НастройкаРасчетовСФондамиПоПособиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка расчетов с фондами по пособиям</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настроювання розрахунків з фондами за допомогами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b0b13dec-182f-4383-9dff-c108ac53cf94">
+    <name>СтатьяРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття розрахунків</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="758f35dd-cc0d-4821-a6fc-5fa1f0c6851a">
+    <name>ФондСоциальногоСтрахования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фонд социального страхования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фонд соціального страхування</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОбязательногоСтрахованияСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fea01c55-405b-448d-b40d-d96ed9bba893">
+    <name>Пособие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пособие</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Допомога</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОсобыхНачисленийИУдержаний</types>
+      <types>EnumRef.ПричиныНетрудоспособности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="d22a00c2-15ff-4aab-8146-96668b022b64">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

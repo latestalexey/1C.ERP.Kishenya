@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0c1daa9-9a29-4cac-b4a2-f75938036d66">
+  <name>ПроверитьФОТНачисленийПериодическихПоказателейРасчетаЗарплатыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить ФОТНачислений периодических показателей расчета зарплаты сотрудников</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити ФОТНачислений періодичних показників розрахунку зарплати співробітників</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ЗначенияПериодическихПоказателейРасчетаЗарплатыСотрудников</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РасчетЗарплатыРасширенныйСобытия.ПроверитьФОТНачисленийПериодическихПоказателейРасчетаЗарплатыСотрудников</handler>
+</mdclass:EventSubscription>

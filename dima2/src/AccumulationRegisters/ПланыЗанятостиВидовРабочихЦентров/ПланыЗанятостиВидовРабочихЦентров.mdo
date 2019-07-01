@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1eb9c3d-c036-4e1b-862c-2e7423310ea5">
+  <producedTypes>
+    <selectionType typeId="70e58b25-c88a-4dd9-92e6-dac7dc6d6781" valueTypeId="306a71de-c168-4fe9-805d-ce8a39a7d73f"/>
+    <listType typeId="9fedf22f-e46e-49fd-95da-db0192804463" valueTypeId="e883f153-a353-4fab-b41e-fbd4ac28415a"/>
+    <managerType typeId="4a2e9c8d-8cd8-432f-a2eb-15c1e41bb0f6" valueTypeId="f7cb76a6-6007-4497-8c38-a56b9f8c2265"/>
+    <recordSetType typeId="23794b49-bbd7-497a-9cef-5b0d2487d8c4" valueTypeId="3a239d08-3138-4d89-b016-7efccf0d5570"/>
+    <recordKeyType typeId="f35ca0ed-879a-47e0-939c-b979213b846f" valueTypeId="c6ea6ca2-8d0d-4f91-8552-412eb72d7d96"/>
+    <recordType typeId="bad7dc0f-52fa-46d0-8e75-5720bfe17c4d" valueTypeId="8b031aa4-addb-40b6-bd90-725e6190b7dd"/>
+  </producedTypes>
+  <name>ПланыЗанятостиВидовРабочихЦентров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы занятости видов рабочих центров</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Плани зайнятості видів робочих центрів</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b09f5e9e-638b-487c-815b-d37f73cdd6f5">
+    <name>Занятость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занятость</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зайнятість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="005384b1-b3a1-4d8b-a656-36d94586c184">
+    <name>Спецификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Специфікація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РесурсныеСпецификации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="32d4109b-b56e-4aed-a158-0133c0a0b6d4">
+    <name>КоличествоНаЕдиницуПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество на единицу продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість на одиницю продукції</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f2b8d572-910c-4cc4-b636-35d2bcf0685f">
+    <name>ОдновременноПроизводимоеКоличествоЕдиницПартийИзделий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Одновременно производимое количество единиц/партий изделий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одночасно вироблена кількість одиниць/партій виробів</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Одновременно производимое количество единиц/партий изделий.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Одночасно виробляєма кількість одиниць/партій виробів.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="5370753c-1755-4dfc-8366-7e06ec28caa0">
+    <name>ВидРабочегоЦентра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид рабочего центра</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид робочого центру</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРабочихЦентров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид рабочего центра, работу которого нужно запланировать</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид робочого центру, роботу якого потрібно запланувати</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Подразделение</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:f7aeb8ff-5a05-4ed1-bb31-62455e7b4a1b</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ПланироватьРаботу</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d5158335-592a-4f2a-afe7-513dfbfc5149">
+    <name>ПодразделениеДиспетчер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение диспетчер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ диспетчер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, по которому запланирована закупка.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, по якому запланована купівля.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="294920c7-d1bf-4c89-8ef2-ce64bd2af987">
+    <name>ПодразделениеИсполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение исполнитель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ виконавець</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, по которому запланирована закупка.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, по якому запланована купівля.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4eb2f9d8-0986-43bd-bf49-2d39d4afcec4">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сценарій</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СценарииТоварногоПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="790bfeda-9fac-4188-b8d5-a371331a6529">
+    <name>ПланПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>План производства</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>План виробництва</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПланПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="590ae4e6-8f63-49d0-89d9-b839525548e3">
+    <name>ДатаВыпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выпуска</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата випуску</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="aa277f62-9b31-4720-a41a-d8d75b49160e">
+    <name>НоменклатураПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура продукції</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7d0b2e0a-d3c1-425e-a970-b3382de771a8">
+    <name>ХарактеристикаПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Характеристика продукції</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

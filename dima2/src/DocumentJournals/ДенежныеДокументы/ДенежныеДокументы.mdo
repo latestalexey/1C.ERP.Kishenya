@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ade570b9-62ee-43c9-b558-15f037fdf25c">
+  <producedTypes>
+    <selectionType typeId="b885ed11-fae6-4f3f-a4f6-4ae7a0bb2d8e" valueTypeId="c47694e6-6a5d-469f-8142-696cb4926574"/>
+    <listType typeId="9fe39634-2192-4c6c-9491-70a85973f772" valueTypeId="b2b2177b-830a-444a-8959-51321481f46a"/>
+    <managerType typeId="8f0babc6-6365-45bd-9951-cb750fe09999" valueTypeId="2b4e45ce-8b17-48a0-9a86-b3400328d12b"/>
+  </producedTypes>
+  <name>ДенежныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Денежные документы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Грошові документи</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДенежныеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВыбытиеДенежныхДокументов</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеДенежныхДокументов</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="d16bee8c-9e9b-419b-8847-788f45dc6a02">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ВыбытиеДенежныхДокументов.Attribute.Организация</references>
+    <references>Document.ПоступлениеДенежныхДокументов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="15b0a740-1efd-4535-849e-80aa1437232a">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ВыбытиеДенежныхДокументов.Attribute.Подразделение</references>
+    <references>Document.ПоступлениеДенежныхДокументов.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="2bc6a31f-58c4-4441-aac2-9af4039eb8e8">
+    <name>МОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>МВО</value>
+    </synonym>
+    <references>Document.ВыбытиеДенежныхДокументов.Attribute.МОЛОтправитель</references>
+    <references>Document.ПоступлениеДенежныхДокументов.Attribute.МОЛ</references>
+  </columns>
+  <columns uuid="38a5f6a3-dae9-4951-846a-d98dad7d95aa">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <references>Document.ВыбытиеДенежныхДокументов.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеДенежныхДокументов.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="5bee696c-70a4-4f4a-8d36-e9dc2c48f232">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <references>Document.ВыбытиеДенежныхДокументов.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеДенежныхДокументов.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <forms uuid="553c2578-4ed7-45f9-ac94-0e8d8f66da13">
+    <name>ФормаСпискаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку документів</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="796fbe18-c271-47e9-aec3-8be03738c5f5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

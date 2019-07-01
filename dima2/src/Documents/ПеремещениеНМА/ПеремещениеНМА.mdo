@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee72e76f-1451-44b5-9ee8-2152ff85da06">
+  <producedTypes>
+    <objectType typeId="84d1a4b2-3f76-4c86-9382-7628da6503b8" valueTypeId="eab768f5-db06-40e2-9a2a-f9200eec7c98"/>
+    <refType typeId="7010c8ad-6e85-4d01-b2b2-10463ce54b9d" valueTypeId="d0dec190-80cd-4be1-81e4-4e06602c5071"/>
+    <selectionType typeId="06a16ad4-f2d5-48f0-a993-af55f852f13a" valueTypeId="f881cdbb-c3c1-4547-9ca6-902360fa2e10"/>
+    <listType typeId="55c932a8-65e2-4c1e-93e8-2354e9a4910d" valueTypeId="acb2e9ac-2ab5-47cc-8169-d6c653758fb1"/>
+    <managerType typeId="320d9a35-698f-43d3-be59-dd375c071267" valueTypeId="b987c922-3dfd-4dd2-954a-da32b87aafd6"/>
+  </producedTypes>
+  <name>ПеремещениеНМА</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение НМА</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Переміщення НМА</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПеремещениеНМА.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>-1</keyField>
+    <typesFilterField>-1</typesFilterField>
+    <typesFilterValue xsi:type="core:UndefinedValue"/>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>-1</objectField>
+    <typeField>-1</typeField>
+    <valueField>-1</valueField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПеремещениеНМА.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПеремещениеНМА.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ПеремещениеНМА.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>InformationRegister.ПервоначальныеСведенияНМАНалоговыйУчет</registerRecords>
+  <registerRecords>InformationRegister.СчетаБухгалтерскогоУчетаНМА</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеДоходы</registerRecords>
+  <registerRecords>InformationRegister.МестонахождениеНМАБухгалтерскийУчет</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииПрочихРасходов</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеАктивыПассивы</registerRecords>
+  <registerRecords>InformationRegister.ОтражениеДокументовВРеглУчете</registerRecords>
+  <registerRecords>AccumulationRegister.ФактическиеДанныеБюджетирования</registerRecords>
+  <registerRecords>AccountingRegister.Хозрасчетный</registerRecords>
+  <registerRecords>InformationRegister.ОтражениеДокументовВМеждународномУчете</registerRecords>
+  <registerRecords>AccountingRegister.Международный</registerRecords>
+  <registerRecords>InformationRegister.СостоянияНМАОрганизаций</registerRecords>
+  <registerRecords>InformationRegister.ПервоначальныеСведенияНМАБухгалтерскийУчет</registerRecords>
+  <registerRecords>InformationRegister.СпособыОтраженияРасходовПоАмортизацииНМАБухгалтерскийУчет</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="624f8ff0-5c9d-4ec6-bc4d-6395af0ba101">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация для которой оформляется документ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація для якої оформляється документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>ХозяйственнаяОперация</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ПеремещениеНМА.Attribute.ХозяйственнаяОперация</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f22d4566-f937-4142-95ab-678e8f8e8dc0">
+    <name>МОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>МВО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Материально ответственное лицо</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Матеріально відповідальна особа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dcc5accb-b1c5-428e-8db5-3b547d495110">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce9227d0-6801-42c1-8797-fa32bd8778e2">
+    <name>СобытиеОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие ОС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Подія ОЗ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СобытияОС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Событие перемещения основых средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Подія переміщення основних засобів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидСобытияОС</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыСобытийОС.EnumValue.ВнутреннееПеремещение</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e84d728-cb6c-49c5-afac-986ff4d3a787">
+    <name>МОЛПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ-получатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>МВО-одержувач</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Материально ответственное лицо, получатель основных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Матеріально відповідальна особа, одержувач основних засобів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9907460b-1f13-4d68-b5fa-51a52d24b546">
+    <name>ПодразделениеПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местонахождение ОС (получатель)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місцезнаходження ОЗ (одержувач)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, получатель основных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, одержувач основних засобів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7bf789b-e01c-4d30-bea2-cac0523a428b">
+    <name>АдресМестонахожденияПолучателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес местонахождения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Адреса місцезнаходження</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес местонахождения основных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Адреса місцезнаходження основних засобів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ddb2e069-9d9f-4b61-81b7-3c8e22c21c93">
+    <name>НачислениеАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление амортизации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахування амортизації</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>Не меняется(0), Действует(1), Остановлено(2)</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>Не змінюється(0), Діє(1), Зупинено(2)</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>Не меняется(0), Действует(1), Остановлено(2)</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>Не змінюється(0), Діє(1), Зупинено(2)</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимость начисления амортизации по основным средствам</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака необхідність нарахування амортизації по основним засобам</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be93f645-9a46-429c-b513-c09c87604285">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за документ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відповідальний за документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fb6c0cc6-0c7a-4f68-b458-2bcf1f8917f0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний коментар</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fc85705-f858-46d7-9136-d57e2d3ee919">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья расходов для отражения в прочих расходах</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Стаття витрат для відображення в інших витратах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.СтатьиРасходов.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80a40f9a-fd2c-4249-8cb6-590f3d9fcd39">
+    <name>АналитикаРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика витрат</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект аналитики прочих расходов.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Об'єкт аналітики інших витрат.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПеремещениеНМА.Attribute.СтатьяРасходов</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>Document.ПеремещениеНМА.Attribute.СтатьяРасходов</field>
+    </linkByType>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26337d93-1992-46c7-843d-3d1be039835a">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперацииРеглУчет</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ=Перемещение; БИ='Передача в подразделение на отдельном балансе'</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>БЛ=Переміщення; БИ='Передача в підрозділ на окремому балансі'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ=Перемещение; БИ='Передача в подразделение на отдельном балансе'</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>БЛ=Переміщення; БИ='Передача в підрозділ на окремому балансі'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции перемещения основных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид операції переміщення основних засобів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ХозяйственныеОперацииРеглУчет.EnumValue.ПеремещениеОС</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd4e358a-3459-4377-a8e8-67a1fdedfb91">
+    <name>СтатьяРасходовНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов по налогу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат з податку</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья расходов для отражения в прочих расходах</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Стаття витрат для відображення в інших витратах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.СтатьиРасходов.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1d4faf5b-0b24-4516-995f-b87151df7484">
+    <name>АналитикаРасходовНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика расходов налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика витрат податок</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект аналитики расходов по налогу.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Об'єкт аналітики витрат з податку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПеремещениеНМА.Attribute.СтатьяРасходовНалог</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>Document.ПеремещениеНМА.Attribute.СтатьяРасходовНалог</field>
+    </linkByType>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08515e0a-10df-4e85-be4b-0bd176686739">
+    <name>ИзменяетсяОтражениеРасходовПоНалогу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяется отражение расходов по налогу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Змінюється відображення витрат з податку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак изменения отражения расходов по налогу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака зміни відображення витрат з податку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a9004b0-6a56-4714-b7ec-7f61a0e42f1e">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект нематериального актива</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Об'єкт нематеріального активу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>ДатаСведений</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ПеремещениеНМА.StandardAttribute.Date</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.БУОрганизация</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:fa0067bd-e4c2-47d1-8516-cfd9260c0f26</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>ТекущийРегистратор</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ПеремещениеНМА.StandardAttribute.Ref</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Контекст</name>
+      <value xsi:type="core:StringValue">
+        <value>БУ, МФУ</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.БУСостояние</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыСостоянийНМА.EnumValue.ПринятКУчету</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ae2db5e2-b492-485f-b496-9d1778290bef">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a542ff2d-0107-4e50-a8b5-86f514b70f58">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="88dbadcc-25ce-4134-bb25-0548ab327554">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="8c3a9785-2316-412e-8c66-db9af299fb9a">
+    <producedTypes>
+      <objectType typeId="1a78eaad-7661-4f0f-80e5-b40e3453b29a" valueTypeId="e035163f-78b4-41a9-847f-acd21b20c31a"/>
+      <rowType typeId="6dea85da-f175-4242-8259-b591af46b44f" valueTypeId="d5c50c7a-5fef-4a38-8fe0-66d23114bc8e"/>
+    </producedTypes>
+    <name>НачисленнаяАмортизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисленная амортизация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахована амортизація</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Начисленная по нематериальному активу амортизация</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Нарахована по нематеріальному активу амортизація</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e64e0170-f69d-4e51-85c1-391c115ff025">
+      <name>ОбъектУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект учета</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Об'єкт обліку</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НематериальныеАктивы</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Нематериальный актив, по которому начислена амортизация</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Нематеріальний актив, по якому нарахована амортизація</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6aec5b7-7200-4123-892b-6e57a6b82c9e">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підрозділ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтруктураПредприятия</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение начисления амортизационных расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Підрозділ нарахування амортизаційних витрат</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e0c25c94-90da-400b-86b9-cdfe283a23f1">
+      <name>СуммаБУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма БУ</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума БО</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма амортизации по данным бухгалтерского учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума амортизації за даними бухгалтерського обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="53576e57-f50d-4df7-9ee8-491a0e4b7755">
+      <name>СуммаНУ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма НУ</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума ПО</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма амортизации по данным налогового учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума амортизації за даними податкового обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7150234a-8296-44ea-9e3a-dca0114a4230">
+      <name>СуммаПР</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма ПР</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума ПР</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Постоянные разницы в оценке амортизации (ПБУ 18/02)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Постійні різниці в оцінці амортизації (ПБО 18/02)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ffa03b76-30b8-439c-b549-e0f2e8613d3d">
+      <name>СуммаВР</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма ВР</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума ВВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Временные разницы в оценке амортизации (ПБУ 18/02)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Тимчасові різниці в оцінці амортизації (ПБО 18/02)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="51fa3bdc-25aa-4816-9079-6515cc7c3d6e">
+      <name>СтатьяРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття витрат</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья расходов, по которой отражается амортизация</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Стаття витрат, по якій відображається амортизація</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bce4d3d7-b6bb-4f3e-9802-7d8798163409">
+      <name>АналитикаРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аналитика расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Аналітика витрат</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект аналитики расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Об'єкт аналітики витрат</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3e70f8c-1003-44db-ae19-dd9c2def7433">
+      <name>ПередаватьРасходыВДругуюОрганизацию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Передавать расходы в другую организацию</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Передавати витрати в іншу організацію</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак того, что расходы по амортизации передаются в другую организацию</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ознака того, що витрати по амортизації передаються в іншу організацію</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b74b0c44-ef70-4243-acb3-1a05411e1fab">
+      <name>ОрганизацияПолучательРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация-получатель расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Організація-одержувач витрат</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Организация-получатель расходов по амортизации</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Організація-одержувач витрат з амортизації</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6f167ef-86ae-46ae-b2aa-2608d5f554ab">
+      <name>СчетПередачиРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет передачи расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок передачі видатків</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Счет передачи расходов по амортизации</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Рахунок передачі витрат по амортизації</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>6f58a5c7-f511-498f-abeb-390cf5afab39.bab005b5-855a-4645-9d72-6a366970c1f5</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9024f6bb-8fcb-4f79-91bc-e0c71dadeedd">
+      <name>НалоговоеНазначение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговое назначение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Податкове призначення</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7afd92d0-837e-4bfe-b05d-a610b54caaca">
+    <producedTypes>
+      <objectType typeId="8cbf4b0a-00e5-4b12-9bf0-7780279b00b3" valueTypeId="62225725-49f4-4157-ac20-f1ce6fb41ea2"/>
+      <rowType typeId="d62ee49a-cdda-4219-81d4-8cc463a0b7ef" valueTypeId="348d23bb-602a-487a-b9ed-e2f7d7ffc6d7"/>
+    </producedTypes>
+    <name>НМА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="94ce310c-7beb-400a-9a63-1d307534daec">
+      <name>НематериальныйАктив</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нематериальный актив</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Нематеріальний актив</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НематериальныеАктивы</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Нематериальный актив</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Нематеріальний актив</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f68085c2-81d5-49ff-9b7a-fbe2fbc144f2">
+  <name>ОбработкаПолученияДанныхВыбораПеречисленияЗарплатаИКадры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка получения данных выбора перечисления зарплата и кадры</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Обробка отримання даних вибору перерахування зарплата і кадри</value>
+  </synonym>
+  <source>
+    <types>EnumManager.ВидыОбязательногоСтрахованияСотрудников</types>
+    <types>EnumManager.ВидыОперацийПоЗарплате</types>
+    <types>EnumManager.ПричиныНетрудоспособности</types>
+    <types>EnumManager.ОснованияДляДоначисленияСтраховыхВзносов</types>
+    <types>EnumManager.ВидыДокументовНачисления</types>
+    <types>EnumManager.ВидыДокументовМежрасчетныхНачислений</types>
+    <types>EnumManager.ОснованияЛьготПоПособию</types>
+    <types>EnumManager.КатегорииНачисленийИНеоплаченногоВремени</types>
+    <types>EnumManager.СтатусыЗаявленийИРеестровНаВыплатуПособий</types>
+    <types>EnumManager.ВидыОграниченияПособия</types>
+    <types>EnumManager.КатегорииУдержаний</types>
+    <types>EnumManager.ВидыЗанятости</types>
+  </source>
+  <event>ChoiceDataGetProcessing</event>
+  <handler>CommonModule.ЗарплатаКадрыСобытия.ОбработкаПолученияДанныхВыбораПеречисления</handler>
+</mdclass:EventSubscription>

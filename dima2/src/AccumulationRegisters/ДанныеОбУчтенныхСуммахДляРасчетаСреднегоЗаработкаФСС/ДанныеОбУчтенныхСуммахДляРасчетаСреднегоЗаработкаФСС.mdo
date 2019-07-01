@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2c60561-737b-4142-8f34-ff6ebf600a99">
+  <producedTypes>
+    <selectionType typeId="fd78a0ee-3fb7-49d4-80b5-5c8d7b2e929f" valueTypeId="e8d5b6a1-92ed-4dad-b2f2-055912c4fbad"/>
+    <listType typeId="e7b1965b-4963-4e43-8115-97eb1846791c" valueTypeId="29219601-2903-48ea-a9d3-c5553a94c934"/>
+    <managerType typeId="7cf6b719-d320-4799-a005-32010e4cb63a" valueTypeId="cae2e47c-eb22-4342-bf60-8c719082c34d"/>
+    <recordSetType typeId="4f88910f-ee41-4636-99e5-3162fc451d0a" valueTypeId="bd75577a-0268-4815-8657-5f9e764c2ae9"/>
+    <recordKeyType typeId="f9a78e33-8f75-4763-8657-72ad2116c295" valueTypeId="089a204f-8367-43ee-8775-b1c10aabd424"/>
+    <recordType typeId="9a5abe07-94bf-4498-9d1e-e0c4eb56a8e8" valueTypeId="54ccab99-7e7a-4e0f-b4a2-5c7980992f7f"/>
+  </producedTypes>
+  <name>ДанныеОбУчтенныхСуммахДляРасчетаСреднегоЗаработкаФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные об учтенных суммах для расчета среднего заработка (ФСС)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Дані про суми врахованих для розрахунку середнього заробітку (ФСС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <explanation>
+    <key>ru</key>
+    <value>Предназначен для учета данных о заработке для расчета среднего совместителей</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Призначений для обліку даних про заробіток для розрахунку середнього сумісників</value>
+  </explanation>
+  <resources uuid="0d2b9efe-0bcb-4561-afaa-f1ed96a15fc8">
+    <name>УчтеннаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учтенная сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Врахована сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="945616c0-6eb4-48d8-9bd2-829ff8f23fac">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Физическое лицо, данные о заработке которого регистрируются</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Фізична особа, дані про заробіток якого реєструються</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="78d4e687-dfbc-486f-aab2-d8d898d4ab61">
+    <name>ГоловнаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, регистрирующая данные</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, яка реєструє дані</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6cf57d2e-2cd7-4533-ab4e-7756babfc42d">
+    <name>НомерЛисткаНетрудоспособности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ЛН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер ЛН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="79d0ed3c-dfdb-48be-9815-fbe9b8109ec5">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місяць</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

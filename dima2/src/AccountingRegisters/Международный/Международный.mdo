@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccountingRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e54bb3b-2103-4fd7-be38-d2f082828348">
+  <producedTypes>
+    <selectionType typeId="a6064680-7421-42eb-bed2-8239f51bfb57" valueTypeId="d43b4dbf-2ef7-4c2a-bc2b-263d10ece6bf"/>
+    <listType typeId="8c742e71-baea-498f-9051-e40851a199a9" valueTypeId="6d5ed58f-2e6e-4c44-ac1d-ab81e94f9a99"/>
+    <managerType typeId="dc395a88-0bbb-49ea-b23d-4ab1d3eb28ca" valueTypeId="d95f083c-59af-43e8-823d-8afe00a0aeb0"/>
+    <recordSetType typeId="a36217ac-bb70-4f48-9cbe-f56c3ce77a27" valueTypeId="419fefaa-8b75-4433-b446-ba0a8bbebca0"/>
+    <recordKeyType typeId="80388770-8d7d-4045-a4e0-ffce251b2658" valueTypeId="dc9a67ae-68b2-4e1b-a539-0ffe58875546"/>
+    <recordType typeId="8f4c38ad-2360-46ce-9847-216ddd06ccc9" valueTypeId="761b687f-c294-465e-9907-2be83a17d42a"/>
+    <extDimensionsType typeId="8a3b816e-6c44-483e-b3c8-f69d2669e6f6" valueTypeId="44a6b085-570a-4152-84c0-ad321b744324"/>
+  </producedTypes>
+  <name>Международный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал проводок (международный учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Журнал проводок (міжнародний облік)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <chartOfAccounts>ChartOfAccounts.Международный</chartOfAccounts>
+  <correspondence>true</correspondence>
+  <defaultListForm>AccountingRegister.Международный.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Account</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimension1</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>AccountingRegister.Международный.StandardAttribute.Account</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimensionType1</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimension2</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>AccountingRegister.Международный.StandardAttribute.Account</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimensionType2</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimension3</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>AccountingRegister.Международный.StandardAttribute.Account</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ExtDimensionType3</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <dimensions uuid="b241f5fd-b4e2-4095-bec7-95667523d449">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, которой принадлежит проводка.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, якій належить проводка.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </dimensions>
+  <dimensions uuid="f4c3327e-11ff-482d-828a-c6fd9e4ed3af">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="b7b199f6-7325-4223-9b16-6a644ae64230">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Международный.AccountingFlag.Валютный</accountingFlag>
+  </dimensions>
+  <resources uuid="594c0fb4-34bc-4042-80d8-a1d95b2d8cfe">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма проводки в функциональной валюте.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума проводки у функціональній валюті.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </resources>
+  <resources uuid="40dbdc75-7909-41c6-8ca6-eb0bfcc3eae5">
+    <name>СуммаПредставления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма представления</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума представлення</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма проводки в валюте представления.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума проводки в валюті представлення.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+  </resources>
+  <resources uuid="c1119c25-738c-4833-977c-21032c318c42">
+    <name>ВалютнаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валютная сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валютна сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума у валюті.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Международный.AccountingFlag.Валютный</accountingFlag>
+    <extDimensionAccountingFlag>ChartOfAccounts.Международный.ExtDimensionAccountingFlag.Валютный</extDimensionAccountingFlag>
+  </resources>
+  <attributes uuid="02aecfd1-106c-4f97-9736-6d2b3def7d9f">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зміст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Краткое описание проводки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Короткий опис проводки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3d249e21-efa1-4f38-9df9-e0a584ba0c39">
+    <name>ШаблонПроводки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон проводки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Шаблон проводки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныПроводокДляМеждународногоУчета</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Правило отражения операции в международном учете.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Правило відображення операції в міжнародному обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="919afcf1-05ae-452c-a093-c0c96a102b18">
+    <name>ТипПроводки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип проводки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип проводки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПроводокМеждународныйУчет</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная характеристика проводки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Додаткова характеристика проводки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="8e457826-b2e4-4fe3-b66d-c8b98e342675">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ca582d48-f253-49d5-89b4-6bfed966a7b7">
+    <name>ПроводкиМеждународногоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d8f2fcfc-1101-44ac-918f-a2714c808ea1">
+    <name>ПроводкиДокументаОперативногоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОперацияПоПлатежнойКарте</types>
+      <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+      <types>DocumentRef.ПоступлениеУслугПоЛизингу</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияЗапасов</types>
+      <types>DocumentRef.ОтчетДавальцу</types>
+      <types>DocumentRef.ВнесениеДенежныхСредствВКассуККМ</types>
+      <types>DocumentRef.ПереоценкаВалютныхСредств</types>
+      <types>DocumentRef.НачислениеОценочныхОбязательствПоОтпускам</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.ПрочиеДоходыРасходы</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.СписаниеНедостачТоваров</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.РемонтОС</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ОтражениеЗарплатыВФинансовомУчете</types>
+      <types>DocumentRef.ПередачаСырьяПереработчику</types>
+      <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+      <types>DocumentRef.ПересортицаТоваров</types>
+      <types>DocumentRef.ВыбытиеДенежныхДокументов</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+      <types>DocumentRef.ПоступлениеДенежныхДокументов</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.КорректировкаПоступления</types>
+      <types>DocumentRef.ОтчетКомитентуОСписании</types>
+      <types>DocumentRef.ПеремещениеВДругоеПодразделение</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.АннулированиеПодарочныхСертификатов</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ИнвентаризацияНаличныхДенежныхСредств</types>
+      <types>DocumentRef.ОприходованиеИзлишковТоваров</types>
+      <types>DocumentRef.ВозвратСырьяОтПереработчика</types>
+      <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+      <types>DocumentRef.СписаниеЗадолженности</types>
+      <types>DocumentRef.ВыпускПродукции</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СборкаТоваров</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>DocumentRef.ВозвратМатериаловИзПроизводства</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ВыкупВозвратнойТарыУПоставщика</types>
+      <types>DocumentRef.ВзаимозачетЗадолженности</types>
+      <types>DocumentRef.ОтражениеРасхожденийПриИнкассацииДенежныхСредств</types>
+      <types>DocumentRef.ПрочееОприходованиеТоваров</types>
+      <types>DocumentRef.НачисленияКредитовИДепозитов</types>
+      <types>DocumentRef.РеализацияПодарочныхСертификатов</types>
+      <types>DocumentRef.ВозвратПодарочныхСертификатов</types>
+      <types>DocumentRef.ПоступлениеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.ОрдерНаПеремещениеТоваров</types>
+      <types>DocumentRef.ПередачаМатериаловВПроизводство</types>
+      <types>DocumentRef.ПорчаТоваров</types>
+      <types>DocumentRef.ПоступлениеПредметовЛизинга</types>
+      <types>DocumentRef.ВыемкаДенежныхСредствИзКассыККМ</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЖурналПроводокМеждународныйУчет</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="e6d46f41-19a8-43c9-b420-ae073fee8ed0">
+    <name>ПроводкиДокументаРеглУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ПодготовкаКПередачеНМА</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.ПеремещениеВЭксплуатации</types>
+      <types>DocumentRef.ПередачаДавальцу</types>
+      <types>DocumentRef.ПеремещениеМатериаловВПроизводстве</types>
+      <types>DocumentRef.ПередачаОСАрендатору</types>
+      <types>DocumentRef.ПерерасчетПропорциональногоНДСпоТоварамИОС</types>
+      <types>DocumentRef.ПринятиеКУчетуОС</types>
+      <types>DocumentRef.АмортизацияНМА</types>
+      <types>DocumentRef.ПоступлениеСырьяОтДавальца</types>
+      <types>DocumentRef.РаспределениеПроизводственныхЗатрат</types>
+      <types>DocumentRef.ОперацияБух</types>
+      <types>DocumentRef.ВводОстатков</types>
+      <types>DocumentRef.РаспределениеРасходовБудущихПериодов</types>
+      <types>DocumentRef.МодернизацияОС</types>
+      <types>DocumentRef.РаспределениеПрочихЗатрат</types>
+      <types>DocumentRef.ВозвратСырьяДавальцу</types>
+      <types>DocumentRef.РемонтОС</types>
+      <types>DocumentRef.АмортизацияОС</types>
+      <types>DocumentRef.ПодготовкаКПередачеОС</types>
+      <types>DocumentRef.ПоступлениеАрендованныхОС</types>
+      <types>DocumentRef.ПереоценкаНМА</types>
+      <types>DocumentRef.ВводОстатковВнеоборотныхАктивов</types>
+      <types>DocumentRef.ОтчетПереработчика</types>
+      <types>DocumentRef.ПереоценкаОС</types>
+      <types>DocumentRef.ИзменениеПараметровОС</types>
+      <types>DocumentRef.ВозвратОСОтАрендатора</types>
+      <types>DocumentRef.СписаниеИзЭксплуатации</types>
+      <types>DocumentRef.РегламентнаяОперация</types>
+      <types>DocumentRef.РасчетСебестоимостиТоваров</types>
+      <types>DocumentRef.ПеремещениеОС</types>
+      <types>DocumentRef.ПринятиеКУчетуНМА</types>
+      <types>DocumentRef.ПоступлениеОтПереработчика</types>
+      <types>DocumentRef.СписаниеНМА</types>
+      <types>DocumentRef.ВыбытиеАрендованныхОС</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияКапитальныхИнвестиций</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЖурналПроводокМеждународныйУчет</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="b83f7e4c-81a5-435c-8ccf-156bad35beed">
+    <name>ПроводкиДокументаПараллельногоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.АмортизацияОСМеждународныйУчет</types>
+      <types>DocumentRef.ПереводОсновныхСредствИнвестиционногоИмуществаМеждународныйУчет</types>
+      <types>DocumentRef.РегламентнаяОперацияМеждународныйУчет</types>
+      <types>DocumentRef.АмортизацияНМАМеждународныйУчет</types>
+      <types>DocumentRef.ПринятиеКУчетуОСМеждународныйУчет</types>
+      <types>DocumentRef.ИзменениеПараметровНМАМеждународныйУчет</types>
+      <types>DocumentRef.ВводОстатковОСМеждународныйУчет</types>
+      <types>DocumentRef.ВводОстатковНМАМеждународныйУчет</types>
+      <types>DocumentRef.СписаниеНМАМеждународныйУчет</types>
+      <types>DocumentRef.ПеремещениеНМАМеждународныйУчет</types>
+      <types>DocumentRef.ПеремещениеОСМеждународныйУчет</types>
+      <types>DocumentRef.СписаниеОСМеждународныйУчет</types>
+      <types>DocumentRef.ПринятиеКУчетуНМАМеждународныйУчет</types>
+      <types>DocumentRef.ИзменениеПараметровОСМеждународныйУчет</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Проводки международного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Проводки міжнародного обліку</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЖурналПроводокМеждународныйУчет</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:AccountingRegister>

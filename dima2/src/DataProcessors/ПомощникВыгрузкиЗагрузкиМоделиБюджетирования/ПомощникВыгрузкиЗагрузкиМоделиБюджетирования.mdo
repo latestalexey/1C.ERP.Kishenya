@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97521ca7-d6a8-4309-8f22-c4605175bde5">
+  <producedTypes>
+    <objectType typeId="765fe464-2bf5-4eb4-8e32-34324d76d609" valueTypeId="d003859d-6ffd-4097-9bfb-27a5fd56453d"/>
+    <managerType typeId="6efd5056-1375-45fb-8290-b8fa58898e5c" valueTypeId="f318af8e-7985-452d-a115-f1aab6ea95f0"/>
+  </producedTypes>
+  <name>ПомощникВыгрузкиЗагрузкиМоделиБюджетирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник выгрузки и загрузки модели бюджетирования</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Помічник вивантаження і завантаження моделі бюджетування</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПомощникВыгрузкиЗагрузкиМоделиБюджетирования.Form.Загрузка</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="6d4d3039-d35d-44e8-a04b-f99f3c6074d5">
+    <name>ИмяФайлаМодели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла модели</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу моделі</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя файла с данными</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я файла з даними</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="942cb610-dd9d-4cf2-8d35-391fc1f985bd">
+    <name>Выгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантаження</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb012a6e-4881-48fc-a5e6-8a102c749e9a">
+    <name>Загрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e0e8b2c0-1da3-431a-abe5-c8dfdecfbaa0">
+    <name>ПравилаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила обміну</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e5497c6b-aa0d-49c0-9116-8960fad57841">
+    <name>ВидыБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды бюджетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Види бюджетів</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d25189b0-5fb7-4645-8e01-66a96af54912">
+    <name>ЭтапыПодготовкиБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этапы подготовки бюджетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Етапи підготовки бюджетів</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="9ccafb24-ec14-4e87-bd34-8cd60b0d85fb">
+    <name>ПомощникВыгрузкиМоделиБюджетирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник выгрузки модели бюджетирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помічник вивантаження моделі бюджетування</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="9ac324c0-f8f3-4e25-ab03-a025f2ce625d">
+    <name>ПомощникЗагрузкиМоделиБюджетирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник загрузки модели бюджетирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помічник завантаження моделі бюджетування</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

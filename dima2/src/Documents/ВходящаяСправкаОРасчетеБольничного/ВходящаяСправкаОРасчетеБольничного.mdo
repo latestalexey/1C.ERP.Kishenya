@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="744a2fb5-c2dc-4d8c-bfd1-dfc7597c5b7b">
+  <producedTypes>
+    <objectType typeId="801fb286-fd0c-43ee-afe2-157a5c2c42f9" valueTypeId="a902d258-8421-4a78-a520-0eebf435d3ae"/>
+    <refType typeId="dc5bae0a-f5f1-4025-a9af-87d9e7996398" valueTypeId="d81c1350-f8db-45f8-ba9e-5b559fda3121"/>
+    <selectionType typeId="020b5169-ce35-4fe9-a4de-62b766751a8d" valueTypeId="9361e2a8-4048-4088-a121-52418f68e529"/>
+    <listType typeId="d7447ac4-836b-4a5a-b738-11e2eb9b2c53" valueTypeId="fc3904bc-027a-44ec-a3b6-06ce08cc16e5"/>
+    <managerType typeId="3512bd70-c4ea-48b5-bb69-ee16eaf54933" valueTypeId="c6e5f94b-ad39-46c5-b16f-41ea9dc3c011"/>
+  </producedTypes>
+  <name>ВходящаяСправкаОРасчетеБольничного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Входящая справка о расчете больничного</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Вхідна довідка про розрахунок лікарняного</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВходящаяСправкаОРасчетеБольничного.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>ДЛФ=D</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>ДЛФ=D</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Catalog.Сотрудники</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Входящая справка о расчете больничного</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Вхідна довідка про розрахунок лікарняного</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Входящие справки о расчете больничного</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Вхідні довідки про розрахунок лікарняного</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВходящаяСправкаОРасчетеБольничного.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ВходящаяСправкаОРасчетеБольничного.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ВходящаяСправкаОРасчетеБольничного.Form.ФормаСписка</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ДанныеОбУчтенныхСуммахДляРасчетаСреднегоЗаработкаФСС</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a16370f4-ea5c-4693-ba83-fcc0e90061e7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b68112ef-a2b7-4f58-9677-e663cfc6f3a3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ТекущаяОрганизация</name>
+      <field>Document.ВходящаяСправкаОРасчетеБольничного.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВАрхиве</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="556c7ce6-e581-494c-9519-748d06a975f9">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80e4f116-18a7-40b5-9656-9370a02ad605">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb25cab4-7e80-4d79-9215-d2006853134c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9af8a174-5826-40f3-a127-643bb6e14270">
+    <name>НомерЛисткаНетрудоспособности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер листка нетрудоспособности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер листа непрацездатності</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1821d7c1-2dbe-4599-99a1-acc70d56d834">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec407d5a-c1e9-41ba-82d3-40b7dbf1fd22">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="62f94199-b0fa-4fbd-b6ec-6041d23a9180">
+    <producedTypes>
+      <objectType typeId="2bf31a04-76f7-409b-a4db-32e8f41fc92a" valueTypeId="dcaad919-2e30-4c4a-975c-6f0a02642fb9"/>
+      <rowType typeId="12eb40b3-14a5-41b4-9b8f-dd83f78e09ea" valueTypeId="78bc99a0-d5c8-4a18-a043-3b536c28e756"/>
+    </producedTypes>
+    <name>ДанныеОЗаработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные о заработке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані про заробіток</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="31356cfc-7a45-49fd-8b77-99cba9268e4c">
+      <name>Заработок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заработок</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Заробіток</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b6dcaba9-e0e6-4bc3-b4bd-7a559903f9dd">
+      <name>РасчетныйМесяц</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расчетный месяц</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Розрахунковий місяць</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </format>
+      <format>
+        <key>uk</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </editFormat>
+      <editFormat>
+        <key>uk</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </editFormat>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

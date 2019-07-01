@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56d1acf0-3877-4712-a75e-4b2caa7192f8">
+  <producedTypes>
+    <selectionType typeId="08b5f13d-6625-4758-a49a-9d7e0bf7a825" valueTypeId="220a5a8c-afc2-4ff1-a154-4e8f6d397336"/>
+    <listType typeId="dcc1e375-9e7e-4894-9256-50b8545e022e" valueTypeId="b902aeba-08c9-47e3-b893-858d0d262064"/>
+    <managerType typeId="a21a2a9f-f02c-4588-8939-2cf209417fcb" valueTypeId="45b553ec-d889-4108-9730-b12744b0512b"/>
+    <recordSetType typeId="fd07186c-3d78-48aa-ba3c-3a571e930eb1" valueTypeId="42ba71cc-e0fb-4c0b-8b87-ab75bda50222"/>
+    <recordKeyType typeId="f465f34d-2571-4eea-9a72-af228c791b45" valueTypeId="4afb2568-7288-4399-b04c-51428b0795e7"/>
+    <recordType typeId="ad1157cc-153b-454f-a79e-6d3fd6385f97" valueTypeId="34840190-6ebc-43ca-bcc9-f3d2eeaffb0d"/>
+  </producedTypes>
+  <name>РасчетыСФондамиПоСтраховымВзносам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с фондами по страховым взносам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розрахунки з фондами по страхових внесках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f92f7426-9559-4e5e-a255-67a14dc2162a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="ccf7bb06-0b73-45d6-bd5a-171557fca083">
+    <name>ЭтоДоначислениеПоАктуПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это доначисление по акту проверки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Це донарахування за актом перевірки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3b310a1f-81ab-45c0-afb5-6d2e1ee3f0b8">
+    <name>ПлатежноеПоручениеНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжне доручення номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="68a60117-2715-4750-bd66-0b2c377730fd">
+    <name>ПлатежноеПоручениеДата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжне доручення дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8b32ac04-7354-4701-be77-aa196b49c73d">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e21c3869-cf0c-4654-bbc8-e83fff0ec0d2">
+    <name>Предел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предел</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Межа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d4452fd5-d682-48b2-9f5c-55d5d2d3178b">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="28ac8f86-1529-457c-9efd-3bd82ea33ea7">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ підстава</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДокументыОснованияЕСВ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="33d297bb-648a-40f1-a2ce-aca43cd640d0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>Это может быть как головная организация, так и обособленное подразделение</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cdaca912-4ef3-498a-abe8-1abb3aedb7a7">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9ce77aa3-9fd0-4705-ae8c-c83e336ace89">
+    <name>ПериодВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період взаєморозрахунків</value>
+    </synonym>
+    <comment>Месяц, которым сумма попадет в отчетность</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

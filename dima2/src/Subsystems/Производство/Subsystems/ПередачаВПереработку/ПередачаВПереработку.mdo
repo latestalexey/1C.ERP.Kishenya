@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a898581-4872-4363-ac7b-c0d4805c9920">
+  <name>ПередачаВПереработку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача в переработку</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Передача в переробку</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВозвратСырьяОтПереработчика</content>
+  <content>Document.ЗаказПереработчику</content>
+  <content>Document.ОтчетПереработчика</content>
+  <content>Document.ПередачаСырьяПереработчику</content>
+  <content>Document.ПоступлениеОтПереработчика</content>
+  <content>Enum.СостоянияЗаказовПереработчикам</content>
+  <content>Enum.СтатусыЗаказовПереработчикам</content>
+  <content>Report.ОстаткиТоваровПереданныхПереработчикам</content>
+  <content>Report.РасшифровкаСостоянияВыполненияЗаказовПереработчикам</content>
+  <content>Enum.ГруппировкиЗатратВЗаказеПереработчику</content>
+  <content>Report.КонтрольПередачиСырьяИМатериаловПереработчику</content>
+  <content>Report.КонтрольПоставкиПродукцииПереработчиком</content>
+  <content>Role.ДобавлениеИзменениеЗаказовПереработчикам</content>
+  <content>Role.ДобавлениеИзменениеОтчетовПереработчиков</content>
+  <content>Role.ДобавлениеИзменениеПередачСырьяПереработчикам</content>
+  <content>Role.ДобавлениеИзменениеПоступленийОтПереработчиков</content>
+  <content>Role.ЧтениеДокументовПоПроизводствуНаСтороне</content>
+  <content>Role.ИспользованиеРабочегоМестаЗаказыПереработчикам</content>
+  <content>CommonModule.ПереработкаНаСторонеКлиентСервер</content>
+  <parentSubsystem>Subsystem.Производство</parentSubsystem>
+</mdclass:Subsystem>

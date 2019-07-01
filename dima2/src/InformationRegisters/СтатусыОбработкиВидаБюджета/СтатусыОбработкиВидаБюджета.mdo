@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ca16b11-fcc6-47e9-9dbb-046893c2f474">
+  <producedTypes>
+    <selectionType typeId="d6551899-3480-42f0-ac91-7a267f4f0f57" valueTypeId="b8864256-ef9c-45e6-9362-e03f3dbb552a"/>
+    <listType typeId="527767f2-f365-4ee1-99fc-bcf60be425dc" valueTypeId="acdfad99-21b6-4e82-bd54-f13049beca03"/>
+    <managerType typeId="967d2e79-9311-4c36-9b0a-92a59fd4a10f" valueTypeId="361fa98b-2547-4dfb-9c36-f67e54b51f50"/>
+    <recordSetType typeId="90e7919d-0028-483e-8f7e-c680bbb2c600" valueTypeId="1d1c9cc5-e660-4e60-a1e7-b2dee36b4067"/>
+    <recordKeyType typeId="1a6f1e15-749b-4d38-86fd-9b319de28b0d" valueTypeId="864d1a22-aaf5-4fd8-b316-43de83ef0704"/>
+    <recordType typeId="0c8eefae-9ecb-414d-8d10-e163c591f76b" valueTypeId="3714c984-c10e-4107-b0a5-390a193598a8"/>
+    <recordManagerType typeId="d14374af-ba58-4928-9a07-3683ebafa950" valueTypeId="45a53fad-1e1e-4e81-88e4-729e05277a11"/>
+  </producedTypes>
+  <name>СтатусыОбработкиВидаБюджета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обработки вида бюджета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Статуси обробки виду бюджету</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ca43742e-f418-4917-bd43-2ca1259e4475">
+    <name>ПроверенУспешно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверен успешно</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перевірений успішно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7d9a93a3-860f-4d37-bac4-1be7aff4b175">
+    <name>СформированКэшСтруктурыКолонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш структуры колонок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш структури колонок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b2abe0df-746c-4589-81cc-8a9bec659f1e">
+    <name>ХранилищеКэшаСтруктурыКолонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша структуры колонок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу структури колонок</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="037ea592-effb-4166-998d-ea375c455d9e">
+    <name>СформированКэшСтруктурыОписанияВидаБюджетаДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш структуры описания вида бюджета документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш структури опису виду бюджету документ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="aa747df5-0e00-4e74-851b-a16318f1ba04">
+    <name>ХранилищеКэшаСтруктурыОписанияВидаБюджетаДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша структуры описания вида бюджета документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу структури опису виду бюджету документ</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="924c5111-724e-4b17-8e9a-143e4e83dd4f">
+    <name>СформированКэшСтруктурыОписанияВидаБюджетаОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш структуры описания вида бюджета отчет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш структури опису виду бюджету звіт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d6669868-377b-4bef-a809-c8690c87a216">
+    <name>ХранилищеКэшаСтруктурыОписанияВидаБюджетаОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша структуры описания вида бюджета отчет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу структури опису виду бюджету звіт</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3b681645-060b-413f-9bb1-8e8c1fb8934b">
+    <name>СформированКэшСтруктурыОписанияВидаБюджетаЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш структуры описания вида бюджета заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш структури опису виду бюджету заповнення</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="23970c63-1932-4a2c-a3fa-b4ed1e081b71">
+    <name>ХранилищеКэшаСтруктурыОписанияВидаБюджетаЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша структуры описания вида бюджета заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу структури опису виду бюджету заповнення</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="00024cef-70d4-400c-beb6-2964c6267937">
+    <name>СформированКэшДереваЭлементовБезДопЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш дерева элементов без доп элементов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш дерева елементів без дод елементів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="df40ec83-e1d0-48dc-afae-f7d546234d28">
+    <name>ХранилищеКэшаДереваЭлементовБезДопЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша дерева элементов без доп элементов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу дерева елементів без дод елементів</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="54ed9db7-a9c2-4950-ab25-c4549c96256f">
+    <name>СформированКэшДереваЭлементовСДопЭлементами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш дерева элементов с доп элементами</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш дерева елементів з дод елементами</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ab90b664-d3f0-4a09-a868-efcc79e0992d">
+    <name>ХранилищеКэшаДереваЭлементовСДопЭлементами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша дерева элементов с доп элементами</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу дерева елементів з дод елементами</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8c05c29b-373f-4c3c-9fe3-2944554e8574">
+    <name>СформированКэшСхемыКомпоновкиДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш схемы компоновки документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш схеми компонування документ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0a1276cd-7276-4f50-a6c9-906f99d646b4">
+    <name>ХранилищеКэшаСхемыКомпоновкиДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша схемы компоновки документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу схеми компонування документ</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6182abfc-fc6f-49c4-a2f7-4f8bfea314a1">
+    <name>СформированКэшСхемыКомпоновкиОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш схемы компоновки отчет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш схеми компонування звіт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d547bcd2-11f1-4e1d-b456-9f6f46173a12">
+    <name>ХранилищеКэшаСхемыКомпоновкиОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша схемы компоновки отчет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу схеми компонування звіт</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="133981c1-096a-4b09-9c10-29f3de0fdf81">
+    <name>СформированКэшСхемыКомпоновкиЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш схемы компоновки заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш схеми компонування заповнення</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="db7d670c-5ef7-4ae9-af4c-04b41ca25b27">
+    <name>ХранилищеКэшаСхемыКомпоновкиЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша схемы компоновки заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу схеми компонування заповнення</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3d19b067-a68b-4bce-8119-d050d04c5d19">
+    <name>СформированКэшДереваВывода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш дерева вывода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш дерева виводу</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="43c16f69-9aba-4062-830e-f85a424ef4f9">
+    <name>ХранилищеКэшаДереваВывода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша дерева вывода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу дерева виводу</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="97af4f52-4a02-4195-a7d2-bda7f6feea45">
+    <name>СформированКэшПараметровСпискаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирован кэш параметров списка ввода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сформований кеш параметрів списку вводу</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9a045a58-6c82-4d9d-beb7-12e915dcc978">
+    <name>ХранилищеКэшаПараметровСпискаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище кэша параметров списка ввода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сховище кешу параметрів списку вводу</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="961ac7af-8926-49a5-94da-4ef932efc618">
+    <name>ИспользуетГраницуФактическихДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использует границу фактических данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовує межу фактичних даних</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг использования границы факт.данных</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Прапор використання межі факт.даних</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d09506ba-87e2-46eb-b3a8-21804e4de033">
+    <name>ВидБюджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид бюджета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид бюджету</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыБюджетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

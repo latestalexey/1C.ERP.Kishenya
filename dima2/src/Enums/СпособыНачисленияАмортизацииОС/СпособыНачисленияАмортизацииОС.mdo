@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9439df1-0430-4bf8-99d7-f611173a3a24">
+  <producedTypes>
+    <refType typeId="2ad5bb9b-65f5-4f08-8d4f-d7c7905dd56e" valueTypeId="ea5fc96c-8f8a-4a41-b3f5-ec7429073d47"/>
+    <listType typeId="c9a1b17d-d14e-4d38-a047-a81cd90329cb" valueTypeId="be930970-982d-4374-bd42-440432a91606"/>
+    <managerType typeId="a6149e6a-ae54-4d75-9db6-0ef02e72fe06" valueTypeId="5edd33f2-e58c-4a04-965e-ca31c1d50176"/>
+  </producedTypes>
+  <name>СпособыНачисленияАмортизацииОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы начисления амортизации основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Способи нарахування амортизації основних засобів</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="01f37f24-b394-40f7-8d67-13b0bfa8ba10">
+    <name>Линейный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прямолинейный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Прямолінійний</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="3319e232-499e-41e4-a60e-169a419ee46f">
+    <name>УменьшаемогоОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уменьшения остатка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зменшення залишку</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="9d4ff2b5-69ad-4790-bfdf-67bf1eb7832a">
+    <name>Налоговый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый (с 01.04.2011 не актуален)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податковий (з 01.04.2011 не актуальний)</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="937b3bdb-f7b3-448c-80be-4ed2dbeb7391">
+    <name>ПропорциональноОбъемуПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виробничий</value>
+    </synonym>
+    <comment>Пропорционально объему продукции</comment>
+  </enumValues>
+  <enumValues uuid="9af3c56c-0a5b-4370-b94e-e63808955b30">
+    <name>Кумулятивный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кумулятивный (по сумме чисел лет)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кумулятивний (по сумі чисел років)</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="23e6cdb7-3ea4-46f8-b00f-151abd6040bd">
+    <name>ПоИндивидуальномуГрафику</name>
+    <synonym>
+      <key>ru</key>
+      <value>По индивидуальному графику амортизации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>За індивідуальним графіком амортизації</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="a4191d80-a151-43f3-b062-7f6e31bfa9c8">
+    <name>УскоренногоУменьшенияОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ускоренного уменьшения остатка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Прискореного зменшення залишку</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="ef5b3861-e6a3-4106-9d1d-43268ee60cce">
+    <name>_100</name>
+    <synonym>
+      <key>ru</key>
+      <value>100%</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>100%</value>
+    </synonym>
+    <comment>100% в первый месяц эксплуатации</comment>
+  </enumValues>
+  <enumValues uuid="5c0636cf-36f0-4333-9bfd-ced3af6deadc">
+    <name>_50_50</name>
+    <synonym>
+      <key>ru</key>
+      <value>50% - 50%</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>50% - 50%</value>
+    </synonym>
+    <comment>50% в первый месяц эксплуатации, 50% при списании</comment>
+  </enumValues>
+</mdclass:Enum>

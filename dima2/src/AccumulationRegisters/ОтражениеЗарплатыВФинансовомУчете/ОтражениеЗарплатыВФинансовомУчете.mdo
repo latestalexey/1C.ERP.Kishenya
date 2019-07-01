@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af49dd69-7f76-4bac-9d6c-0d0269b0b890">
+  <producedTypes>
+    <selectionType typeId="61350d0c-4c86-484d-b51f-bdb20befdf09" valueTypeId="8e2f8b98-833f-4e42-9bea-f53c98463f0a"/>
+    <listType typeId="2359939d-3ea0-4a7c-99ee-b8abdc615191" valueTypeId="dea1bba9-cae1-43f1-b84c-7ec538c6a0a0"/>
+    <managerType typeId="e829ce6b-fd8b-4ebf-8f86-02e7cee619d1" valueTypeId="d7ff1e10-c95d-4327-9690-ffe7946344b3"/>
+    <recordSetType typeId="1d2724a3-7d5b-42d7-a41d-568d91b97496" valueTypeId="84ff4be7-0012-4f21-bf23-aeb410851c91"/>
+    <recordKeyType typeId="d78a1d0a-b20b-4324-9bf3-b8216436efb7" valueTypeId="9244583f-f7ab-47db-b079-5f9db21fa8f9"/>
+    <recordType typeId="3f237f98-1845-43c8-804c-4c8be7c7d00d" valueTypeId="4e06373c-d6e2-46b3-8e3c-27c0a9f7b6c0"/>
+  </producedTypes>
+  <name>ОтражениеЗарплатыВФинансовомУчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отражение зарплаты в финансовом учете</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відображення зарплати в фінансовому обліку</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="08040132-0f30-41ff-802e-c388a867b681">
+    <name>СуммаРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма регл</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума регл</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума у валюті регламентованого обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="91de174b-75f3-43f8-ae0a-546b7034823c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой отражается зарплата</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, по якій відображається зарплата</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8a6bf8d1-6716-4ca1-9e57-81d4f944dd67">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Управленческое подразделение, по которому отражаются расходы</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Управлінський підрозділ, за яким відбиваються витрати</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cb0d2b05-fdaa-4677-a8bb-9afa0810bf4d">
+    <name>ВидОперацииПоЗарплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции по зарплате</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції з зарплати</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийПоЗарплате</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции по зарплате</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид операції з зарплати</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7b232cc2-f2cb-4882-b4f6-a15626bad14c">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+      <types>ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья, по которой отражаются расходы на оплату труда</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Стаття, за якою відображаються витрати на оплату праці</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="41771cd8-c94f-44e4-bb08-29ec9073feb3">
+    <name>АналитикаРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика витрат</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика статьи</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика статті</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c6da6aa3-d9c4-48b2-9eb1-4ef51caf4a20">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид робіт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРаботСотрудников</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид работ сотрудников</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид робіт співробітників</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="044a336b-52cf-40f0-88c6-5d8ba67d454b">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Работник организации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Працівник організації</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="636d3464-af3b-4cd0-b5c5-145a35647dd3">
+    <name>ГруппаПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа (вид) продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група (вид) продукції</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыАналитическогоУчетаНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа (вид) продукции</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група (вид) продукції</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="653ed967-5e45-48dc-9646-a181492663a7">
+    <name>ТипНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип страхового взноса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип страхового внеску</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийПоЗарплате</types>
+      <types>EnumRef.ТипыНалогов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид страхования, по которому начислена сумма</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид страхування, за яким нарахована сума</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b4e7e010-55be-4f92-8be4-c16f2bef4f7a">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид страхования, по которому начислена сумма</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид страхування, за яким нарахована сума</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="219c31bc-4da8-4a8b-a5e8-c33065f7f06b">
+    <name>АналитикаАктивовПассивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика пассивов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика пасивів</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СтатьиАктивовПассивов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика пассивов для отражения в учете прочих пассивов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика пасивів для відображення в обліку інших пасивів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:b9c33f8a-d9be-4930-b392-c5ed9b61744d</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>0:b9c33f8a-d9be-4930-b392-c5ed9b61744d</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="13f43597-6537-48e1-886b-7379fc9c680e">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет регл. учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рахунок регл. обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b1a56b49-b1bf-4d1b-8b18-a9037c5aafc1">
+    <name>Субконто1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто1</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 1</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>0/0</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d5ca4490-7db2-4bd1-a6fa-1a760df2d0a4">
+    <name>Субконто2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто2</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 2</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>0/0</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0d8c63bc-64df-42b4-bbfa-8ad15259c44b">
+    <name>Субконто3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто3</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 3</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>0/0</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="86f33a94-5248-48a0-93a6-b238753f4b98">
+    <name>БизнесСфера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес сфера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БизнесСферы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

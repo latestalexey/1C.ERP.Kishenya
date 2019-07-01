@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f32df72-4bf9-4049-9e57-b3cc93f8c070">
+  <producedTypes>
+    <selectionType typeId="73133535-54dd-418b-a959-ac80a8836a06" valueTypeId="c674fec7-cfc9-4f19-a875-fc56a3ffaac4"/>
+    <listType typeId="74ab8e9f-d4e7-4c4a-abeb-bd7b2261a20a" valueTypeId="3e659a56-408d-4b0f-899c-26b1d6f11413"/>
+    <managerType typeId="6d0d71c8-6b1f-4b3b-aea4-915cea42393b" valueTypeId="c346e9dd-f737-4d80-9dc4-23cdf20b0ce1"/>
+  </producedTypes>
+  <name>ДокументыПоНМАМеждународныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по НМА (международный учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи з НМА (міжнародний облік)</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоНМАМеждународныйУчет.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПринятиеКУчетуНМАМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.СписаниеНМАМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.АмортизацияНМАМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеПараметровНМАМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеНМАМеждународныйУчет</registeredDocuments>
+  <registeredDocuments>Document.ВыработкаНМА</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы по НМА</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Документи по НМА</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы по НМА (международный учет)</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Документи з НМА (міжнародний облік)</value>
+  </extendedListPresentation>
+  <columns uuid="e6f82ac9-249a-401f-86bc-45239c9e2e4a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуНМАМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.СписаниеНМАМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.АмортизацияНМАМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ПеремещениеНМАМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ИзменениеПараметровНМАМеждународныйУчет.Attribute.Организация</references>
+    <references>Document.ВыработкаНМА.Attribute.Организация</references>
+  </columns>
+  <columns uuid="0c146d3f-1004-4f82-80c4-8a4b277ad7a9">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуНМАМеждународныйУчет.Attribute.Подразделение</references>
+    <references>Document.СписаниеНМАМеждународныйУчет.Attribute.Подразделение</references>
+    <references>Document.ПеремещениеНМАМеждународныйУчет.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="892d853a-baeb-49e5-83cf-f1ece03ed425">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуНМАМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.СписаниеНМАМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.АмортизацияНМАМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеНМАМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ИзменениеПараметровНМАМеждународныйУчет.Attribute.Ответственный</references>
+    <references>Document.ВыработкаНМА.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="b523bfad-e53c-4701-a2e1-16fb1e2be778">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуНМАМеждународныйУчет.Attribute.НематериальныйАктив</references>
+    <references>Document.СписаниеНМАМеждународныйУчет.Attribute.НематериальныйАктив</references>
+    <references>Document.ПеремещениеНМАМеждународныйУчет.Attribute.НематериальныйАктив</references>
+    <references>Document.ИзменениеПараметровНМАМеждународныйУчет.Attribute.НематериальныйАктив</references>
+  </columns>
+  <forms uuid="9287c797-4fe0-4807-8817-9c5f0f0d258b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

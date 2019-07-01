@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e8e4df8-3c78-4763-b195-7d334c8344c8">
+  <producedTypes>
+    <selectionType typeId="99b7b82c-beea-4ddb-8fa7-88c0b027aa46" valueTypeId="c5aa478c-676b-45e6-81a6-e7dc74352527"/>
+    <listType typeId="d1b656a0-2d0e-4f00-a724-19bd1a274ad3" valueTypeId="b29c02c3-fe97-4dab-aeb9-ae431adf479f"/>
+    <managerType typeId="2ce0f374-3646-454e-8f30-7697712b3b70" valueTypeId="dea3970a-18d7-4601-962d-81845466a165"/>
+    <recordSetType typeId="598f2cbf-c4c6-4e9d-979b-646d5e22477e" valueTypeId="8a23b351-d7f1-4c55-950b-6a856505806b"/>
+    <recordKeyType typeId="0eb4dc13-37d4-4628-9f6f-ed79fbffdacf" valueTypeId="a8f924c2-2243-41d9-9446-aa68ddfe00e0"/>
+    <recordType typeId="f7a151e1-1376-4747-af44-77f4e5c3449b" valueTypeId="02853540-b28c-415b-8893-c6aadfdad4f4"/>
+    <recordManagerType typeId="afd3b6b0-af09-45dd-8f98-0bec0c540818" valueTypeId="a1b1e7df-0848-4091-b454-e7efbd196122"/>
+  </producedTypes>
+  <name>ОбособленныеПодразделенияДляНДФЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обособленные подразделения для НДФЛ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відокремлені підрозділи для ПДФО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОбособленныеПодразделенияДляНДФЛ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОбособленныеПодразделенияДляНДФЛ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="546c091e-251e-44e1-840d-e5a2543a0dea">
+    <name>ОбособленноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленное подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відокремлений підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбособленныеПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4f708b1f-2bdc-423e-9357-af87c3d2c0d7">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структурная единица</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Структурна одиниця</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="abc9cb52-2a89-49a5-bf10-b76670327f5c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec0f34d0-ce98-4152-bdc8-5cad34157d87">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="e74e812d-f2b1-40d9-ab66-72aa5bf91f11">
+    <name>ОбособленныеПодразделенияДляНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленные подразделения для НДФЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відокремлені підрозділи для ПДФО</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

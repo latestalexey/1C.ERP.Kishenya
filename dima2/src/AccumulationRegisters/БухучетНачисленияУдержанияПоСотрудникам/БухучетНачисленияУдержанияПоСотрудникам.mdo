@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dde1c909-39f0-42af-90bd-9407f2c4aaa9">
+  <producedTypes>
+    <selectionType typeId="665c1137-8379-4cad-a590-c52f3befe068" valueTypeId="136d8241-65d4-42db-8ef4-8179ffacdbaf"/>
+    <listType typeId="4cccdd49-af80-467a-8402-a915ffdf6af9" valueTypeId="e28a9e2e-44b8-4c56-8c7f-f068eaf6cf7c"/>
+    <managerType typeId="99691d47-6639-4971-bcf4-d1dcf5a5d1ac" valueTypeId="e80292f4-2d71-4ab4-9553-5d1d74e0ac71"/>
+    <recordSetType typeId="a13632b7-662a-4e63-a543-a94d88872aaf" valueTypeId="f89e94dc-4ab3-4b8c-bd61-815826173d29"/>
+    <recordKeyType typeId="8a8e59cd-af8e-453c-b4d3-bf493f2821c4" valueTypeId="047eaf72-9b2a-4d02-9f5d-d54850e90c8c"/>
+    <recordType typeId="ae9ecba1-6bad-43f4-9604-0ef4c2b1d9af" valueTypeId="0f0fb330-4ac3-418f-8157-86513ba7bcda"/>
+  </producedTypes>
+  <name>БухучетНачисленияУдержанияПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухучет начисления удержания по сотрудникам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Бухоблік нарахування за утриманнями по співробітниках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="382f00df-53b4-4d19-880a-bbe7a3fd168d">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="20d5b92b-33e7-4ced-b317-9934926ca03f">
+    <name>ГруппаНачисленияУдержанияВыплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа начисления удержания выплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група нарахування утримання виплати</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ГруппыНачисленияУдержанияВыплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="dfb9d859-0bb6-4659-869a-7c388f788660">
+    <name>ПериодДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период действия</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період дії</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f1cb7859-acac-414f-b033-4a875143c9a1">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ підстава</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.УдержаниеВСчетРасчетовПоПрочимОперациям</types>
+      <types>DocumentRef.УдержаниеПрофсоюзныхВзносов</types>
+      <types>DocumentRef.Совмещение</types>
+      <types>DocumentRef.ДоговорАвторскогоЗаказа</types>
+      <types>DocumentRef.ИсполнительныйЛист</types>
+      <types>DocumentRef.АктПриемкиВыполненныхРаботОказанныхУслуг</types>
+      <types>DocumentRef.ДоговорРаботыУслуги</types>
+      <types>DocumentRef.Командировка</types>
+      <types>DocumentRef.ПостоянноеУдержаниеВПользуТретьихЛиц</types>
+      <types>DocumentRef.ПереносДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="88234d51-0a1b-47a1-8e53-6b1f52aacb13">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="992765b7-90ee-4ee3-b406-27d54783bf34">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d543b442-3a94-414c-8b35-1734fb5bcf07">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата закінчення</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a63a6b32-53db-405e-b978-654ef1b0d3f9">
+    <name>ИдентификаторСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор строки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ідентифікатор рядка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9fd719f3-9a43-4116-8546-5b50f5ba4d7f">
+    <name>СпособОтраженияЗарплатыВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб відображення</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВБухУчете</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4ab1ea34-2efc-496f-a0fa-471fed3aa115">
+    <name>ОблагаетсяЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Облагается ЕНВД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оподатковується ЕНВД</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c06fa00a-52d0-4ca8-a51c-c8632538d2b1">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийПоЗарплате</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="14a57a6f-1877-4c12-a661-e5ae9adfeac6">
+    <name>НеУчитыватьВРаспределенииПриОкончательномРасчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать в распределении при окончательном расчете</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Не враховувати в розподілі при остаточному розрахунку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="124c1a5d-8e58-4bbc-ba51-542bfce5a3b8">
+    <name>ТерриторияВыполненияРаботВОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Территория выполнения работ в организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Територія виконання робіт в організації</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТерриторииВыполненияРаботВОрганизации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c1b5a90e-4894-4dad-a386-ba433193099c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6e676d8d-65fc-4e3e-a201-63d6ac5fdb57">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="162d35c3-5b3e-417c-9a48-7e82579bb988">
+    <name>СтатьяФинансирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья финансирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття фінансування</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиФинансированияЗарплата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="739f73fc-7532-47b0-af6c-ce83ec58a4fd">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиРасходовЗарплата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="551c0eb3-aa25-405e-b780-f9ed1c329b6c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a6169875-7890-4870-974c-5f5516c0ee5c">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8de7c367-5c73-4aa8-83d6-01947241a8a8">
+    <name>НачислениеУдержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление удержание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахування утримання</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыВзаиморасчетовССотрудниками</types>
+      <types>EnumRef.ВидыОсобыхНачисленийИУдержаний</types>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+      <types>ChartOfCalculationTypesRef.Удержания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1ca4809-da9e-4e1e-b0cb-e3a9c77edb80">
+  <producedTypes>
+    <selectionType typeId="bf4aa7d2-67da-47f9-b9e3-264cd138dd34" valueTypeId="5e178b5a-b5ab-43d5-b70f-6ba076268dd8"/>
+    <listType typeId="5fbb8531-c713-4989-95a4-816efbf8553b" valueTypeId="c64b3d6c-9228-452b-870c-65215f0c7032"/>
+    <managerType typeId="0f0caa54-d296-46ac-893c-3e4e21a44522" valueTypeId="5ac905aa-5568-4b8b-9791-c5958bdc557c"/>
+    <recordSetType typeId="0e280dd0-fa3c-4ae4-9374-00f0dd737ad7" valueTypeId="d0793ac2-076e-4042-9a0a-a33b3f5992d8"/>
+    <recordKeyType typeId="2d1af162-2c82-49ff-9c15-9fabf37546b1" valueTypeId="1833069f-d3cd-4a09-8840-dd73673ab0f3"/>
+    <recordType typeId="cd396eca-5838-412c-a3cf-2dd1ed0abbbb" valueTypeId="da7b5994-a24f-4ab5-9974-8433b74f03a5"/>
+  </producedTypes>
+  <name>УдалитьГрафикЭтаповПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) График этапов производства</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Графік етапів виробництва</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="2173017f-a2e6-4b59-8d64-87e01e00bbce">
+    <name>Запланировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество этапов (запланировано)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість етапів (заплановано)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сколько осталось запланировать.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Скільки залишилося запланувати.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c6856ef7-ac24-465b-a661-1ba94f8a9652">
+    <name>КВыполнению</name>
+    <synonym>
+      <key>ru</key>
+      <value>К выполнению</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>До виконання</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сколько осталось выполнить.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Скільки залишилося виконати.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="2a2051fa-8be2-4345-b145-e1059e5eb1d2">
+    <name>ТребуетсяПерепланировать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется перепланировать</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Потрібно перепланувати</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="f2bb1ace-06eb-4acb-96a5-31a3a5e9b58d">
+    <name>Распоряжение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распоряжение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розпорядження</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказНаПроизводство</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="82216aaf-d0f3-4ada-8f90-42e43592a96c">
+    <name>КодСтрокиПродукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки (продукция)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код рядка (продукція)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизит для связи текущей строки со строками в других табличных частях.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Реквізит для зв'язку поточного рядка з рядками в інших табличних частинах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6773d23d-7824-40ea-911b-b72af14c0f47">
+    <name>КодСтрокиЭтапыГрафик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки (график выполнения этапов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код рядка (графік виконання етапів)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Связывает текущую строку со строкой из ТЧ &quot;Продукция&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Пов'язує поточний рядок з рядком з ТЧ &quot;Продукція&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0aebdd8c-635e-4a09-b8dc-5314fac57925">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Етап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыПроизводства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d21183c7-1011-4297-b821-3c56e49df05a">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение в котором выполняется работа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ в якому виконується робота</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8b19c7a6-1ad7-4d1d-9592-cb7f8eb1f7a3">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата події</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

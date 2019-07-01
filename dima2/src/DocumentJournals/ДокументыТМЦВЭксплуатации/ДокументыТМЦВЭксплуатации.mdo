@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cc5aabf-08d7-4bc7-91e9-1789c84149cf">
+  <producedTypes>
+    <selectionType typeId="397ae972-75f7-471f-8c1e-8203ec29302f" valueTypeId="df4135aa-dbe2-453c-8639-ee812a9e93ab"/>
+    <listType typeId="b7e62934-97e9-43b9-899a-326595a2058d" valueTypeId="edb9eac4-c126-4649-b982-7e5230128eda"/>
+    <managerType typeId="696cc49c-0df8-4f7d-99a6-6938610a7e51" valueTypeId="4066fcfa-08de-4335-9547-c928fe213076"/>
+  </producedTypes>
+  <name>ДокументыТМЦВЭксплуатации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы ТМЦ в эксплуатации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи ТМЦ в експлуатації</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыТМЦВЭксплуатации.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВнутреннееПотреблениеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ЗаказНаВнутреннееПотребление</registeredDocuments>
+  <registeredDocuments>Document.ПрочееОприходованиеТоваров</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеВЭксплуатации</registeredDocuments>
+  <registeredDocuments>Document.СписаниеИзЭксплуатации</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="aca8337e-c203-4f04-ab51-2d29452b7bd6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Организация</references>
+    <references>Document.ЗаказНаВнутреннееПотребление.Attribute.Организация</references>
+    <references>Document.ПрочееОприходованиеТоваров.Attribute.Организация</references>
+    <references>Document.ПеремещениеВЭксплуатации.Attribute.Организация</references>
+    <references>Document.СписаниеИзЭксплуатации.Attribute.Организация</references>
+  </columns>
+  <columns uuid="22e54fb5-1eb7-4bc5-8055-1d12f54b3486">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Подразделение</references>
+    <references>Document.ЗаказНаВнутреннееПотребление.Attribute.Подразделение</references>
+    <references>Document.ПрочееОприходованиеТоваров.Attribute.Подразделение</references>
+    <references>Document.ПеремещениеВЭксплуатации.Attribute.Подразделение</references>
+    <references>Document.СписаниеИзЭксплуатации.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="5f9db703-1bef-4c4e-8990-7d3b49c88792">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.Ответственный</references>
+    <references>Document.ЗаказНаВнутреннееПотребление.Attribute.Ответственный</references>
+    <references>Document.ПрочееОприходованиеТоваров.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеВЭксплуатации.Attribute.Ответственный</references>
+    <references>Document.СписаниеИзЭксплуатации.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="a072a980-6719-4e3c-bd2f-f696f2e5d91b">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <references>Document.ВнутреннееПотреблениеТоваров.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ЗаказНаВнутреннееПотребление.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПрочееОприходованиеТоваров.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <forms uuid="dc265768-9256-4bc2-ac30-ee9df66bbc7b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

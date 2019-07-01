@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd81371d-2289-4649-91e6-e6dbcb6aacda">
+  <producedTypes>
+    <selectionType typeId="e80947ba-4335-4e16-9cc0-d6e9a3cd495d" valueTypeId="60d2fb31-9684-4a03-9a5e-45d4b79debc1"/>
+    <listType typeId="5da2d501-3f94-4909-9871-b2e2f7acaf57" valueTypeId="c69d5ac6-21b0-4218-bbd7-ad8366509137"/>
+    <managerType typeId="f5b05279-7ef0-4aeb-9a85-e070ca7f7a07" valueTypeId="05e9aefa-ffce-4f46-bd88-7bebb15ace18"/>
+    <recordSetType typeId="859d1bf2-1f17-4295-83e0-ce60a96af0b8" valueTypeId="b1a49e09-3b33-4380-967d-05c3c36ea883"/>
+    <recordKeyType typeId="1c8b8a25-2b65-4575-b6dd-02cb45cf7feb" valueTypeId="bb28b776-3167-4c15-8680-84caaaa70885"/>
+    <recordType typeId="b8cb1ea1-101f-42ed-b23d-c5ca4bf26c53" valueTypeId="146a29ef-7ea2-47eb-824a-33822e749298"/>
+    <recordManagerType typeId="a2509821-d56f-45ca-97ee-68ac7606c75f" valueTypeId="a8ffc5bd-476d-4d95-8cb6-4614a58d2646"/>
+  </producedTypes>
+  <name>ОсновныеСпецификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные спецификации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Основні специфікації</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная с</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна з</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Основная спецификация</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Основна специфікація</value>
+  </recordPresentation>
+  <resources uuid="9449e513-4f15-43db-af8f-25e424c9f633">
+    <name>Спецификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Специфікація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РесурсныеСпецификации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Основная спецификция.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Основна специфікація.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5d108a53-ebee-4d50-bf1e-0fcb2c156bf4">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура, для которой определяется основная спецификция.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номенклатура, для якої визначається основна спецификция.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Номенклатура.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6459f8b7-ce2c-4bea-97c5-168888044704">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Характеристика номенклатуры, для которой определяется основная спецификция.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Характеристика номенклатури, для якої визначається основна спецификция.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Номенклатура</name>
+      <changeMode>DontChange</changeMode>
+      <field>InformationRegister.ОсновныеСпецификации.Dimension.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ХарактеристикиНоменклатуры.EmptyRef</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8bc6573e-13f8-4daa-a7ed-b7bbc09bc87f">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, для которого определяется основная спецификция.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, для якого визначається основна спецификция.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ПодразделениеДиспетчерИлиПроизводственноеПодразделение</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fdc62ed0-d2b8-47ad-8d4a-c6cc937760e6">
+    <name>НазначитьОсновнойСпецификацией</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначить основной спецификацией</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначити основною специфікацією</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6976e07a-6577-4ec0-8dcd-de6baa0c4471">
+    <name>НазначитьОсновнойСпецификацией</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначить основной</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначити основною</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.РесурсныеСпецификации</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Назначить основной спецификацией</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Призначити основною специфікацією</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

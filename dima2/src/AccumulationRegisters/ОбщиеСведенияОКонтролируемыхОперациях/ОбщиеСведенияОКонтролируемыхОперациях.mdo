@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="586ea868-3ca1-43cb-ba83-6fe2bcc43114">
+  <producedTypes>
+    <selectionType typeId="ba848b65-8fde-474d-85bb-32dd92f4b7ce" valueTypeId="9d5bccfd-d900-420f-a117-5025d0d1b195"/>
+    <listType typeId="23a17d6f-fe9b-4adb-b834-a231163c9635" valueTypeId="b2ac02c4-1b22-427f-b7db-2ff59775d1b6"/>
+    <managerType typeId="aab3edaa-3c7d-43da-a7f2-9b67dc427167" valueTypeId="b61178a6-5a45-4a1a-b60d-6edf9508395f"/>
+    <recordSetType typeId="df5ebaca-240d-4585-aeae-cc089b4dc212" valueTypeId="c641b9c7-7ed8-4230-812f-232b16fd81ac"/>
+    <recordKeyType typeId="1cb611af-ff91-485d-bbe4-9d3450e5e463" valueTypeId="b90abaad-8b9b-44ad-9bd6-d2470335bfba"/>
+    <recordType typeId="8a2392f8-e401-4c56-bd2e-8ae2a37c6851" valueTypeId="22d469b5-bb04-4552-8586-0d524ac5b0a8"/>
+  </producedTypes>
+  <name>ОбщиеСведенияОКонтролируемыхОперациях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общие сведения о контролируемых операциях</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Загальні відомості про контрольовані операції</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7349a82f-546e-43b0-8f48-6a379d16aadf">
+    <name>СуммаОбщая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма общая</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума загальна</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f0268d1c-de29-4e11-8942-2a7b74d12c7c">
+    <name>СуммаКонтролируемыхОпераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма контролируемых операций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума контрольованих операцій</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="12c6af81-e675-4381-8c11-9c8ef5c5eb97">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="90d6799b-43a2-4a90-913f-50e8d404e080">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

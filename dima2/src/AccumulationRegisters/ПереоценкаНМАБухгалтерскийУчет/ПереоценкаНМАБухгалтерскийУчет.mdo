@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6de43670-d779-4239-a314-52cc73969c64">
+  <producedTypes>
+    <selectionType typeId="d6b0d885-b919-4449-8e9a-fa48a2fb172a" valueTypeId="7ac968f2-9465-40e0-a2f9-e8312a1d52f3"/>
+    <listType typeId="a03172dd-9e9b-48d1-94b3-b9e4bcd27e2e" valueTypeId="d6b90fcf-7606-4acc-a2f2-19dcebbd9681"/>
+    <managerType typeId="ccc96b87-6014-4e65-b38c-ea9585d060f0" valueTypeId="56a92a14-3dc6-4ef2-b08e-b3c3f7d05dd2"/>
+    <recordSetType typeId="965961c0-77a0-4ed5-94ae-42377155c118" valueTypeId="6c82a009-a411-49ec-8bd6-304406b8ab45"/>
+    <recordKeyType typeId="c8d2cdac-d1f4-4df2-85e6-4a3281de3b0a" valueTypeId="4cc4200a-501f-4978-a316-89fba25cf6cb"/>
+    <recordType typeId="aecb0e1b-7926-4a99-87f9-2d4b5687e0fe" valueTypeId="1fc65459-b9f1-49a2-b403-f9c0df932c67"/>
+  </producedTypes>
+  <name>ПереоценкаНМАБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переоценка НМА (бухгалтерский учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Переоцінка НМА (бухгалтерський облік)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="0a33ba72-ba4f-4ac1-8eed-5685e4530f4b">
+    <name>СуммаПереоценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма переоценки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума переоцінки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f1900d05-6ecf-4761-a369-d116f5abeb42">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="69550249-e8bb-454a-bd36-fb53f0e105d0">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
