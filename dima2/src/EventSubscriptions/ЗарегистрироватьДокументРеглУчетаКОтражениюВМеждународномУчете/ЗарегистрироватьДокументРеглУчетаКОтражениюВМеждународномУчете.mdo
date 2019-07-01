@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="228df0c5-081f-4f30-bcdb-890efc0b410c">
+  <name>ЗарегистрироватьДокументРеглУчетаКОтражениюВМеждународномУчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарегистрировать документ регл. учета к отражению в международном учете</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Зареєструвати документ регл. обліку до відображення в міжнародному обліку</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.АннулированиеПодарочныхСертификатов</types>
+    <types>DocumentObject.ВозвратТоваровОтКлиента</types>
+    <types>DocumentObject.СписаниеНМА</types>
+    <types>DocumentObject.ПрочееОприходованиеТоваров</types>
+    <types>DocumentObject.КорректировкаНалоговогоНазначенияКапитальныхИнвестиций</types>
+    <types>DocumentObject.ВозвратСырьяДавальцу</types>
+    <types>DocumentObject.ВводОстатков</types>
+    <types>DocumentObject.ВозвратМатериаловИзПроизводства</types>
+    <types>DocumentObject.РаспределениеРасходовБудущихПериодов</types>
+    <types>DocumentObject.ВозвратСырьяОтПереработчика</types>
+    <types>DocumentObject.ВозвратПодарочныхСертификатов</types>
+    <types>DocumentObject.НачислениеДивидендов</types>
+    <types>DocumentObject.ПринятиеКУчетуОС</types>
+    <types>DocumentObject.ПередачаДавальцу</types>
+    <types>DocumentObject.ПоступлениеОтПереработчика</types>
+    <types>DocumentObject.ОтчетПереработчика</types>
+    <types>DocumentObject.ПеремещениеОС</types>
+    <types>DocumentObject.ПоступлениеСырьяОтДавальца</types>
+    <types>DocumentObject.ВнесениеДенежныхСредствВКассуККМ</types>
+    <types>DocumentObject.РасчетСебестоимостиТоваров</types>
+    <types>DocumentObject.СписаниеОС</types>
+    <types>DocumentObject.МодернизацияОС</types>
+    <types>DocumentObject.ПринятиеКУчетуНМА</types>
+    <types>DocumentObject.АмортизацияОС</types>
+    <types>DocumentObject.ПодготовкаКПередачеОС</types>
+    <types>DocumentObject.РаспределениеПрочихЗатрат</types>
+    <types>DocumentObject.ОтчетКомиссионера</types>
+    <types>DocumentObject.ПереоценкаВалютныхСредств</types>
+    <types>DocumentObject.ПоступлениеПредметовЛизинга</types>
+    <types>DocumentObject.РаспределениеПроизводственныхЗатрат</types>
+    <types>DocumentObject.ПеремещениеМатериаловВПроизводстве</types>
+    <types>DocumentObject.РеализацияПодарочныхСертификатов</types>
+    <types>DocumentObject.ОтчетБанкаПоОперациямЭквайринга</types>
+    <types>DocumentObject.ПерерасчетПропорциональногоНДСпоТоварамИОС</types>
+    <types>DocumentObject.АмортизацияНМА</types>
+    <types>DocumentObject.ВводОстатковВнеоборотныхАктивов</types>
+    <types>DocumentObject.ОперацияБух</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.МеждународныйУчетПроведениеСервер.ЗарегистрироватьДокументРеглУчетаКОтражениюВМеждународномУчетеОбработкаПроведения</handler>
+</mdclass:EventSubscription>

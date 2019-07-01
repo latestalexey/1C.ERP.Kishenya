@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30711407-b323-438f-946b-d1986c7e3131">
+  <name>SAPExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>SAP Exchange</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>SAP Exchange</value>
+  </synonym>
+  <namespace>http://www.sample-package.org</namespace>
+  <descriptorFileName>SAPExchange.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="9b071d34-0621-4442-a033-0ddbee420f09">
+    <name>Test</name>
+    <synonym>
+      <key>ru</key>
+      <value>Test</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Test</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Test</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+</mdclass:WebService>

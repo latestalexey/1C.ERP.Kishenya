@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b527a79-cee4-4b57-b9e4-490abdcf60d4">
+  <producedTypes>
+    <objectType typeId="bae5788f-dbe9-4913-8af9-12efa60942a2" valueTypeId="6ba0792a-b052-4ebd-9b99-178e0ebbe6e0"/>
+    <refType typeId="d8e5710b-464f-4683-a4ce-be367e25e8d9" valueTypeId="9b5b28dd-7b44-49b4-94a9-60b3ed3b6336"/>
+    <selectionType typeId="e963283f-0bf6-4459-94af-6e879d813c42" valueTypeId="a3e2df53-8b9f-4a88-be39-e404105842e8"/>
+    <listType typeId="3ab2fe5f-b052-434a-a06a-2403a4c73f96" valueTypeId="2ea6906c-57f1-4653-8ce3-07927efb0fcc"/>
+    <managerType typeId="e56ce606-0863-4d7d-a2e6-b84c5ce73399" valueTypeId="c3923b1a-a493-4909-aa6f-65055d29920c"/>
+  </producedTypes>
+  <name>ТехнологическиеОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технологические операции</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Технологічні операції</value>
+  </synonym>
+  <inputByString>Catalog.ТехнологическиеОперации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в маршрут</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Входить в маршрут</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.МаршрутныеКарты.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.ТехнологическиеОперации.StandardAttribute.Owner</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изготовить (выполнить)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виготовити (виконати)</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>-1</keyField>
+    <typesFilterField>-1</typesFilterField>
+    <typesFilterValue xsi:type="core:UndefinedValue"/>
+    <characteristicValues>Catalog.ТехнологическиеОперации.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>-1</objectField>
+    <typeField>-1</typeField>
+    <valueField>-1</valueField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>-1</keyField>
+    <typesFilterField>-1</typesFilterField>
+    <typesFilterValue xsi:type="core:UndefinedValue"/>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>-1</objectField>
+    <typeField>-1</typeField>
+    <valueField>-1</valueField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Операция</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Операція</value>
+  </objectPresentation>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.МаршрутныеКарты</owners>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТехнологическиеОперации.Form.ФормаОперации</defaultObjectForm>
+  <defaultListForm>Catalog.ТехнологическиеОперации.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТехнологическиеОперации.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="5ee9cead-c571-4ccc-9603-a23a6f5983b9">
+    <name>НомерОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер операції</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номер операції.</value>
+    </toolTip>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c59f99f-82ae-4c6f-9f98-d691dab352a3">
+    <name>НомерСледующейОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующая операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Наступна операція</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Операция, которая выполняется после текущей.
+Не заполняется, если это последняя операция.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Операція, яка виконується після поточної.
+Не заповнюється, якщо це остання операція.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c6bc09bf-1c4d-48c3-b490-6e240808109c">
+    <name>РабочийЦентр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий центр</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Робочий центр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РабочиеЦентры</types>
+      <types>CatalogRef.ВидыРабочихЦентров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рабочий центр или вид рабочего центра, который используется для выполнения операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Робочий центр або вид робочого центру, який використовується для виконання операції.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="74489035-f1cb-4899-96df-e0aa18eeedfa">
+    <name>СодержитВложенныйМаршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ=Операция; БИ='Вложенный маршрут'</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>БЛ=Операція; БИ='Вкладений маршрут'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ=Операция; БИ='Вложенный маршрут'</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>БЛ=Операція; БИ='Вкладений маршрут'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45cf8235-be24-4efd-8f5c-4b1b4f77c032">
+    <name>ВложенныйМаршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вложенный маршрут</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вкладений маршрут</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МаршрутныеКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>ЗапретитьВыбор</name>
+      <changeMode>DontChange</changeMode>
+      <field>Catalog.ТехнологическиеОперации.StandardAttribute.Owner</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f6368cbe-da4a-4f20-8fa3-e7e11281fa86">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество результата операции</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кількість результату операції</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07a8fd5d-99f3-4b2c-ad5c-f321606eeb78">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм.</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Од. вим.</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Единица измерения результата</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Одиниця вимірювання результату</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee83ecd1-0200-457c-ab41-aa5c0eb794d9">
+    <name>ВремяШтучное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время штучное</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Час штучний</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Штучное время выполнения операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Штучний час виконання операції.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5276d12b-8074-41d5-9304-30db610e5470">
+    <name>ВремяШтучноеЕдИзм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время штучное, ед. изм.</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Час штучний, од. вим.</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЕдиницыИзмеренияВремени</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывает в какой единице задано штучное время выполнения.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Зазначає в якій одиниці заданий поштучний час виконання.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ЕдиницыИзмеренияВремени.EnumValue.Минута</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c5e0f51-ee75-4091-957b-89eb94a89805">
+    <name>ВремяПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Час ПЗ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подготовительно-заключительное время.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підготовчо-заключний час.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="805d1781-777f-4056-b4d5-2f83eb8b6112">
+    <name>ВремяПЗЕдИзм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время ПЗ, ед. изм.</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Час ПЗ, од. вим.</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЕдиницыИзмеренияВремени</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывает в какой единице задано подготовительное время.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Зазначає в якій одиниці задано підготовчий час.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ЕдиницыИзмеренияВремени.EnumValue.Минута</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9539a0b1-ed09-4183-924e-6c9e6e67e805">
+    <name>ВариантНаладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант наладки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Варіант налагодження</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВариантыНаладки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант наладки рабочего центра.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Варіант наладки робочого центру.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8ad18e40-ac16-4cc5-b631-cf2de919a23f">
+    <name>Загрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузка рабочего центра при выполнении операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Завантаження робочого центру при виконанні операції.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e855f6ac-65e1-4e1c-9531-fe5bb008a414">
+    <name>Непрерывная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Непрерывная</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Безперервна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выполнение операции не может прерываться интервалами недоступности.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Виконання операції не може перериватися інтервалами недоступності.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="88b773f3-37e2-419b-aa02-f0ea01fb8942">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Опис</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Опис операції.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="6b301c46-b654-4c75-9655-64b03335a55d">
+    <producedTypes>
+      <objectType typeId="7b602af5-f769-49d8-a04f-800512148841" valueTypeId="c95e5706-2740-4fdc-a2af-aa8c8e8da5cc"/>
+      <rowType typeId="9c9feb2e-98ae-43a8-a61e-c6ea6ce0520a" valueTypeId="8d5fe35c-a3df-42a6-b6fb-d85f63c06370"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Додаткові реквізити</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Набор реквизитов, состав которого определяется компанией.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Набір реквізитів, склад якого визначається компанією.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4f8733c9-f690-4c9a-8861-7abc3fa24d2f">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Властивість</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Додатковий реквізит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="abe7b50e-4870-4e0d-aad1-db2c0913771a">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Значення</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.ТехнологическиеОперации.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7223d535-c1ad-4239-92ff-4df9850e9fda">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Текстовий рядок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Повний текст строкового додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="73ef3487-b26a-4658-84a2-ee468e5ff0d4">
+    <producedTypes>
+      <objectType typeId="04eeadac-83e8-45cf-9643-517dce887575" valueTypeId="ec5a9062-d47f-4749-8885-d170a214908d"/>
+      <rowType typeId="03dfb75d-072b-4e3f-ac19-5b28dc68b225" valueTypeId="47e7b798-1990-44ee-b9b6-b22a500ed011"/>
+    </producedTypes>
+    <name>ВспомогательныеРабочиеЦентры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вспомогательные рабочие центры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Допоміжні робочі центри</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Рабочие центры, участвующие в выполнении операции вместе с основным рабочим центром.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Робочі центри, які беруть участь у виконанні операції разом з основним робочим центром.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9e0392ca-a7ab-4967-b344-706d54a2a19e">
+      <name>РабочийЦентр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рабочий центр</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Робочий центр</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.РабочиеЦентры</types>
+        <types>CatalogRef.ВидыРабочихЦентров</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вспомогательный рабочий центр или вид рабочего центра, который используется для выполнения операции.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Допоміжний робочий центр або вид робочого центру, який використовується для виконання операції.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ПланироватьРаботуРабочихЦентров</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7e955705-8677-406f-b1e2-ac5d47a8c00f">
+    <name>ФормаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма операції</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6b0622a7-e083-493b-ada0-66a63dcf9430">
+    <name>ФормаВложенногоМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вложенного маршрута</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вкладеного маршруту</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f799516d-e635-4a2c-a7bc-afe56e3faaad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="385832fe-baf3-4d89-a59a-b19aae47e0a6">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

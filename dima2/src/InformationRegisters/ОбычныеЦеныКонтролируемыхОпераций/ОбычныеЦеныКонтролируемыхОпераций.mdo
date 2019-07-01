@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69723652-db5f-4fa2-bf1b-e9e9be743c7e">
+  <producedTypes>
+    <selectionType typeId="b978ef5d-97b7-471c-ad66-87b6a9736fe6" valueTypeId="e39fe36d-fc9a-4fa0-88b3-32b572062a79"/>
+    <listType typeId="d6519489-4a60-42d6-b2ae-910e8c8fb31a" valueTypeId="41452ba3-48b0-4bb4-a138-3968fe2b1824"/>
+    <managerType typeId="cc8f4bd8-c1c5-4e6f-b33a-53f7db17978a" valueTypeId="f063d613-ceff-453c-b741-1a2aa636de08"/>
+    <recordSetType typeId="a8758eeb-8963-49cd-b9e8-959f05a1f838" valueTypeId="5cc54a51-b8bf-4b16-ab41-b52aaa9897c1"/>
+    <recordKeyType typeId="84ce1440-f20d-4a10-acbb-6ccc0649fe0d" valueTypeId="06a78c53-f944-4d3f-a742-3be3bd20f90c"/>
+    <recordType typeId="a10dabbb-2315-41e9-9952-4d582fa831bf" valueTypeId="c80f7dd3-21e8-4a8f-a005-40b4c3cbc392"/>
+    <recordManagerType typeId="2f03245b-611b-40da-87c2-40bc3da9f130" valueTypeId="d8c6987b-ad85-4cf2-a7f5-824ca350b399"/>
+  </producedTypes>
+  <name>ОбычныеЦеныКонтролируемыхОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обычные цены контролируемых операций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звичайні ціни контрольованих операцій</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ОбычныеЦеныКонтролируемыхОпераций.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОбычныеЦеныКонтролируемыхОпераций.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Параметры определения обычных цен в контролируемых сделках</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Параметри визначення звичайних цін у контрольованих операціях</value>
+  </recordPresentation>
+  <resources uuid="d6e9221d-aaf6-403b-8672-7def0a470276">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена (без НДС за единицу)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ціна (без ПДВ за одиницю)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f149c2b3-801a-4234-bf7c-39af6b968531">
+    <name>ВалютаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта цены</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта ціни</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="599422df-037a-4f7b-a4e2-71cbfcd27f16">
+    <name>ПоказательРентабельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код показателя рентабельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код показника рентабельності</value>
+    </synonym>
+    <comment>410-480</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ac1291cc-c4d0-4bee-ab15-5985cb54697a">
+    <name>ЗначениеПоказателяРентабельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение показателя рентабельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Значення показника рентабельності</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="650525be-283a-441e-9ffb-9af58f66707f">
+    <name>ПредметСделки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет сделки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Предмет угоди</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="77bee991-f564-47a8-8d85-fe95e09d194a">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Характеристика номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ОбычныеЦеныКонтролируемыхОпераций.Dimension.ПредметСделки</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d5c2979-f645-4ca0-91fb-792156bc5829">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e0b377b8-57e7-46e2-9876-ff97fe8fa787">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="546981c2-8bbc-4c3b-8bab-659c3e253c46">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>InformationRegister.ОбычныеЦеныКонтролируемыхОпераций.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>InformationRegister.ОбычныеЦеныКонтролируемыхОпераций.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="473d18b6-ff9b-4574-ae09-d58981a76f41">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee95fe70-fd35-48e6-a580-f2f570c28465">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9dc2c1f-8ab8-413f-af95-4d6e952b9798">
+  <producedTypes>
+    <selectionType typeId="00d7b873-6c15-45e8-97e9-1b6e9a61423b" valueTypeId="ab36433f-3d99-4dfb-b1db-1d1188705466"/>
+    <listType typeId="496add14-cb25-41ad-8757-a8ddd1e086a2" valueTypeId="6b309368-4cce-40a6-bc05-059ced6ec1a6"/>
+    <managerType typeId="a8f4cf6b-aaeb-4c1f-bd1f-a12dee30c361" valueTypeId="f9894baf-5817-451e-bb53-4b5375bc2ee8"/>
+    <recordSetType typeId="c7baf5df-d66c-4981-ae8f-db499f5adbe1" valueTypeId="daf23ad8-2e86-49df-9f56-5db847efbf84"/>
+    <recordKeyType typeId="e2d83d26-a38a-4a4a-afd6-311b179f30fd" valueTypeId="7541c5b6-8d17-4834-99b3-a1c8bfa994ed"/>
+    <recordType typeId="087e67d5-605f-4207-a93b-6854d6797873" valueTypeId="3f217b2d-fa7a-4c64-b71a-892bc4e34e4c"/>
+  </producedTypes>
+  <name>УДАЛИТЬДенежныеСредстваКПоступлениюНаличные</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Денежные средства к поступлению (наличные)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Кошти до надходження (готівкові)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="28c44b67-6159-43e9-a014-09ebee49135a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума грошових коштів</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="0f401370-f9f6-4613-9bfd-2d19c849da95">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хозяйственая операция, по которой отражены движения денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Господаська операція, по якій відображені рухи грошових коштів.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="0707c515-579f-406b-bac0-a8c9bb5cc331">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой ведется учет наличных денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, по якій ведеться облік готівки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="38a85ef2-96ab-4abf-9ec9-74ea5b9eb686">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Каса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КассыККМ</types>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Касса организации, в которую должны поступить денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Каса організації, в яку повинні надійти грошові кошти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="17387e5f-9696-4b27-85e7-531885b846fb">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>CatalogRef.КассыККМ</types>
+      <types>DocumentRef.ВыемкаДенежныхСредствИзКассыККМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, которым оформлена передача  денежных средств в другую кассу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Документ, яким оформлена передача грошових коштів в іншу касу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

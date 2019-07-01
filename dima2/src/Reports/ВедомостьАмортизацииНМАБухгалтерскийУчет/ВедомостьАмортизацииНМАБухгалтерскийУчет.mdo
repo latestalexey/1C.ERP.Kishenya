@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="921d01be-b559-449b-b740-af56ba787777">
+  <producedTypes>
+    <objectType typeId="9cbb4fb6-11f4-438f-8d0d-4dd12fc3c9a6" valueTypeId="fd4aa5f5-ce1d-408a-92ce-4c83ee293731"/>
+    <managerType typeId="9e6de5e2-b11e-4334-bf1e-fe2f17f25b0c" valueTypeId="4fb378da-a4dd-41f2-bf36-1251122c7f4d"/>
+  </producedTypes>
+  <name>ВедомостьАмортизацииНМАБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость амортизации НМА</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відомість амортизації МНА</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ВедомостьАмортизацииНМАБухгалтерскийУчет.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ВедомостьАмортизацииНМАБухгалтерскийУчет.Template.СхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="f573cd87-939b-4dbb-99d6-fc4af9d333b9">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Включаючи відокремлені підрозділи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0a8e0510-df30-44a4-87b9-95f8a38797df">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кінець періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="00fd83f2-1aa4-4c2d-bc25-c2899813a63e">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початок періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f74269c5-c47f-46d1-a8ce-2b3c0950aa5e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f180a698-fba0-47e8-be22-ad986191e122">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc938fba-be4f-4843-82d6-bd2805ca5da0">
+    <name>РазмещениеДополнительныхПолей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размещение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розміщення</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="559b5705-bdd3-46b4-b5ce-f86bcfc0dddf">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим розшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6d076203-be31-44cc-ab94-80577afeb908">
+    <name>ПоказательНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>НУ (данные налогового учета)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ПО (дані податкового обліку)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87defd0d-4f1b-4b2f-8a61-d2a1d6f9442b">
+    <name>ПоказательБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>БУ (данные бухгалтерского учета)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>БО (дані бухгалтерського обліку)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="b4a760bf-bab7-4b93-9baa-b47d4e083d92">
+    <producedTypes>
+      <objectType typeId="34a7f2d5-c717-49e2-8942-ab5593f93ec3" valueTypeId="79f2da87-582d-4173-a283-7fdd41c3ce1c"/>
+      <rowType typeId="b569fdaf-5255-443f-9cd5-af3ed718a7a5" valueTypeId="69bce322-86d8-4311-9a50-10317dd0d3e4"/>
+    </producedTypes>
+    <name>Группировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Групування</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1b991ec6-9bd2-4688-843a-3533378df557">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Використання</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4f0291f0-43f0-4c3a-812c-c71c57612c4d">
+      <name>Поле</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5f71c937-613d-47dd-9a2b-a9d9c46adee3">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bd9cd4c0-2965-404d-882f-a2a3d495e3d1">
+      <name>ТипГруппировки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип группировки</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Тип групування</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:StringValue">
+        <value>0</value>
+      </minValue>
+      <maxValue xsi:type="core:StringValue">
+        <value>2</value>
+      </maxValue>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="34fc7929-2cc8-475e-821e-522c9a8423d0">
+    <producedTypes>
+      <objectType typeId="6cf58900-d564-460b-9ff4-e34fb4e062ee" valueTypeId="aa19df0d-d197-4d2a-b475-e4d7da5a10cf"/>
+      <rowType typeId="7b1f3aad-a999-4fdf-a564-3ad44c00baeb" valueTypeId="4b6b1422-620e-45b0-90d8-5aa230a3ee31"/>
+    </producedTypes>
+    <name>ДополнительныеПоля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные поля</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Додаткові поля</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0f008e96-cc8b-465f-b2f1-f3af05efce5f">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Використання</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="eb59702b-9490-4bbd-9092-4f302c0944a7">
+      <name>Поле</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2dad297b-ed2f-4b40-bcb7-4c42cb473af7">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Поле</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a6502ece-3061-47f2-96d2-6caa8ed07764">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="991d0f96-bbee-44d8-9149-deacfbc8173f">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

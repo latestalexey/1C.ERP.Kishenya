@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82d1ca8a-2765-48ed-98cd-772977e1f950">
+  <name>ЗаписатьПлатежныйДокументПеречисленияЗарплатыУП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записать платежный документ перечисления зарплаты УП</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Записати платіжний документ перерахування зарплати УП</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЗаявкаНаРасходованиеДенежныхСредств</types>
+    <types>DocumentObject.СписаниеБезналичныхДенежныхСредств</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменСБанкамиПоЗарплатнымПроектамПереопределяемый.ПриЗаписиПлатежногоДокументаПеречисленияЗарплаты</handler>
+</mdclass:EventSubscription>

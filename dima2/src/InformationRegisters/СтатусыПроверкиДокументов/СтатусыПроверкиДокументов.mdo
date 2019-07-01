@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fb7e641-f6dc-4733-abe2-af9b3b39a318">
+  <producedTypes>
+    <selectionType typeId="bf2b3ca6-00ca-4901-9f37-2570ca2c2000" valueTypeId="c94d9184-f10e-436d-81df-991e7629dda4"/>
+    <listType typeId="aacc522f-e36a-42d0-a1c8-ea54d5ad6517" valueTypeId="c8ab04f9-39c5-4671-aca3-9f11881b128c"/>
+    <managerType typeId="036f2c6b-5b04-4028-8d12-561d117a3fd0" valueTypeId="bcf3d610-0040-4f40-bf87-b31366b4550a"/>
+    <recordSetType typeId="fbc65aec-1a82-418d-9f0e-663f2cc612e7" valueTypeId="74f28c31-1793-4306-a435-f35e47128e99"/>
+    <recordKeyType typeId="f7fd2ff5-d2cc-40c3-8074-a863046e1fc6" valueTypeId="4d6d1cc3-9f33-4a4b-9a6c-805c9a8123d6"/>
+    <recordType typeId="d13122a1-c3d9-4f35-8789-05b676558d85" valueTypeId="7e384ac2-5f06-45ed-92dd-cf83f4b4e16a"/>
+    <recordManagerType typeId="8a90b8b2-7206-45e8-a9bc-c09c9438ef95" valueTypeId="fe03db77-7970-4824-927d-9b56642689f8"/>
+  </producedTypes>
+  <name>СтатусыПроверкиДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы проверки документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Статуси перевірки документів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8c6031ce-8cb5-490f-af79-c8455192907b">
+    <name>СтатусПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус проверки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус перевірки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЭтапыПроверкиДокументаВРеглУчете</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус проверки документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Статус перевірки документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0175c980-dfa6-4578-87ba-4c4d3c2e872c">
+    <name>Проверил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверил</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перевірив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, осуществивший проверку</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Користувач, який здійснив перевірку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d9576f7a-422f-459e-86c6-33287227a8d7">
+    <name>ДатаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проверки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата перевірки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2d2e374-3a4d-4085-b57b-5d57faccf448">
+    <name>Изменил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменил</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Змінив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4b82be66-8347-46cc-830d-6a92715c6641">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата зміни</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a60b5acb-6e11-4032-bb68-ba390cacc0aa">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+      <types>DocumentRef.ПодготовкаКПередачеНМА</types>
+      <types>DocumentRef.СписаниеОС</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.ПередачаДавальцу</types>
+      <types>DocumentRef.ПеремещениеМатериаловВПроизводстве</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ПередачаОСАрендатору</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОперацияПоПлатежнойКарте</types>
+      <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+      <types>DocumentRef.ПоступлениеУслугПоЛизингу</types>
+      <types>DocumentRef.ПерерасчетПропорциональногоНДСпоТоварамИОС</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.ОтчетДавальцу</types>
+      <types>DocumentRef.ПринятиеКУчетуОС</types>
+      <types>DocumentRef.ПоступлениеСырьяОтДавальца</types>
+      <types>DocumentRef.НачислениеОценочныхОбязательствПоОтпускам</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.РаспределениеПроизводственныхЗатрат</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.ПрочиеДоходыРасходы</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.РаспределениеРасходовБудущихПериодов</types>
+      <types>DocumentRef.МодернизацияОС</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.СписаниеНедостачТоваров</types>
+      <types>DocumentRef.РаспределениеПрочихЗатрат</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.ВозвратСырьяДавальцу</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.ПеремещениеНМА</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ПодготовкаКПередачеОС</types>
+      <types>DocumentRef.ПоступлениеАрендованныхОС</types>
+      <types>DocumentRef.ОтражениеЗарплатыВФинансовомУчете</types>
+      <types>DocumentRef.ПереоценкаНМА</types>
+      <types>DocumentRef.ПередачаСырьяПереработчику</types>
+      <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+      <types>DocumentRef.ПересортицаТоваров</types>
+      <types>DocumentRef.ВыбытиеДенежныхДокументов</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+      <types>DocumentRef.ПоступлениеДенежныхДокументов</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.НачислениеДивидендов</types>
+      <types>DocumentRef.КорректировкаПоступления</types>
+      <types>DocumentRef.ОтчетКомитентуОСписании</types>
+      <types>DocumentRef.ОтчетПереработчика</types>
+      <types>DocumentRef.ВыкупВозвратнойТарыКлиентом</types>
+      <types>DocumentRef.ПереоценкаОС</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.АннулированиеПодарочныхСертификатов</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ИнвентаризацияНаличныхДенежныхСредств</types>
+      <types>DocumentRef.ИзменениеПараметровОС</types>
+      <types>DocumentRef.ОприходованиеИзлишковТоваров</types>
+      <types>DocumentRef.ВозвратСырьяОтПереработчика</types>
+      <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+      <types>DocumentRef.СписаниеЗадолженности</types>
+      <types>DocumentRef.ВыпускПродукции</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СборкаТоваров</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>DocumentRef.ВозвратМатериаловИзПроизводства</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ВозвратОСОтАрендатора</types>
+      <types>DocumentRef.ВзаимозачетЗадолженности</types>
+      <types>DocumentRef.ДепонированиеЗарплаты</types>
+      <types>DocumentRef.ОтражениеРасхожденийПриИнкассацииДенежныхСредств</types>
+      <types>DocumentRef.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС</types>
+      <types>DocumentRef.ПрочееОприходованиеТоваров</types>
+      <types>DocumentRef.НачисленияКредитовИДепозитов</types>
+      <types>DocumentRef.РеализацияПодарочныхСертификатов</types>
+      <types>DocumentRef.ПеремещениеОС</types>
+      <types>DocumentRef.ВозвратПодарочныхСертификатов</types>
+      <types>DocumentRef.ПоступлениеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.ПередачаМатериаловВПроизводство</types>
+      <types>DocumentRef.ПринятиеКУчетуНМА</types>
+      <types>DocumentRef.ПорчаТоваров</types>
+      <types>DocumentRef.ПоступлениеОтПереработчика</types>
+      <types>DocumentRef.СписаниеНМА</types>
+      <types>DocumentRef.ВыбытиеАрендованныхОС</types>
+      <types>DocumentRef.ПоступлениеПредметовЛизинга</types>
+      <types>DocumentRef.КорректировкаНалоговогоНазначенияКапитальныхИнвестиций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e49078cb-5c72-46ee-85ae-6bc988225a8e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

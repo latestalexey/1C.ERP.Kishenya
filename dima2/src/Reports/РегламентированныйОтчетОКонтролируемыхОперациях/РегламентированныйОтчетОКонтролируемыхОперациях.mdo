@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="465c6871-18ca-4697-ba7d-154b1e6ace2f">
+  <producedTypes>
+    <objectType typeId="e0062220-556b-4caa-b4c2-1d328e9e9e0c" valueTypeId="e4e2ddde-1e25-4fb9-b51e-564707792f8f"/>
+    <managerType typeId="a58fdf8a-0b7d-436e-9cfe-5057d51c484f" valueTypeId="74c4848c-06c9-4fdc-aa0d-0cb242bad67d"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетОКонтролируемыхОперациях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о контролируемых операциях</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт про контрольовані операції</value>
+  </synonym>
+  <comment>Отчет о контролируемых операциях</comment>
+  <defaultForm>Report.РегламентированныйОтчетОКонтролируемыхОперациях.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="eee5e9e9-a691-4c07-9947-67fafb592759">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6987baf-12e8-452a-bac6-d1a7c6488c2c">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ecf2440c-ea89-42ce-ba27-aab0d8024f54">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eaa74feb-bb25-408f-b263-3ca5f4d5ec77">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aafd5a49-4a3a-49d9-b8ba-4c2547515272">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d5d1b536-fb07-45f2-b6c9-dd70be71908d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d6b71dd8-3fb8-4692-959b-b267e155fe2d">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о контролируемых операциях</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про контрольовані операції</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="669a55c1-c32b-49eb-b82f-05755a82a633">
+    <name>ФормаОтчета2017УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о контролируемых операциях</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про контрольовані операції</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e9c48f84-b5fd-4628-af9d-c47a22d2fe5a">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+  </templates>
+  <templates uuid="2d5ccdb2-ce28-4900-bb7c-71694c03e74a">
+    <name>СоставПоказателей2017УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2017 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Состав показателей2017 УФ</value>
+    </synonym>
+  </templates>
+  <commands uuid="d267370c-6b7d-4f09-8ebb-54c8c2eb4868">
+    <name>СоздатьОтчетОКонтролируемыхОперациях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о контролируемых операциях</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про контрольовані операції</value>
+    </synonym>
+    <group>CommandGroup.РазделГлавное11_РегламентированныйУчет</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,3863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ПродукцияЗаказовНаПроизводство</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номер рядка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаПроизводство</dataPath>
+			<field>ЗаказНаПроизводство</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на производство</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замовлення на виробництво</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодСтрокиЗаказаНаПроизводство</dataPath>
+			<field>КодСтрокиЗаказаНаПроизводство</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код строки заказа на производство</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Код рядка замовлення на виробництво</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Продукция</dataPath>
+			<field>Продукция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продукция</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Продукція</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаПродукции</dataPath>
+			<field>ХарактеристикаПродукции</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика продукции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристика продукції</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказНаПроизводствоПродукция.Ссылка КАК ЗаказНаПроизводство,
+	ЗаказНаПроизводствоПродукция.КодСтроки КАК КодСтрокиЗаказаНаПроизводство,
+	ЗаказНаПроизводствоПродукция.Номенклатура КАК Продукция,
+	ЗаказНаПроизводствоПродукция.Характеристика КАК ХарактеристикаПродукции,
+	ЗаказНаПроизводствоПродукция.НомерСтроки
+ИЗ
+	Документ.ЗаказНаПроизводство.Продукция КАК ЗаказНаПроизводствоПродукция</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetUnion">
+		<name>Объединение</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяКалькуляции</dataPath>
+			<field>СтатьяКалькуляции</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья калькуляции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стаття калькуляції</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиКалькуляции</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Затрата</dataPath>
+			<field>Затрата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Затрата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Витрата</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ВидыРаботСотрудников</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКалькуляция</dataPath>
+			<field>КоличествоКалькуляция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество по калькуляции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість за калькуляцією</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСпецификация</dataPath>
+			<field>КоличествоСпецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество по спецификации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість за специфікацією</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКалькуляция</dataPath>
+			<field>СуммаКалькуляция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма по калькуляции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума по калькуляції</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСпецификация</dataPath>
+			<field>СуммаСпецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма по спецификации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума по специфікації</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ед. изм.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Од. вим.</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Калькуляция</dataPath>
+			<field>Калькуляция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Калькуляция</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Калькуляція</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<presentationExpression>Документы.ПлановаяКалькуляция.ПредставлениеПлановойКалькуляции(Калькуляция) </presentationExpression>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ПлановаяКалькуляция</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДетализироватьСтатьиКалькуляции</dataPath>
+			<field>ДетализироватьСтатьиКалькуляции</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Детализировать статьи калькуляции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Деталізувати статті калькуляції</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходноеИзделиеЗаказНаПроизводство</dataPath>
+			<field>ВыходноеИзделиеЗаказНаПроизводство</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на производство</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замовлення на виробництво</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ЗаказНаПроизводство</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</dataPath>
+			<field>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Код рядка</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходноеИзделиеСпецификация</dataPath>
+			<field>ВыходноеИзделиеСпецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спецификация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Специфікація</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.РесурсныеСпецификации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходноеИзделиеНоменклатура</dataPath>
+			<field>ВыходноеИзделиеНоменклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выходное изделие</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вихідний виріб</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыходноеИзделиеХарактеристика</dataPath>
+			<field>ВыходноеИзделиеХарактеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика выходного изделия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристика вихідного виробу</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоФакт</dataPath>
+			<field>КоличествоФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество факт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаФакт</dataPath>
+			<field>СуммаФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма факт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаКалькуляция</dataPath>
+			<field>ЦенаКалькуляция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена калькуляция</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ціна калькуляція</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаСпецификация</dataPath>
+			<field>ЦенаСпецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена спецификация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ціна специфікація</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаФакт</dataPath>
+			<field>ЦенаФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена факт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ціна факт</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<item xsi:type="DataSetObject">
+			<name>План</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяКалькуляции</dataPath>
+				<field>СтатьяКалькуляции</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Статья калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Стаття калькуляції</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.СтатьиКалькуляции</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Затрата</dataPath>
+				<field>Затрата</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Затрата</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Витрата</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Номенклатура</v8:Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ВидыРаботСотрудников</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоКалькуляция</dataPath>
+				<field>КоличествоКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество по калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість за калькуляцією</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоСпецификация</dataPath>
+				<field>КоличествоСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество по спецификации</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість за специфікацією</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКалькуляция</dataPath>
+				<field>СуммаКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма по калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума по калькуляції</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаСпецификация</dataPath>
+				<field>СуммаСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма по спецификации</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума по специфікації</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Характеристика</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Характеристика</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаИзмерения</dataPath>
+				<field>ЕдиницаИзмерения</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ед. изм.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Од. вим.</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Калькуляция</dataPath>
+				<field>Калькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Калькуляція</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.ПлановаяКалькуляция</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДетализироватьСтатьиКалькуляции</dataPath>
+				<field>ДетализироватьСтатьиКалькуляции</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Детализировать статьи калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Деталізувати статті калькуляції</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:boolean</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеЗаказНаПроизводство</dataPath>
+				<field>ВыходноеИзделиеЗаказНаПроизводство</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заказ на производство</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Замовлення на виробництво</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.ЗаказНаПроизводство</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</dataPath>
+				<field>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Код строки заказа напроизводство</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Код рядка замовлення на виробництво</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеСпецификация</dataPath>
+				<field>ВыходноеИзделиеСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб специфікація</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.РесурсныеСпецификации</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеНоменклатура</dataPath>
+				<field>ВыходноеИзделиеНоменклатура</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие номенклатура</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб номенклатура</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Номенклатура</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеХарактеристика</dataPath>
+				<field>ВыходноеИзделиеХарактеристика</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие характеристика</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб характеристика</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаФакт</dataPath>
+				<field>СуммаФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума факт</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>2</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоФакт</dataPath>
+				<field>КоличествоФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість факт</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>3</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаКалькуляция</dataPath>
+				<field>ЦенаКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна калькуляція</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>2</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаСпецификация</dataPath>
+				<field>ЦенаСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна специфікація</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>2</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаФакт</dataPath>
+				<field>ЦенаФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна факт</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>15</v8:Digits>
+						<v8:FractionDigits>2</v8:FractionDigits>
+						<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>НаборДанных</objectName>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>Факт</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Калькуляция</dataPath>
+				<field>Калькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Калькуляція</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.ПлановаяКалькуляция</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Характеристика</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Характеристика</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеЗаказНаПроизводство</dataPath>
+				<field>ВыходноеИзделиеЗаказНаПроизводство</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие заказ на производство</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб замовлення на виробництво</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</dataPath>
+				<field>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие код строки заказа напроизводство</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб код рядка замовлення на виробництво</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеНоменклатура</dataPath>
+				<field>ВыходноеИзделиеНоменклатура</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие номенклатура</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб номенклатура</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеСпецификация</dataPath>
+				<field>ВыходноеИзделиеСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб специфікація</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВыходноеИзделиеХарактеристика</dataPath>
+				<field>ВыходноеИзделиеХарактеристика</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выходное изделие характеристика</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Вихідний виріб характеристика</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДетализироватьСтатьиКалькуляции</dataPath>
+				<field>ДетализироватьСтатьиКалькуляции</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Детализировать статьи калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Деталізувати статті калькуляції</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаИзмерения</dataPath>
+				<field>ЕдиницаИзмерения</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Одиниця виміру</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Затрата</dataPath>
+				<field>Затрата</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Затрата</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Витрата</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоКалькуляция</dataPath>
+				<field>КоличествоКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість калькуляція</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоСпецификация</dataPath>
+				<field>КоличествоСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість специфікація</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоФакт</dataPath>
+				<field>КоличествоФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Кількість факт</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтатьяКалькуляции</dataPath>
+				<field>СтатьяКалькуляции</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Статья калькуляции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Стаття калькуляції</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаКалькуляция</dataPath>
+				<field>СуммаКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума калькуляція</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаСпецификация</dataPath>
+				<field>СуммаСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума специфікація</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаФакт</dataPath>
+				<field>СуммаФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Сума факт</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаКалькуляция</dataPath>
+				<field>ЦенаКалькуляция</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена калькуляция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна калькуляція</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаСпецификация</dataPath>
+				<field>ЦенаСпецификация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена спецификация</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна специфікація</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаФакт</dataPath>
+				<field>ЦенаФакт</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Цена факт</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Ціна факт</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПартииНЗП.ЗаказНаПроизводство КАК ЗаказНаПроизводство,
+	ПартииНЗП.КодСтрокиПродукция КАК КодСтрокиЗаказаНаПроизводство,
+	ПартииНЗП.СтатьяКалькуляции КАК СтатьяКалькуляции,
+	Аналитика.Номенклатура КАК Затрата,
+	Аналитика.Характеристика КАК Характеристика,
+	Аналитика.Номенклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ПартииНЗП.Количество КАК КоличествоФакт,
+	ВЫБОР
+		КОГДА &amp;ДанныеПоСебестоимости = 1
+			ТОГДА ПартииНЗП.Количество * (СтоимостьЗатрат.Стоимость + СтоимостьЗатрат.СтоимостьДопРасходы)
+		КОГДА &amp;ДанныеПоСебестоимости = 2
+			ТОГДА ПартииНЗП.Количество * (СтоимостьЗатрат.СтоимостьБезНДС + СтоимостьЗатрат.СтоимостьДопРасходыБезНДС)
+		КОГДА &amp;ДанныеПоСебестоимости = 3
+			ТОГДА ПартииНЗП.Количество * СтоимостьЗатрат.СтоимостьРегл
+		ИНАЧЕ 0
+	КОНЕЦ КАК СуммаФакт,
+	ПартииНЗП.Продукция КАК ВыходноеИзделиеНоменклатура,
+	ПартииНЗП.ХарактеристикаПродукции КАК ВыходноеИзделиеХарактеристика,
+	ЗаказНаПроизводствоПродукция.Спецификация,
+	ПартииНЗП.Организация,
+	ЗаказНаПроизводствоПродукция.ДатаПотребности
+ПОМЕСТИТЬ ВТФакт
+ИЗ
+	РегистрНакопления.ПартииНезавершенногоПроизводства КАК ПартииНЗП
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.АналитикаУчетаНоменклатуры КАК Аналитика
+		ПО ПартииНЗП.АналитикаУчетаНоменклатуры = Аналитика.КлючАналитики
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтоимостьТоваров КАК СтоимостьЗатрат
+		ПО ПартииНЗП.АналитикаУчетаНоменклатуры = СтоимостьЗатрат.АналитикаУчетаНоменклатуры
+			И ПартииНЗП.Организация = СтоимостьЗатрат.Организация
+			И (СтоимостьЗатрат.Период = НАЧАЛОПЕРИОДА(ПартииНЗП.Период, МЕСЯЦ))
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказНаПроизводство.Продукция КАК ЗаказНаПроизводствоПродукция
+		ПО ПартииНЗП.ЗаказНаПроизводство = ЗаказНаПроизводствоПродукция.Ссылка
+			И ПартииНЗП.КодСтрокиПродукция = ЗаказНаПроизводствоПродукция.КодСтроки
+ГДЕ
+	ПартииНЗП.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И ПартииНЗП.ЗаказНаПроизводство = &amp;ЗаказНаПроизводство
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПрочиеРасходыНЗП.ЗаказНаПроизводство,
+	ПрочиеРасходыНЗП.КодСтрокиПродукция,
+	ПрочиеРасходыНЗП.СтатьяКалькуляции,
+	ПрочиеРасходыНЗП.СтатьяРасходов,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка),
+	НЕОПРЕДЕЛЕНО,
+	0,
+	ВЫБОР
+		КОГДА &amp;ДанныеПоСебестоимости = 1
+			ТОГДА ПрочиеРасходыНЗП.Стоимость
+		КОГДА &amp;ДанныеПоСебестоимости = 2
+			ТОГДА ПрочиеРасходыНЗП.СтоимостьБезНДС
+		КОГДА &amp;ДанныеПоСебестоимости = 3
+			ТОГДА ПрочиеРасходыНЗП.СтоимостьРегл
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ПрочиеРасходыНЗП.Продукция,
+	ПрочиеРасходыНЗП.ХарактеристикаПродукции,
+	ЗаказНаПроизводствоПродукция.Спецификация,
+	ПрочиеРасходыНЗП.Организация,
+	ЗаказНаПроизводствоПродукция.ДатаПотребности
+ИЗ
+	РегистрНакопления.ПрочиеРасходыНезавершенногоПроизводства КАК ПрочиеРасходыНЗП
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаказНаПроизводство.Продукция КАК ЗаказНаПроизводствоПродукция
+		ПО ПрочиеРасходыНЗП.ЗаказНаПроизводство = ЗаказНаПроизводствоПродукция.Ссылка
+			И ПрочиеРасходыНЗП.КодСтрокиПродукция = ЗаказНаПроизводствоПродукция.КодСтроки
+ГДЕ
+	ПрочиеРасходыНЗП.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И ПрочиеРасходыНЗП.ЗаказНаПроизводство = &amp;ЗаказНаПроизводство
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТрудозатратыНЗП.ЗаказНаПроизводство,
+	ТрудозатратыНЗП.КодСтрокиПродукция,
+	ТрудозатратыНЗП.СтатьяКалькуляции,
+	ТрудозатратыНЗП.ВидРабот,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка),
+	ТрудозатратыНЗП.ВидРабот.ЕдиницаИзмерения,
+	ТрудозатратыНЗП.Количество,
+	ВЫБОР
+		КОГДА &amp;ДанныеПоСебестоимости = 1
+			ТОГДА ТрудозатратыНЗП.Стоимость
+		КОГДА &amp;ДанныеПоСебестоимости = 2
+			ТОГДА ТрудозатратыНЗП.Стоимость
+		КОГДА &amp;ДанныеПоСебестоимости = 3
+			ТОГДА ТрудозатратыНЗП.СтоимостьРегл
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ТрудозатратыНЗП.Продукция,
+	ТрудозатратыНЗП.ХарактеристикаПродукции,
+	ЗаказНаПроизводствоПродукция.Спецификация,
+	ТрудозатратыНЗП.Организация,
+	ЗаказНаПроизводствоПродукция.ДатаПотребности
+ИЗ
+	РегистрНакопления.ТрудозатратыНезавершенногоПроизводства КАК ТрудозатратыНЗП
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаказНаПроизводство.Продукция КАК ЗаказНаПроизводствоПродукция
+		ПО ТрудозатратыНЗП.ЗаказНаПроизводство = ЗаказНаПроизводствоПродукция.Ссылка
+			И ТрудозатратыНЗП.КодСтрокиПродукция = ЗаказНаПроизводствоПродукция.КодСтроки
+ГДЕ
+	ТрудозатратыНЗП.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И ТрудозатратыНЗП.ЗаказНаПроизводство = &amp;ЗаказНаПроизводство
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТФакт.Организация,
+	ВТФакт.ЗаказНаПроизводство,
+	ВТФакт.КодСтрокиЗаказаНаПроизводство,
+	ВТФакт.Спецификация,
+	ВТФакт.ВыходноеИзделиеНоменклатура КАК Номенклатура,
+	ВТФакт.ВыходноеИзделиеХарактеристика КАК Характеристика,
+	ВТФакт.ДатаПотребности
+ПОМЕСТИТЬ СпецификацияВыходныеИзделия
+ИЗ
+	ВТФакт КАК ВТФакт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПлановаяКалькуляция.Ссылка КАК Калькуляция,
+	ПлановаяКалькуляция.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект ССЫЛКА Документ.ЗаказНаПроизводство
+			ТОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект
+		ИНАЧЕ ЗНАЧЕНИЕ(Документ.ЗаказНаПроизводство.ПустаяСсылка)
+	КОНЕЦ КАК ЗаказНаПроизводство,
+	ПлановаяКалькуляцияДействиеКалькуляции.КодСтрокиЗаказаНаПроизводство КАК КодСтрокиЗаказаНаПроизводство,
+	ВЫБОР
+		КОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект ССЫЛКА Справочник.РесурсныеСпецификации
+			ТОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка)
+	КОНЕЦ КАК Спецификация,
+	ВЫБОР
+		КОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект ССЫЛКА Справочник.Номенклатура
+			ТОГДА ПлановаяКалькуляцияДействиеКалькуляции.Объект
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)
+	КОНЕЦ КАК Номенклатура,
+	ПлановаяКалькуляцияДействиеКалькуляции.Характеристика КАК Характеристика,
+	ПлановаяКалькуляция.ДатаОкончанияДействия КАК ПериодЗавершения,
+	ПлановаяКалькуляция.ДатаНачалаДействия КАК Период,
+	ПлановаяКалькуляция.Дата
+ПОМЕСТИТЬ ВТВсеКалькуляции
+ИЗ
+	Документ.ПлановаяКалькуляция.ДействиеКалькуляции КАК ПлановаяКалькуляцияДействиеКалькуляции
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПлановаяКалькуляция КАК ПлановаяКалькуляция
+		ПО ПлановаяКалькуляцияДействиеКалькуляции.Ссылка = ПлановаяКалькуляция.Ссылка
+ГДЕ
+	ПлановаяКалькуляция.Проведен
+	И ПлановаяКалькуляция.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыПлановыхКалькуляций.Действует)
+
+ИНДЕКСИРОВАТЬ ПО
+	Организация,
+	ЗаказНаПроизводство,
+	КодСтрокиЗаказаНаПроизводство,
+	Спецификация,
+	Номенклатура,
+	Характеристика,
+	ПериодЗавершения,
+	Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.ПериодЗавершения,
+	ВТВсеКалькуляции.Период,
+	МАКСИМУМ(ВТВсеКалькуляции.Дата) КАК Дата
+ПОМЕСТИТЬ ВТМаксимальныеДатыКалькуляций
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Период,
+	ВТВсеКалькуляции.ПериодЗавершения,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Калькуляция) КАК Калькуляция,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.ПериодЗавершения,
+	ВТВсеКалькуляции.Период,
+	ВТВсеКалькуляции.Дата
+ПОМЕСТИТЬ ВТУникальныеКалькуляции
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТМаксимальныеДатыКалькуляций КАК ВТМаксимальныеДатыКалькуляций
+		ПО ВТВсеКалькуляции.Организация = ВТМаксимальныеДатыКалькуляций.Организация
+			И ВТВсеКалькуляции.ЗаказНаПроизводство = ВТМаксимальныеДатыКалькуляций.ЗаказНаПроизводство
+			И ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство = ВТМаксимальныеДатыКалькуляций.КодСтрокиЗаказаНаПроизводство
+			И ВТВсеКалькуляции.Спецификация = ВТМаксимальныеДатыКалькуляций.Спецификация
+			И ВТВсеКалькуляции.Номенклатура = ВТМаксимальныеДатыКалькуляций.Номенклатура
+			И ВТВсеКалькуляции.Характеристика = ВТМаксимальныеДатыКалькуляций.Характеристика
+			И ВТВсеКалькуляции.ПериодЗавершения = ВТМаксимальныеДатыКалькуляций.ПериодЗавершения
+			И ВТВсеКалькуляции.Период = ВТМаксимальныеДатыКалькуляций.Период
+			И ВТВсеКалькуляции.Дата = ВТМаксимальныеДатыКалькуляций.Дата
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.ПериодЗавершения,
+	ВТВсеКалькуляции.Период,
+	ВТВсеКалькуляции.Дата,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период) КАК Период,
+	10 КАК ПриоритетЗаказНаПроизводство,
+	0 КАК ПриоритетСпецификация,
+	0 КАК ПриоритетИзделие,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура КАК Номенклатура,
+	ВТВсеКалькуляции.Характеристика КАК Характеристика,
+	ВТВсеКалькуляции.Спецификация КАК Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство КАК ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство КАК КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка) КАК ВыходноеИзделиеСпецификация,
+	ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка) КАК ВыходноеИзделиеНоменклатура,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка) КАК ВыходноеИзделиеХарактеристика
+ПОМЕСТИТЬ ПриоритетыКалькуляций
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ПО ВТВсеКалькуляции.ЗаказНаПроизводство = СпецификацияВыходныеИзделия.ЗаказНаПроизводство
+			И ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство = СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство
+			И ВТВсеКалькуляции.Организация = СпецификацияВыходныеИзделия.Организация
+ГДЕ
+	ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+	И ВТВсеКалькуляции.Организация &lt;&gt; ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВТВсеКалькуляции.ЗаказНаПроизводство &lt;&gt; ЗНАЧЕНИЕ(Документ.ЗаказНаПроизводство.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.Организация,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	9,
+	0,
+	0,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ПО ВТВсеКалькуляции.ЗаказНаПроизводство = СпецификацияВыходныеИзделия.ЗаказНаПроизводство
+			И ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство = СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство
+ГДЕ
+	ВТВсеКалькуляции.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+	И ВТВсеКалькуляции.ЗаказНаПроизводство &lt;&gt; ЗНАЧЕНИЕ(Документ.ЗаказНаПроизводство.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.Организация,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	10,
+	0,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Спецификация,
+	ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ПО ВТВсеКалькуляции.Спецификация = СпецификацияВыходныеИзделия.Спецификация
+			И ВТВсеКалькуляции.Организация = СпецификацияВыходныеИзделия.Организация
+ГДЕ
+	ВТВсеКалькуляции.Организация &lt;&gt; ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Спецификация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	9,
+	0,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Спецификация,
+	ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка),
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+ИЗ
+	ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ПО ВТВсеКалькуляции.Спецификация = СпецификацияВыходныеИзделия.Спецификация
+ГДЕ
+	ВТВсеКалькуляции.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Спецификация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	0,
+	8,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка),
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+ИЗ
+	СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ПО СпецификацияВыходныеИзделия.Номенклатура = ВТВсеКалькуляции.Номенклатура
+			И СпецификацияВыходныеИзделия.Характеристика = ВТВсеКалькуляции.Характеристика
+			И СпецификацияВыходныеИзделия.Организация = ВТВсеКалькуляции.Организация
+ГДЕ
+	ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+	И ВТВсеКалькуляции.Организация &lt;&gt; ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	0,
+	7,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка),
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+ИЗ
+	СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ПО СпецификацияВыходныеИзделия.Номенклатура = ВТВсеКалькуляции.Номенклатура
+			И СпецификацияВыходныеИзделия.Характеристика = ВТВсеКалькуляции.Характеристика
+ГДЕ
+	ВТВсеКалькуляции.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	0,
+	6,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка),
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+ИЗ
+	СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ПО СпецификацияВыходныеИзделия.Номенклатура = ВТВсеКалькуляции.Номенклатура
+			И СпецификацияВыходныеИзделия.Организация = ВТВсеКалькуляции.Организация
+ГДЕ
+	ВТВсеКалькуляции.Характеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+	И ВТВсеКалькуляции.Организация &lt;&gt; ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	МАКСИМУМ(ВТВсеКалькуляции.Период),
+	0,
+	0,
+	5,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка),
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+ИЗ
+	СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВсеКалькуляции КАК ВТВсеКалькуляции
+		ПО СпецификацияВыходныеИзделия.Номенклатура = ВТВсеКалькуляции.Номенклатура
+ГДЕ
+	ВТВсеКалькуляции.Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+	И ВТВсеКалькуляции.Характеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	И ВЫБОР
+			КОГДА ВТВсеКалькуляции.ПериодЗавершения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА СпецификацияВыходныеИзделия.ДатаПотребности МЕЖДУ ВТВсеКалькуляции.Период И ВТВсеКалькуляции.ПериодЗавершения
+			ИНАЧЕ СпецификацияВыходныеИзделия.ДатаПотребности &gt; ВТВсеКалькуляции.Период
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ВТВсеКалькуляции.Номенклатура,
+	ВТВсеКалькуляции.Спецификация,
+	ВТВсеКалькуляции.Характеристика,
+	ВТВсеКалькуляции.Организация,
+	ВТВсеКалькуляции.ЗаказНаПроизводство,
+	ВТВсеКалькуляции.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство,
+	СпецификацияВыходныеИзделия.Номенклатура,
+	СпецификацияВыходныеИзделия.Характеристика
+
+ИНДЕКСИРОВАТЬ ПО
+	ЗаказНаПроизводство,
+	КодСтрокиЗаказаНаПроизводство,
+	Спецификация,
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ПриоритетыКалькуляций.ПриоритетЗаказНаПроизводство) КАК ПриоритетЗаказНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	МАКСИМУМ(ПриоритетыКалькуляций.ПриоритетСпецификация) КАК ПриоритетСпецификация
+ПОМЕСТИТЬ ПриоритКалькуляцииДляСпецификации
+ИЗ
+	ПриоритетыКалькуляций КАК ПриоритетыКалькуляций
+
+СГРУППИРОВАТЬ ПО
+	ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство
+
+ИНДЕКСИРОВАТЬ ПО
+	ВыходноеИзделиеЗаказНаПроизводство,
+	ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПриоритетЗаказНаПроизводство
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ПриоритетыКалькуляций.ПриоритетЗаказНаПроизводство) КАК ПриоритетЗаказНаПроизводство,
+	МАКСИМУМ(ПриоритетыКалькуляций.ПриоритетСпецификация) КАК ПриоритетСпецификация,
+	МАКСИМУМ(ПриоритетыКалькуляций.ПриоритетИзделие) КАК ПриоритетИзделие,
+	ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеСпецификация КАК ВыходноеИзделиеСпецификация,
+	ПриоритетыКалькуляций.ВыходноеИзделиеНоменклатура,
+	ПриоритетыКалькуляций.ВыходноеИзделиеХарактеристика
+ПОМЕСТИТЬ ПериодПриоритетнойКалькуляции
+ИЗ
+	ПриоритетыКалькуляций КАК ПриоритетыКалькуляций
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ПриоритКалькуляцииДляСпецификации КАК ПриоритКалькуляцииДляСпецификации
+		ПО ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство = ПриоритКалькуляцииДляСпецификации.ВыходноеИзделиеЗаказНаПроизводство
+			И ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство = ПриоритКалькуляцииДляСпецификации.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство
+			И (ВЫБОР
+				КОГДА ПриоритКалькуляцииДляСпецификации.ПриоритетЗаказНаПроизводство &gt; 0
+					ТОГДА ПриоритетыКалькуляций.ПриоритетЗаказНаПроизводство &gt; 0
+				КОГДА ПриоритКалькуляцииДляСпецификации.ПриоритетСпецификация &gt; 0
+					ТОГДА ПриоритетыКалькуляций.ПриоритетСпецификация &gt; 0
+				ИНАЧЕ ИСТИНА
+			КОНЕЦ)
+
+СГРУППИРОВАТЬ ПО
+	ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПриоритетыКалькуляций.ВыходноеИзделиеСпецификация,
+	ПриоритетыКалькуляций.ВыходноеИзделиеНоменклатура,
+	ПриоритетыКалькуляций.ВыходноеИзделиеХарактеристика
+
+ИНДЕКСИРОВАТЬ ПО
+	ВыходноеИзделиеЗаказНаПроизводство,
+	ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ВыходноеИзделиеСпецификация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТУникальныеКалькуляции.Калькуляция КАК Калькуляция,
+	ВТУникальныеКалькуляции.Калькуляция.ВидЦены КАК ВидЦены,
+	ВТУникальныеКалькуляции.Калькуляция.ДетализироватьСтатьиКалькуляции КАК ДетализироватьСтатьиКалькуляции,
+	ПериодПриоритетнойКалькуляции.ВыходноеИзделиеЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	ПериодПриоритетнойКалькуляции.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ПериодПриоритетнойКалькуляции.ВыходноеИзделиеСпецификация КАК ВыходноеИзделиеСпецификация,
+	ПериодПриоритетнойКалькуляции.ВыходноеИзделиеНоменклатура,
+	ПериодПриоритетнойКалькуляции.ВыходноеИзделиеХарактеристика
+ПОМЕСТИТЬ ДействующаяКалькуляция
+ИЗ
+	ПериодПриоритетнойКалькуляции КАК ПериодПриоритетнойКалькуляции
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ПриоритетыКалькуляций КАК ПриоритетыКалькуляций
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТУникальныеКалькуляции КАК ВТУникальныеКалькуляции
+			ПО ПриоритетыКалькуляций.Период = ВТУникальныеКалькуляции.Период
+				И ПриоритетыКалькуляций.Организация = ВТУникальныеКалькуляции.Организация
+				И ПриоритетыКалькуляций.Номенклатура = ВТУникальныеКалькуляции.Номенклатура
+				И ПриоритетыКалькуляций.Характеристика = ВТУникальныеКалькуляции.Характеристика
+				И ПриоритетыКалькуляций.Спецификация = ВТУникальныеКалькуляции.Спецификация
+				И ПриоритетыКалькуляций.ЗаказНаПроизводство = ВТУникальныеКалькуляции.ЗаказНаПроизводство
+				И ПриоритетыКалькуляций.КодСтрокиЗаказаНаПроизводство = ВТУникальныеКалькуляции.КодСтрокиЗаказаНаПроизводство
+		ПО (ВЫБОР
+				КОГДА ПериодПриоритетнойКалькуляции.ПриоритетЗаказНаПроизводство &gt; 0
+					ТОГДА ПериодПриоритетнойКалькуляции.ПриоритетЗаказНаПроизводство = ПриоритетыКалькуляций.ПриоритетЗаказНаПроизводство
+				КОГДА ПериодПриоритетнойКалькуляции.ПриоритетСпецификация &gt; 0
+					ТОГДА ПериодПриоритетнойКалькуляции.ПриоритетСпецификация = ПриоритетыКалькуляций.ПриоритетСпецификация
+				ИНАЧЕ ПериодПриоритетнойКалькуляции.ПриоритетИзделие = ПриоритетыКалькуляций.ПриоритетИзделие
+			КОНЕЦ)
+			И ПериодПриоритетнойКалькуляции.ВыходноеИзделиеЗаказНаПроизводство = ПриоритетыКалькуляций.ВыходноеИзделиеЗаказНаПроизводство
+			И ПериодПриоритетнойКалькуляции.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство = ПриоритетыКалькуляций.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство
+			И ПериодПриоритетнойКалькуляции.ВыходноеИзделиеСпецификация = ПриоритетыКалькуляций.ВыходноеИзделиеСпецификация
+			И ПериодПриоритетнойКалькуляции.ВыходноеИзделиеНоменклатура = ПриоритетыКалькуляций.ВыходноеИзделиеНоменклатура
+			И ПериодПриоритетнойКалькуляции.ВыходноеИзделиеХарактеристика = ПриоритетыКалькуляций.ВыходноеИзделиеХарактеристика
+
+ИНДЕКСИРОВАТЬ ПО
+	Калькуляция,
+	ВыходноеИзделиеЗаказНаПроизводство,
+	ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство,
+	ВыходноеИзделиеСпецификация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СпецификацияВыходныеИзделия.ЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНапроизводство,
+	СпецификацияВыходныеИзделия.Спецификация КАК ВыходноеИзделиеСпецификация,
+	СпецификацияВыходныеИзделия.Номенклатура КАК ВыходноеИзделиеНоменклатура,
+	СпецификацияВыходныеИзделия.Характеристика КАК ВыходноеИзделиеХарактеристика,
+	ЕСТЬNULL(КалькуляцияЗаказ.Калькуляция, ЕСТЬNULL(КалькуляцияСпецификация.Калькуляция, ЕСТЬNULL(КалькуляцияИзделие.Калькуляция, ЗНАЧЕНИЕ(Документ.ПлановаяКалькуляция.ПустаяСсылка)))) КАК Калькуляция
+ПОМЕСТИТЬ Калькуляции
+ИЗ
+	СпецификацияВыходныеИзделия КАК СпецификацияВыходныеИзделия
+		ЛЕВОЕ СОЕДИНЕНИЕ ДействующаяКалькуляция КАК КалькуляцияЗаказ
+		ПО СпецификацияВыходныеИзделия.ЗаказНаПроизводство = КалькуляцияЗаказ.ВыходноеИзделиеЗаказНаПроизводство
+			И СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство = КалькуляцияЗаказ.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство
+			И (КалькуляцияЗаказ.ВыходноеИзделиеСпецификация = ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка))
+			И (КалькуляцияЗаказ.ВыходноеИзделиеНоменклатура = ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка))
+			И (КалькуляцияЗаказ.ВыходноеИзделиеХарактеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))
+		ЛЕВОЕ СОЕДИНЕНИЕ ДействующаяКалькуляция КАК КалькуляцияСпецификация
+		ПО СпецификацияВыходныеИзделия.ЗаказНаПроизводство = КалькуляцияСпецификация.ВыходноеИзделиеЗаказНаПроизводство
+			И СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство = КалькуляцияСпецификация.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство
+			И (КалькуляцияСпецификация.ВыходноеИзделиеНоменклатура = ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка))
+			И (КалькуляцияСпецификация.ВыходноеИзделиеХарактеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))
+			И СпецификацияВыходныеИзделия.Спецификация = КалькуляцияСпецификация.ВыходноеИзделиеСпецификация
+		ЛЕВОЕ СОЕДИНЕНИЕ ДействующаяКалькуляция КАК КалькуляцияИзделие
+		ПО СпецификацияВыходныеИзделия.ЗаказНаПроизводство = КалькуляцияИзделие.ВыходноеИзделиеЗаказНаПроизводство
+			И СпецификацияВыходныеИзделия.КодСтрокиЗаказаНаПроизводство = КалькуляцияИзделие.ВыходноеИзделиеКодСтрокиЗаказаНаПроизводство
+			И (СпецификацияВыходныеИзделия.Характеристика = КалькуляцияИзделие.ВыходноеИзделиеХарактеристика
+				ИЛИ КалькуляцияИзделие.ВыходноеИзделиеХарактеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))
+			И СпецификацияВыходныеИзделия.Номенклатура = КалькуляцияИзделие.ВыходноеИзделиеНоменклатура
+			И (КалькуляцияИзделие.ВыходноеИзделиеСпецификация = ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Калькуляции.Калькуляция,
+	ВТФакт.СтатьяКалькуляции,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(Калькуляции.Калькуляция.ДетализироватьСтатьиКалькуляции, ЛОЖЬ)
+			ТОГДА ВТФакт.Затрата
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)
+	КОНЕЦ КАК Затрата,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(Калькуляции.Калькуляция.ДетализироватьСтатьиКалькуляции, ЛОЖЬ)
+			ТОГДА ВТФакт.Характеристика
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	КОНЕЦ КАК Характеристика,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(Калькуляции.Калькуляция.ДетализироватьСтатьиКалькуляции, ЛОЖЬ)
+			ТОГДА ВТФакт.ЕдиницаИзмерения
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ВТФакт.КоличествоФакт,
+	ВЫБОР
+		КОГДА ВТФакт.КоличествоФакт = 0
+			ТОГДА 0
+		ИНАЧЕ ВТФакт.СуммаФакт / ВТФакт.КоличествоФакт
+	КОНЕЦ КАК ЦенаФакт,
+	ВТФакт.СуммаФакт,
+	ЕСТЬNULL(Калькуляции.Калькуляция.ДетализироватьСтатьиКалькуляции, ЛОЖЬ) КАК ДетализироватьСтатьиКалькуляции,
+	ВТФакт.ЗаказНаПроизводство КАК ВыходноеИзделиеЗаказНаПроизводство,
+	ВТФакт.КодСтрокиЗаказаНаПроизводство КАК ВыходноеИзделиеКодСтрокиЗаказаНапроизводство,
+	ВТФакт.Спецификация КАК ВыходноеИзделиеСпецификация,
+	ВТФакт.ВыходноеИзделиеНоменклатура КАК ВыходноеИзделиеНоменклатура,
+	ВТФакт.ВыходноеИзделиеХарактеристика КАК ВыходноеИзделиеХарактеристика,
+	0 КАК КоличествоКалькуляция,
+	0 КАК ЦенаКалькуляция,
+	0 КАК СуммаКалькуляция,
+	0 КАК КоличествоСпецификация,
+	0 КАК ЦенаСпецификация,
+	0 КАК СуммаСпецификация
+ИЗ
+	ВТФакт КАК ВТФакт
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Калькуляции КАК Калькуляции
+		ПО ВТФакт.ЗаказНаПроизводство = Калькуляции.ВыходноеИзделиеЗаказНаПроизводство
+			И ВТФакт.КодСтрокиЗаказаНаПроизводство = Калькуляции.ВыходноеИзделиеКодСтрокиЗаказаНапроизводство
+			И ВТФакт.ВыходноеИзделиеНоменклатура = Калькуляции.ВыходноеИзделиеНоменклатура
+			И ВТФакт.ВыходноеИзделиеХарактеристика = Калькуляции.ВыходноеИзделиеХарактеристика</query>
+		</item>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Объединение</sourceDataSet>
+		<destinationDataSet>ПродукцияЗаказовНаПроизводство</destinationDataSet>
+		<sourceExpression>ВыходноеИзделиеЗаказНаПроизводство</sourceExpression>
+		<destinationExpression>ЗаказНаПроизводство</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Объединение</sourceDataSet>
+		<destinationDataSet>ПродукцияЗаказовНаПроизводство</destinationDataSet>
+		<sourceExpression>ВыходноеИзделиеКодСтрокиЗаказаНапроизводство</sourceExpression>
+		<destinationExpression>КодСтрокиЗаказаНаПроизводство</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>ОбъектКалькуляции</dataPath>
+		<expression>Выбор Когда Калькуляция.ОбъектКалькуляции = Значение(Перечисление.ОбъектыКалькуляции.ЗаказНаПроизводство) Тогда "Позиция заказа" Когда Калькуляция.ОбъектКалькуляции = Значение(Перечисление.ОбъектыКалькуляции.ресурснаяСпецификация) Тогда ВыходноеИзделиеСпецификация Иначе НоменклатураКлиентСервер.ПредставлениеНоменклатурыДляПечати(ВыходноеИзделиеНоменклатура, ВыходноеИзделиеХарактеристика) Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объект калькуляции</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Об'єкт калькуляції</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоКалькуляцияОтклонение</dataPath>
+		<expression>КоличествоКалькуляция - КоличествоСпецификация</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (количество)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (кількість)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>3</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаКалькуляцияОтклонение</dataPath>
+		<expression>СуммаКалькуляция - СуммаСпецификация</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (сумма)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (сума)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоФактОтклонение</dataPath>
+		<expression>КоличествоКалькуляция - КоличествоФакт</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое откл. (количество)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відх. (кількість)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>3</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаФактОтклонение</dataPath>
+		<expression>СуммаКалькуляция - СуммаФакт</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое отклонение (сумма)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відхилення (сума)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоКалькуляцияПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(КоличествоКалькуляция - КоличествоСпецификация, КоличествоКалькуляция)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (количество), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (кількість), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>3</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаКалькуляцияПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(СуммаКалькуляция - СуммаСпецификация, СуммаКалькуляция)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (сумма), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (сума), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоФактПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(КоличествоКалькуляция - КоличествоФакт, КоличествоКалькуляция)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое отклонение (Количество), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відхилення (Кількість), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>3</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаФактПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(СуммаКалькуляция - СуммаФакт, СуммаКалькуляция)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое отклонение (сумма), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відхилення (сума), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаКалькуляция2</dataPath>
+		<expression>СуммаКалькуляция</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма по калькуляции</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Сума по калькуляції</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоКалькуляция2</dataPath>
+		<expression>КоличествоКалькуляция</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество по калькуляции</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Кількість за калькуляцією</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">12</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЦенаСпецификацияОтклонение</dataPath>
+		<expression>ЦенаКалькуляция - ЦенаСпецификация</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (Цена)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (Ціна)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЦенаСпецификацияПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(ЦенаКалькуляция - ЦенаСпецификация, ЦенаКалькуляция) </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение спецификации (Цена), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відхилення специфікації (Ціна), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">19</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЦенаФактОтклонение</dataPath>
+		<expression>ЦенаКалькуляция - ЦенаФакт</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое отклонение (Цена)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відхилення (Ціна)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЦенаФактОтклонениеПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(ЦенаКалькуляция - ЦенаФакт, ЦенаКалькуляция)  </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Фактическое отклонение (Цена), %</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Фактичне відхилення (Ціна), %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=1</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ЦенаКалькуляция2</dataPath>
+		<expression>ЦенаКалькуляция</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Цена калькуляция2</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Ціна калькуляция2</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоКалькуляция</dataPath>
+		<expression>Сумма(КоличествоКалькуляция)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСпецификация</dataPath>
+		<expression>Сумма(КоличествоСпецификация)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСпецификация</dataPath>
+		<expression>Сумма(СуммаСпецификация)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКалькуляция</dataPath>
+		<expression>Сумма(СуммаКалькуляция)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФакт</dataPath>
+		<expression>Сумма(СуммаФакт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоФакт</dataPath>
+		<expression>Сумма(КоличествоФакт)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКалькуляцияОтклонение</dataPath>
+		<expression>Сумма(КоличествоКалькуляцияОтклонение)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКалькуляцияОтклонение</dataPath>
+		<expression>Сумма(СуммаКалькуляцияОтклонение)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоФактОтклонение</dataPath>
+		<expression>Сумма(КоличествоФактОтклонение)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФактОтклонение</dataPath>
+		<expression>Сумма(СуммаФактОтклонение)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКалькуляцияПроцент</dataPath>
+		<expression>Максимум(КоличествоКалькуляцияПроцент)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКалькуляцияПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(Сумма(СуммаКалькуляция) - Сумма(СуммаСпецификация), (Сумма(СуммаКалькуляция))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоФактПроцент</dataPath>
+		<expression>Максимум(КоличествоФактПроцент)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФактПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(Сумма(СуммаКалькуляция)-Сумма(СуммаФакт), (Сумма(СуммаКалькуляция))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКалькуляция2</dataPath>
+		<expression>Сумма(СуммаКалькуляция2)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКалькуляция2</dataPath>
+		<expression>Сумма(КоличествоКалькуляция2)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаКалькуляция</dataPath>
+		<expression>Максимум(ЦенаКалькуляция)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаКалькуляция2</dataPath>
+		<expression>Максимум(ЦенаКалькуляция2)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаСпецификация</dataPath>
+		<expression>Максимум(ЦенаСпецификация)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаСпецификацияОтклонение</dataPath>
+		<expression>Максимум(ЦенаКалькуляция) - Максимум(ЦенаСпецификация)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаСпецификацияПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(Максимум(ЦенаКалькуляция) - Максимум(ЦенаСпецификация), (Максимум(ЦенаКалькуляция))</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаФакт</dataPath>
+		<expression>Максимум(ЦенаФакт)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаФактОтклонение</dataPath>
+		<expression>Максимум(ЦенаКалькуляция) - Максимум(ЦенаФакт)</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦенаФактОтклонениеПроцент</dataPath>
+		<expression>Документы.ПлановаяКалькуляция.ПроцентОтклонения(Максимум(ЦенаКалькуляция) - Максимум(ЦенаФакт) , (Максимум(ЦенаКалькуляция))</expression>
+		<group>ЕдиницаИзмерения</group>
+		<group>Затрата</group>
+		<group>Характеристика</group>
+	</totalField>
+	<parameter>
+		<name>ЗаказНаПроизводство</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заказ на производство</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Замовлення на виробництво</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаказНаПроизводство</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Валюта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Валюта</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Валюта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Валюты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ДанныеПоСебестоимости</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Данные по себестоимости</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Дані по собівартості</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>З ПДВ</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Без ПДВ</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">3</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В валюте регл.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>У валюті регл.</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>СравнениеКалькуляцииИСпецификацииЗаказаКонтекст</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сравнение спецификации заказа и плановой калькуляции</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Порівняння специфікації замовлення та планової калькуляції</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Валюта</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДанныеПоСебестоимости</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">2</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>f07fa393-45f2-4fbf-8f40-c1dcb0a6f786</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерСтроки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СтатьяКалькуляции.РеквизитДопУпорядочивания</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Затрата</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Затрата</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;не указана&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>&lt;не зазначена&gt;</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтатьяКалькуляции</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СтатьяКалькуляции</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;не указана&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>&lt;не зазначена&gt;</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Калькуляция</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Калькуляция</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;не задана&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>&lt;не вказано&gt;</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонения от плановой калькуляции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відхилення від планової калькуляції</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ФиксацияСлева</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionFixation">DontUse</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ФиксацияСверху</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionFixation">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НомерСтроки</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Продукция</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Калькуляция</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ОбъектКалькуляции</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ТипЗаголовкаПолей</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionFieldsTitleType">Short</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemTable">
+						<dcsset:column>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						</dcsset:column>
+						<dcsset:row>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>СтатьяКалькуляции</dcsset:field>
+									<dcsset:groupType>HierarchyOnly</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>СтатьяКалькуляции</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СтатьяКалькуляции</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СтатьяКалькуляции.ТипЗатрат</dcsset:field>
+										</dcsset:item>
+										<dcsset:placement>Together</dcsset:placement>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:item>
+									<dcsset:name>Затрата</dcsset:name>
+									<dcsset:groupItems>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>Затрата</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>Характеристика</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+									</dcsset:groupItems>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemGroup">
+											<dcsset:groupType>OrGroup</dcsset:groupType>
+											<dcsset:item xsi:type="dcsset:FilterItemGroup">
+												<dcsset:groupType>AndGroup</dcsset:groupType>
+												<dcsset:item xsi:type="dcsset:FilterItemComparison">
+													<dcsset:left xsi:type="dcscor:Field">ДетализироватьСтатьиКалькуляции</dcsset:left>
+													<dcsset:comparisonType>Equal</dcsset:comparisonType>
+													<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+												</dcsset:item>
+											</dcsset:item>
+											<dcsset:item xsi:type="dcsset:FilterItemGroup">
+												<dcsset:groupType>AndGroup</dcsset:groupType>
+												<dcsset:item xsi:type="dcsset:FilterItemComparison">
+													<dcsset:left xsi:type="dcscor:Field">ДетализироватьСтатьиКалькуляции</dcsset:left>
+													<dcsset:comparisonType>Equal</dcsset:comparisonType>
+													<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+												</dcsset:item>
+												<dcsset:item xsi:type="dcsset:FilterItemComparison">
+													<dcsset:left xsi:type="dcscor:Field">Затрата</dcsset:left>
+													<dcsset:comparisonType>Filled</dcsset:comparisonType>
+												</dcsset:item>
+											</dcsset:item>
+											<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:left xsi:type="dcscor:Field">СуммаКалькуляцияОтклонение</dcsset:left>
+											<dcsset:comparisonType>Greater</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+											<dcsset:userSettingID>ba6e1299-ce80-477e-99a8-7bcaf41d9c45</dcsset:userSettingID>
+											<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Откл. спецификации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Відх. специфікації</v8:content>
+												</v8:item>
+											</dcsset:userSettingPresentation>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:left xsi:type="dcscor:Field">СуммаКалькуляцияПроцент</dcsset:left>
+											<dcsset:comparisonType>Greater</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">50</dcsset:right>
+											<dcsset:userSettingID>77705048-fa7c-4f8e-8043-f73e12ebd069</dcsset:userSettingID>
+											<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Откл. спецификации, %</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Відх. специфікації, %</v8:content>
+												</v8:item>
+											</dcsset:userSettingPresentation>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:left xsi:type="dcscor:Field">СуммаФактОтклонение</dcsset:left>
+											<dcsset:comparisonType>Greater</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">50</dcsset:right>
+											<dcsset:userSettingID>d806f508-f040-4aa7-a5cb-d279ec47b52f</dcsset:userSettingID>
+											<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Откл. фактическое</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Відх. фактичне</v8:content>
+												</v8:item>
+											</dcsset:userSettingPresentation>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:left xsi:type="dcscor:Field">СуммаФактПроцент</dcsset:left>
+											<dcsset:comparisonType>Greater</dcsset:comparisonType>
+											<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+											<dcsset:userSettingID>75228b9d-9488-4615-a070-098b03a31be0</dcsset:userSettingID>
+											<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Откл. фактическое, %</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Відх. фактичне, %</v8:content>
+												</v8:item>
+											</dcsset:userSettingPresentation>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:order>
+										<dcsset:item xsi:type="dcsset:OrderItemField">
+											<dcsset:field>СуммаКалькуляцияОтклонение</dcsset:field>
+											<dcsset:orderType>Desc</dcsset:orderType>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:OrderItemField">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:field>СуммаФактОтклонение</dcsset:field>
+											<dcsset:orderType>Desc</dcsset:orderType>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:OrderItemField">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:field>СуммаКалькуляцияПроцент</dcsset:field>
+											<dcsset:orderType>Desc</dcsset:orderType>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:OrderItemField">
+											<dcsset:use>false</dcsset:use>
+											<dcsset:field>СуммаФактПроцент</dcsset:field>
+											<dcsset:orderType>Desc</dcsset:orderType>
+										</dcsset:item>
+										<dcsset:viewMode>Normal</dcsset:viewMode>
+									</dcsset:order>
+									<dcsset:selection>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>Затрата</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>Характеристика</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+									</dcsset:selection>
+									<dcsset:outputParameters>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+											<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+										</dcscor:item>
+									</dcsset:outputParameters>
+									<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+								</dcsset:item>
+								<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+							</dcsset:item>
+							<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						</dcsset:row>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Спецификция заказа</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Спецификция замовлення</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Кількість витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>КоличествоКалькуляция</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>КоличествоСпецификация</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Спецификация заказа</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Специфікація замовлення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>КоличествоКалькуляцияОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Кількість</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>КоличествоКалькуляцияПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вартість витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЦенаКалькуляция</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЦенаСпецификация</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Спецификация</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Специфікація</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ЦенаСпецификацияОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вартість</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ЦенаСпецификацияПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаКалькуляция</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаСпецификация</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Спецификация заказа</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Специфікація замовлення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СуммаКалькуляцияОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сумма</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сума</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СуммаКалькуляцияПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:placement>SpecialColumn</dcsset:placement>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Фактические затраты</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Фактичні витрати</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Кількість витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>КоличествоКалькуляция2</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>КоличествоФакт</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>КоличествоФактОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Кількість</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>КоличествоФактПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вартість витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЦенаКалькуляция2</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ЦенаФакт</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ЦенаФактОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стоимость</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вартість</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ЦенаФактОтклонениеПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма затрат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума витрат</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаКалькуляция2</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Калькуляция</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Калькуляція</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СуммаФакт</dcsset:field>
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Факт</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отклонение</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Відхилення</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СуммаФактОтклонение</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сумма</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сума</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>СуммаФактПроцент</dcsset:field>
+											<dcsset:lwsTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>%</v8:content>
+												</v8:item>
+											</dcsset:lwsTitle>
+										</dcsset:item>
+										<dcsset:placement>SpecialColumn</dcsset:placement>
+									</dcsset:item>
+									<dcsset:placement>SpecialColumn</dcsset:placement>
+								</dcsset:item>
+								<dcsset:placement>SpecialColumn</dcsset:placement>
+							</dcsset:item>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+								<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+						<dcsset:columnsViewMode>Normal</dcsset:columnsViewMode>
+						<dcsset:rowsViewMode>Normal</dcsset:rowsViewMode>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</dcsset:item>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

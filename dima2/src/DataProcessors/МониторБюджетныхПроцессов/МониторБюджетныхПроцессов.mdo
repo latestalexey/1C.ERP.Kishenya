@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cecb8fa3-20eb-4dca-a3a1-210c213ac5ac">
+  <producedTypes>
+    <objectType typeId="32458870-3def-4410-95e5-095a81c2ceaf" valueTypeId="d37d0ca6-2598-4d55-a3a8-d4aebd98dcf2"/>
+    <managerType typeId="e1e33d75-4a8e-44ee-8e8d-2785a44d3c79" valueTypeId="0509d149-9445-487d-ba23-a533441cee51"/>
+  </producedTypes>
+  <name>МониторБюджетныхПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монитор бюджетных процессов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Монітор бюджетних процесів</value>
+  </synonym>
+  <defaultForm>DataProcessor.МониторБюджетныхПроцессов.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="79b5d572-fe06-49a1-9de2-1f3a69cbbf5c">
+    <name>МодельБюджетирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель бюджетирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Модель бюджетування</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МоделиБюджетирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="280f7711-8111-41e8-8185-d53be800692a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b075ef04-840a-43b3-a11a-459a0ecc06f3">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="2d133fc8-eb4e-4940-804b-349732f0f96d">
+    <name>МониторБюджетныхПроцессов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Монитор бюджетных процессов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Монітор бюджетних процесів</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

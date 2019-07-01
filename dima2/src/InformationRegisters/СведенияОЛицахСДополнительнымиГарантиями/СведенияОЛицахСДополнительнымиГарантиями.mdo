@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f02c8be7-5df0-4ff3-8694-143c92679149">
+  <producedTypes>
+    <selectionType typeId="f6b212d3-771d-4a02-9522-9de6b8c7e5ed" valueTypeId="53bff6c3-7dd8-4dd2-adbb-2fa16cfa97b3"/>
+    <listType typeId="70aa4d0f-8068-4f62-9f8e-207c271ff72e" valueTypeId="b6d6e4e7-5bd7-4ee7-a488-936887a2fdfd"/>
+    <managerType typeId="6e150476-a1fd-4269-89a3-11b0a53527a2" valueTypeId="86832d4e-b4b0-40dc-9778-714cdf6b4982"/>
+    <recordSetType typeId="5fff3f57-4e2c-4d59-aedf-76dc44e406fd" valueTypeId="686e467b-f460-49b5-83b3-9644c0c7e3e3"/>
+    <recordKeyType typeId="5ceab95c-0f4c-44aa-a9bf-82ac5f7b21c0" valueTypeId="95ffe96b-7ca3-4c18-a69a-15596ffacf9f"/>
+    <recordType typeId="8ef9df8d-a7b2-4afa-b073-d0dde887df5b" valueTypeId="9ed7f049-bc54-46e4-8de4-c8ed8cb882ce"/>
+    <recordManagerType typeId="63ade7a9-19de-456d-95c8-b7454a0cbbeb" valueTypeId="dd1f9883-231a-4f1e-a7dc-869e0389ab37"/>
+  </producedTypes>
+  <name>СведенияОЛицахСДополнительнымиГарантиями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о лицах с дополнительными гарантиями</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відомості про осіб з додатковими гарантіями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СведенияОЛицахСДополнительнымиГарантиями.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="cfcf1961-c796-47d4-b786-d8602477656d">
+    <name>НаличиеГарантий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наличие гарантий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Наявність гарантій</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7453b2c9-f762-4ca4-b111-8ea6de19ebb0">
+    <name>ВидГарантии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид гарантии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид гарантії</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДополнительныеГарантииВСодействииТрудоустройству</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9c321714-9eae-491b-9675-ea07dd2e4591">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="803b3bee-63b3-4d46-8765-1e8305c5d799">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="550fb15b-065c-48e1-a996-2aadbc1e0936">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ca8c8639-9ef3-4e8c-ae28-0ba57e6ef101">
+    <name>РедактированиеИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование истории</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Редагування історії</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

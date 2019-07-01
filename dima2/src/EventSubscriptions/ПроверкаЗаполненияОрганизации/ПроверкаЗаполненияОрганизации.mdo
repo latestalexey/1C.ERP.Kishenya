@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="015c39cd-52f6-4750-bc1b-0504e271144b">
+  <name>ПроверкаЗаполненияОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка заполнения организации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірка заповнення організації</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Организации</types>
+  </source>
+  <event>FillCheckProcessing</event>
+  <handler>CommonModule.БазовыеСправочныеДанныеСобытия.ПроверкаЗаполненияОрганизации</handler>
+</mdclass:EventSubscription>

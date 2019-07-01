@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5456fa34-bff1-44b2-8449-7e4469c24bd6">
+  <producedTypes>
+    <selectionType typeId="9bf699bf-16c3-477a-bca9-bf3a6c133792" valueTypeId="12afad4c-3bf4-47f1-ae8e-4cb04f481b3e"/>
+    <listType typeId="7ec36711-db60-437a-ab7b-b2f146f89d91" valueTypeId="530c4805-05dc-4c17-86b6-a81d288b8169"/>
+    <managerType typeId="42c6b224-a049-4105-b2a3-c7cf01142eed" valueTypeId="7f41046f-84a6-41e9-8205-516aa042a6cd"/>
+    <recordSetType typeId="808fb499-5470-4fa9-8139-29424574d699" valueTypeId="1b220691-6434-4ca4-bf69-2b05d70ad854"/>
+    <recordKeyType typeId="9505b88f-a409-4bc5-9959-995b22bdd5a1" valueTypeId="0341b6a5-4e09-4238-97ab-0557937b1283"/>
+    <recordType typeId="3ac2c182-6303-4b70-9c61-9ddba09313d1" valueTypeId="adc904e9-6cab-4ec6-98a8-7162ff483d8c"/>
+    <recordManagerType typeId="9a7e1f49-3dc9-4428-b3c5-77f0e03651c8" valueTypeId="8f859218-7500-49a1-be9b-c2593a1534a1"/>
+  </producedTypes>
+  <name>НастройкаГруппУчетаОсобыхНачисленийИУдержаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка групп учета особых начислений и удержаний</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настройка груп особливих нарахувань і утримань</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9082c4b5-f4f8-454e-858a-913c1aa16c7b">
+    <name>ГруппаУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група обліку</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыУчетаНачисленийИУдержаний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f23465f9-3fa7-4f05-9bcd-9d28fddb33af">
+    <name>НачислениеУдержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление удержание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахування утримання</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОсобыхНачисленийИУдержаний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="5a1f43de-4593-4ffc-b923-e83384f771a9">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

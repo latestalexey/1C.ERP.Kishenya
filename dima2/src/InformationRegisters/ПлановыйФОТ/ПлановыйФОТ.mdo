@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ddffd21-1310-48cd-985a-c5d9fd28ffc5">
+  <producedTypes>
+    <selectionType typeId="c1c05eca-d9a9-4177-ae12-00ec796dac63" valueTypeId="5063d8cd-6d5d-4fdd-8c75-d3d137277044"/>
+    <listType typeId="620c6a33-eb65-47dd-964b-1bf0c82fe173" valueTypeId="8b0ea1bb-0e76-463b-ae65-4dfbb063d584"/>
+    <managerType typeId="7d7f6f71-495d-44a3-abc3-4a23206c7fb8" valueTypeId="5f2a8980-1c80-44d5-9067-2d0d018e4b67"/>
+    <recordSetType typeId="6eea4d49-c3bb-40b1-afac-5340e9b806b3" valueTypeId="7744d061-ebd9-47e3-83c9-727e2a20125a"/>
+    <recordKeyType typeId="1e1b53c6-ef13-4d1b-8ed1-eec563c083d0" valueTypeId="2e80b350-2f70-4431-b88e-f7759ab9630a"/>
+    <recordType typeId="8a1d333c-bfea-43be-98fe-87a0c5529dc4" valueTypeId="b789a434-3447-4605-b07f-ee34b13937c6"/>
+    <recordManagerType typeId="152046d7-749a-49bf-96bb-1ed2207bc499" valueTypeId="459485e0-5abc-4b25-b86f-7c83d47a99b3"/>
+  </producedTypes>
+  <name>ПлановыйФОТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановый ФОТ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Плановий ФОП</value>
+  </synonym>
+  <defaultListForm>InformationRegister.ПлановыйФОТ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>ФОТ начисления</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>ФОП нарахування</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>ФОТ плановых начислений</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>ФОП планових нарахувань</value>
+  </listPresentation>
+  <resources uuid="c8310ded-49c6-4eef-951f-fcd2945aa172">
+    <name>ВкладВФОТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вклад в ФОТ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Внесок у ФОП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="1ae9637e-3593-497d-8625-2942480776fd">
+    <name>ПересчетНеТребуется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчет не требуется</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перерахунок не потрібний</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="82836e4e-ad2e-41c3-9ece-70a67af22e21">
+    <name>ВторичнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вторичная запись</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вторинний запис</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="02139fcf-6952-4e94-a1da-c897af7d88c2">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підстава</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.НазначениеПлановогоНачисления</types>
+      <types>DocumentRef.ИзменениеМестРаботы</types>
+      <types>DocumentRef.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+      <types>DocumentRef.ИзменениеОплатыТруда</types>
+      <types>DocumentRef.КадровыйПеревод</types>
+      <types>DocumentRef.ИзменениеГрафикаРаботыСписком</types>
+      <types>DocumentRef.УтверждениеТарифнойСетки</types>
+      <types>DocumentRef.Совмещение</types>
+      <types>DocumentRef.ИзменениеКвалификационногоРазряда</types>
+      <types>DocumentRef.ИндексацияЗаработка</types>
+      <types>DocumentRef.ОтменаДоплатыДоСреднегоЗаработка</types>
+      <types>DocumentRef.НачальнаяШтатнаяРасстановка</types>
+      <types>DocumentRef.ИзменениеПлановыхНачислений</types>
+      <types>DocumentRef.Увольнение</types>
+      <types>DocumentRef.НазначениеПодработки</types>
+      <types>DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком</types>
+      <types>DocumentRef.ПриказНаДоплатуДоСреднегоЗаработка</types>
+      <types>DocumentRef.КадровыйПереводСписком</types>
+      <types>DocumentRef.ПрекращениеПодработки</types>
+      <types>DocumentRef.ПриемНаРаботу</types>
+      <types>DocumentRef.УвольнениеСписком</types>
+      <types>DocumentRef.ОтменаСовмещения</types>
+      <types>DocumentRef.ОтпускПоУходуЗаРебенком</types>
+      <types>DocumentRef.ПриемНаРаботуСписком</types>
+      <types>DocumentRef.ПереносДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="ac0d37cd-05c8-4d96-8985-455df09ddc40">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b7b54995-f2e2-4533-a6bf-e0ff1e843a94">
+    <name>ДолжностьПоШтатномуРасписанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность по штатному расписанию</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШтатноеРасписание</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4451c405-1a7c-4f1d-a5a1-57fede36e622">
+    <name>Начисление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахування</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="639c4026-8ba9-4cdf-8d60-0a849932811b">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="61a733b7-babe-4c93-bb1c-12cc7667db33">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ підстава</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОснованиеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="becd3f03-a776-44c3-bbc9-abef29357771">
+    <name>ГоловнаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Головная организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Головна організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="650dbdbc-c15c-4dc9-915c-d238a04826ce">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

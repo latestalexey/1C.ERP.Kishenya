@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48df70a1-a116-4d62-8b47-ccf965f29100">
+  <producedTypes>
+    <objectType typeId="2570f625-7a60-4b46-b2b2-338b856bcb91" valueTypeId="a6179314-b8b3-4d16-85da-b4d236cc043a"/>
+    <refType typeId="260b54e2-42ff-4673-a757-fd6ccf2c752b" valueTypeId="77600057-85ab-4423-8dda-b5f7bc4c96fb"/>
+    <selectionType typeId="15834c78-48dc-4570-a9c7-cb29ee47d70f" valueTypeId="02d3c731-dad0-4618-9d37-765aedbb078f"/>
+    <listType typeId="2eae2422-a234-4ca5-9f64-7d72c5f8e385" valueTypeId="ef2b7230-e030-4f4e-86c1-d10dd3a306ff"/>
+    <managerType typeId="ad4ebed3-23df-442e-9506-438f11bba088" valueTypeId="c02f53ac-06a9-46a3-b572-344b87be0f33"/>
+  </producedTypes>
+  <name>ОтчетДавальцу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет давальцу</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт давальцю</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтчетДавальцу.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата оформления документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата оформлення документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядковый номер документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Порядковий номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_ОтчетДавальцу</value>
+    </typesFilterValue>
+    <characteristicValues>Document.ОтчетДавальцу.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Document.ОтчетДавальцу.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Document.ОтчетДавальцу.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Document.ОтчетДавальцу.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_ОтчетДавальцу</value>
+    </typesFilterValue>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+  </characteristics>
+  <basedOn>Document.ЗаказДавальца</basedOn>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Отчет давальцу</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Звіт давальцю</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Отчет давальцу</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>uk</key>
+    <value>Звіт давальцю</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Отчеты давальцам</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Звіти давальцям</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Отчеты давальцам</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Звіти давальцям</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Документы, фиксирующие факт оказания услуг по переработке давальческого сырья предприятием</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Документи, що фіксують факт надання послуг з переробки давальницької сировини підприємством</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОтчетДавальцу.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ОтчетДавальцу.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ОтчетДавальцу.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccumulationRegister.ПрочиеДоходы</registerRecords>
+  <registerRecords>AccumulationRegister.НДСРасчетНалоговыхОбязательств</registerRecords>
+  <registerRecords>AccumulationRegister.ТрудозатратыНезавершенногоПроизводства</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеРасходы</registerRecords>
+  <registerRecords>InformationRegister.СуммыДокументовВВалютеРегл</registerRecords>
+  <registerRecords>AccumulationRegister.СебестоимостьТоваров</registerRecords>
+  <registerRecords>AccumulationRegister.НДСУсловныеПродажи</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияНоменклатураДоходыРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеАктивыПассивы</registerRecords>
+  <registerRecords>InformationRegister.ОтражениеДокументовВРеглУчете</registerRecords>
+  <registerRecords>AccumulationRegister.НДСНоменклатурныйСоставДляНалоговыхНакладных</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииРасходовНаСебестоимостьТоваров</registerRecords>
+  <registerRecords>AccumulationRegister.ФактическиеДанныеБюджетирования</registerRecords>
+  <registerRecords>AccountingRegister.Хозрасчетный</registerRecords>
+  <registerRecords>AccumulationRegister.УслугиДавальцуКОформлению</registerRecords>
+  <registerRecords>InformationRegister.ОтражениеДокументовВМеждународномУчете</registerRecords>
+  <registerRecords>AccountingRegister.Международный</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентамиПоДокументам</registerRecords>
+  <registerRecords>AccumulationRegister.ВыручкаИСебестоимостьПродаж</registerRecords>
+  <registerRecords>AccumulationRegister.КорректировкиНДСПартий</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияНоменклатураНоменклатура</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеРасходыНезавершенногоПроизводства</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииПроизводственныхЗатрат</registerRecords>
+  <registerRecords>AccumulationRegister.ВыпускПродукции</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииНезавершенногоПроизводства</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииЗатратНаВыпуск</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="82b75b30-b512-47f5-98ec-4a8c6c21aa75">
+    <name>БанковскийСчетКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок контрагента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет контрагента, которому оформляется реализация</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок контрагента, якому оформляється реалізація</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ОтчетДавальцу.Attribute.Контрагент</field>
+    </choiceParameterLinks>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="48980b29-b9c0-497d-9f5f-9ee6a2355487">
+    <name>БанковскийСчетОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок організації</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет организации, от имени которой оформляется документ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок організації, від імені якої оформляється документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ОтчетДавальцу.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>ВыборСчетовГоловнойОрганизации</name>
+      <value xsi:type="core:UndefinedValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>ЕстьРасчетыСКлиентами</name>
+      <value xsi:type="core:UndefinedValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70164402-4bf2-41d2-8e35-d1960ad68c1f">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Валюты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7bee71cd-66af-44f0-aec4-f25d50f57711">
+    <name>ВалютаВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта взаєморозрахунків</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта взаиморасчетов с давальцем</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта взаєморозрахунків з давальцем</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Валюты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="804f80da-e0a0-416e-a82f-c8d26ccb2db8">
+    <name>ДатаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата платежу</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата оплаты выполненных работ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата оплати виконаних робіт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="90282aaf-6438-46c1-8df2-618adc58be88">
+    <name>ДополнительнаяИнформация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация для печати</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інформація для друку</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст, выводится в печатную форму акта в подвале</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний текст, який виводиться в друковану форму акта в підвалі</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="186dc9c6-7f4a-48f6-ab5c-d4e2738080c5">
+    <name>ДополнительнаяИнформацияШапки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная информация шапки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Додаткова інформація шапки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст, выводится в печатную форму акта в шапке</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний текст, який виводиться в друковану форму акта в шапці</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6c656ba-a457-4dd1-b288-7e918b6081e5">
+    <name>ЗаказДавальца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ давальца</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Замовлення давальця</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказДавальца</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ, по которому оформляется Отчет давальцу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Замовлення, за яким оформлюється Звіт давальцю</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.ЗаказДавальца.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c6182d2-da78-42fa-9c91-8a199afa27c7">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Каса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Касса организации, в которую планируется поступление денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Каса організації, в яку планується надходження грошових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ОтчетДавальцу.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>ВыборКассГоловнойОрганизации</name>
+      <value xsi:type="core:UndefinedValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>ЕстьРасчетыСКлиентами</name>
+      <value xsi:type="core:UndefinedValue"/>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Кассы.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="97cbc90d-8e99-4f1e-9ebc-d1242a685e82">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="57e9c267-55df-471f-8d47-5785e2eb027f">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Является получателем расходного документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Є одержувачем видаткового документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Партнер</name>
+      <field>Document.ОтчетДавальцу.Attribute.Партнер</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Контрагенты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="624fad58-d827-446f-b277-70c11a2e8569">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за Отчет давальцу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відповідальний за Звіт давальцю</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f53141a-e015-4b4a-8002-e0e6c5251ba4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ выполнения работ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація підприємства, від імені якої оформляється документ виконання робіт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Организации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e32e92c2-f915-4424-b49d-8379dec76ae2">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Давалец</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Давалець</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Давалец, которому оказываются услуги</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Давалець, якому надаються послуги</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Клиент</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Поставщик</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Партнеры.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="591f6301-6322-4ed0-86fd-e4b03e9eaf95">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется в качестве дополнительной аналитики продаж</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Використовується в якості додаткової аналітики продажів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтруктураПредприятия.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b968c5c9-b697-4e19-8e41-e042a1cee538">
+    <name>Сделка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сделка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Угода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СделкиСКлиентами</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Агрегирует все документы в рамках заказа, поступления и отгрузки давальческой продукции</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Агрегує всі документи в рамках замовлення, надходження і відвантаження давальницької продукції</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Партнер</name>
+      <field>Document.ОтчетДавальцу.Attribute.Партнер</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СделкиСКлиентами.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e9f9c3a-8360-4082-939c-3484d6b0f29e">
+    <name>СкидкиРассчитаны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидки рассчитаны</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Знижки розраховані</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак, указывающий на то, что скидки (наценки) рассчитаны</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака, що вказує на те, що знижки (націнки) розраховані</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f370aae-26c6-43ff-b930-2b9a9ec7491d">
+    <name>Согласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласован</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Погоджений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак, определяющий, что Отчет давальцу согласован</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака, що визначає, що Звіт давальцю погоджений</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d946940-1829-4e6d-bd1d-e052b779d97e">
+    <name>СуммаВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума взаєморозрахунків</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общая сумма документа в валюте взаиморасчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Загальна сума документа у валюті взаєморозрахунків</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5b9deb04-6f6a-4614-b2e9-d5045ea1fc39">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общая сумма документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Загальна сума документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="336367aa-5a40-40b1-af90-2d25c45ba7e3">
+    <name>ФормаОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма оплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма оплати</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФормыОплаты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Форма оплаты выполнения работ: наличная, безналичная, платежная карта</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Форма оплати виконання робіт: готівкова, безготівкова, платіжна карта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ссылка</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ФормыОплаты.EnumValue.Наличная</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ФормыОплаты.EnumValue.Безналичная</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ФормыОплаты.EnumValue.ПлатежнаяКарта</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ФормыОплаты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6e954d4-a249-46fe-be62-813b4055a512">
+    <name>ЦенаВключаетНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена включает НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ціна включає ПДВ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения НДС в цену и сумму документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення ПДВ в ціну та суму документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="313eeaf0-06f6-4cab-8b16-e66c2dd37ee8">
+    <name>ГруппаФинансовогоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа финансового учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група фінансового обліку</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыФинансовогоУчетаРасчетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа финансового учета расчетов с партнерами</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група фінансового обліку розрахунків з партнерами</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a013f5c3-e5ea-4803-9367-502489111f8f">
+    <name>КартаЛояльности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта лояльности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Карта лояльності</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КартыЛояльности</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Карта лояльности, определяющая дополнительные скидки (наценки).</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Карта лояльності, визначає додаткові знижки (націнки).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыКартЛояльности.EnumValue.Действует</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1fd243f4-cc7a-45b5-a4f0-31bf4f21a591">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор, в рамках которого оформляется отчет</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Договір, в рамках якого оформляється звіт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ВалютаВзаиморасчетов</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.ВалютаВзаиморасчетов</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.Контрагент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Партнер</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.Партнер</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыДоговоровКонтрагентов.EnumValue.Действует</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ХозяйственнаяОперация</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ХозяйственныеОперации.EnumValue.ПроизводствоИзДавальческогоСырья</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ПометкаУдаления</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1d1f8b96-7837-4904-a8df-b360f013ae7c">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, являющийся автором Отчета давальцу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Користувач, який є автором Звіту давальцю</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b5954e83-2430-4b59-bd43-e635013dffca">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контактна особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контактное лицо, для взаимодействия по Отчету давальцу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Контактна особа, для взаємодії за Звітом давальцю</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="487d9ccf-8661-4f1f-9771-38a6eed51f12">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Керівник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОтветственныеЛицаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, расписывающийся в печатных формах за руководителя.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Співробітник, який розписується в друкованих формах за керівника.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Дата</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.StandardAttribute.Date</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ОтветственноеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ОтветственныеЛицаОрганизаций.EnumValue.Руководитель</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f2593d2e-a3b9-48c8-b82c-2272c7779473">
+    <name>ГлавныйБухгалтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главный бухгалтер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Головний бухгалтер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОтветственныеЛицаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, расписывающийся в печатных формах за главного бухгалтера.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Співробітник, який розписується в друкованих формах за головного бухгалтера.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Дата</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.StandardAttribute.Date</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.ОтчетДавальцу.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ОтветственноеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ОтветственныеЛицаОрганизаций.EnumValue.ГлавныйБухгалтер</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6449780-d4b4-45ef-a402-3fc80d63df89">
+    <name>ПорядокРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Порядок розрахунків</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядокРасчетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядок расчета по Отчету давальца</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Порядок розрахунку за Звітом давальця</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПорядокРасчетов.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4ecfc35-5b88-49d3-ae60-a7debdd68a47">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование номенклатурной позиции</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Найменування номенклатурної позиції</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Услуга</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Работа</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f463182c-c8f1-41a3-a999-94509b533291">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Характеристика номенклатуры, если есть</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Характеристика номенклатури, якщо є</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Номенклатура</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:5602f465-5b67-4ade-94fb-b6e3cbd8593a</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee8382e6-a68d-4c67-94bc-b5f552193a76">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка ПДВ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ставка ПДВ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8c45e4fb-7b07-40de-9fa7-97a2072e0006">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зміст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание услуги для представления в печатных документах</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Опис послуги для подання в друкованих документах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ec20dab-66c7-4ae9-a972-3f9f59604621">
+    <name>НаправлениеДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Напрям діяльності</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаправленияДеятельности</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Направление деятельности расчетов с партнерами</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Напрям діяльності розрахунків з партнерами</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыНаправленияДеятельности.EnumValue.Используется</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e94528d-5fb5-4d56-b46e-be805d7c5ac1">
+    <name>НалоговоеНазначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговое назначение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкове призначення (ПДВ)</value>
+    </synonym>
+    <comment>Налоговое назначение</comment>
+    <type>
+      <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ГруппаНалоговогоНазначения</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>dd60c705-8ad0-445e-a79c-6c7033d04f2c.ac5992b5-81ea-498a-a7bc-67cb8b4e2198</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3c4b31e-32a6-40b7-9a80-d893bb3c77d1">
+    <name>ПредставительОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представитель организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Представник організації</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, ответственный за осуществление хозяйственной операции и правильность её оформления. Выводится в печатные формы</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Співробітник, відповідальний за здійснення господарської операції і вірність ії оформлення. Виводиться в друковані форми</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="57e8f1c6-3454-4bfe-984f-8dbe3cd96eb1">
+    <name>ПредставительОрганизацииДолжность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Посада</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Должность сотрудника, ответственного за осуществление хозяйственной операции и правильность её оформления. Выводится в печатные формы</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Посада співробітника, відповідального за здійснення господарської операції і правильність її оформлення. Виводиться в друковані форми</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66462261-f942-43b2-af2f-d037d1c4295f">
+    <name>ПредставительКонтрагента</name>
+    <synonym>
+      <key>uk</key>
+      <value>Представитель контрагента</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Представитель контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Должность и ФИО представителя контрагента</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Посада та ПІБ представника контрагента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d29bafc-64c1-4367-941a-febc160d9173">
+    <name>МестоСоставленияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место составления документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місце складання документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место составления документа выводимое на печать</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Місце складання документа, що виводиться на друк</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e0aa683-bb0b-4484-b93b-7c4c142c1b47">
+    <name>АвторасчетНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторасчет НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Авторозрахунок ПДВ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак авторасчета НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака авторозрахунку ПДВ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ed55a30b-6551-47ab-b5e9-0440926772ff">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a26cb317-ef10-4418-873c-826bc464339b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1a35d77e-c144-497e-b199-c5b75da39101">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="19e3712d-b38f-44e1-9cfb-b4a95a606531">
+    <name>ФормаВыбораРаспоряжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора распоряжения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору розпорядження</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="67d95f3f-57cd-4126-ab32-4acf1339b8c2">
+    <name>ФормаПодбораУслугИзЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор выпущенной продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підбір випущеної продукції</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3ed1dab8-dad3-4d6c-9cb2-f66a3a6b416c">
+    <name>ФормаСпискаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчеты давальцам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіти давальцям</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="53ac0971-ff22-49e8-ad26-9ca8b5738db9">
+    <producedTypes>
+      <objectType typeId="a096ea1d-d71e-487a-b9fd-0891994e7bf4" valueTypeId="1c4bc0dc-6654-4993-baaa-96be712c969f"/>
+      <rowType typeId="03da9586-2a0d-47bb-882f-6814a52fb898" valueTypeId="df0f834c-f192-4c73-bc3f-b9962da87215"/>
+    </producedTypes>
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Продукція</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Продукция, выпущенная из переработанных материалов давальца</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Продукція, випущена з перероблених матеріалів давальця</value>
+    </toolTip>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="318e9155-7088-43b4-89a9-1f60ec714ce9">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование номенклатурной позиции</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Найменування номенклатурної позиції</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ТипНоменклатуры</name>
+        <value xsi:type="core:FixedArrayValue">
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
+          </values>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="36ed73a9-636a-4576-8dad-be327f823a97">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Характеристика номенклатуры, если характеристики для номенклатуры используются</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Характеристика номенклатури, якщо характеристики для номенклатури використовуються</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.ОтчетДавальцу.TabularSection.Продукция.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="03d365d6-1ed5-4748-8246-149874ac389d">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество (в единицах хранения)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Кількість (в одиницях зберігання)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество единиц </value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Кількість одиниць </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cbd93de5-1c83-4d19-9dc8-ba60d0dc5119">
+      <name>ВидЦены</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид цены</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вид ціни</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыЦен</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Определяет алгоритм расчета и правила округления  цены продажи</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Визначає алгоритм розрахунку та правила округлення ціни продажу</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ЦенаВключаетНДС</name>
+        <field>Document.ОтчетДавальцу.Attribute.ЦенаВключаетНДС</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Отбор.ИспользоватьПриПродаже</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0ab74eb9-8acc-4f84-af63-dc50d725e9ed">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ціна</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e4beb4f2-c27b-436b-8c2d-954d4b1d05a5">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма в валюте документа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума у валюті документа</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e4904c6-c437-475c-8c8c-a48774cf87cf">
+      <name>СтавкаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ставка ПДВ</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтавкиНДС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ставка НДС</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ставка ПДВ</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="42040555-171e-4293-947a-eb5e1189d300">
+      <name>СуммаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума ПДВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма НДС в валюте документа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума ПДВ у валюті документа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3e8938ed-1e6a-45d4-8e97-8d55bbfb1e5f">
+      <name>СуммаСНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма с НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума з ПДВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма с учетом НДС в валюте документа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума з урахуванням ПДВ у валюті документа</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="17d509a2-cd6b-408d-9b1e-40d752ae8485">
+      <name>КодСтроки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код строки</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Код рядка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентифицирует строку заказа, по которой осуществляется оказание услуги.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ідентифікує рядок замовлення, за яким здійснюється надання послуги.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="89b9917b-9dc0-453e-a919-01f6dd1fa788">
+      <name>СуммаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума взаєморозрахунків</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма с НДС в валюте заказа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума з ПДВ у валюті замовлення</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d8143aea-4cef-4378-97a8-b21eda5e5f98">
+      <name>ЗаказДавальца</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ давальца</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Замовлення давальця</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаказДавальца</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Документ, на основании которого заполнена эта строка</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Документ, на підставі якого заповнена ций рядок</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="371c5c6c-20e2-4dd4-aaf5-be2a49625e69">
+      <name>ИдентификаторСтроки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор строки</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ідентифікатор рядка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Уникальный идентификатор строки документа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Унікальний ідентифікатор рядка документа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="70b63401-20fd-4461-ba60-d3bf7311bdb5">
+      <name>Упаковка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Упаковка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Упаковка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Упаковка номенклатуры, если есть</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Упаковка номенклатури, якщо є</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <changeMode>DontChange</changeMode>
+        <field>0:7b526229-3286-418a-920a-ff15a9b3ec48/0:da473af6-1960-4683-b941-b8e3988be4fb</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="86e5adc8-58f8-41d7-ae1f-889fa68b648d">
+      <name>КоличествоУпаковок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество упаковок</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Кількість упаковок</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество упаковок или единиц номенклатуры</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Кількість упаковок або одиниць номенклатури</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="209c0630-2422-489b-8668-3536efaaca68">
+      <name>Содержание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Содержание</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Зміст</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>1000</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Описание услуги</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Опис послуги</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ee3d94f1-5471-4ee3-9a9b-d1e1c7055fa7">
+    <producedTypes>
+      <objectType typeId="032ef5bd-86b7-44a2-99fd-0fab79fc9844" valueTypeId="66f36c31-6d90-4e18-98e3-9ae5db87134a"/>
+      <rowType typeId="846a7684-a5f6-4f23-bd57-a2b4c91bed78" valueTypeId="6332e9c7-7b7b-4fb5-9b51-099155a388c1"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Додаткові реквізити</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="92d242ed-8d5a-4e5a-92b1-edaf465993c1">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Властивість</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Додатковий реквізит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="80dfbe90-3642-4369-ae5d-d84b1981d32e">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Значення</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.ОтчетДавальцу.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ca5a93cf-b6b2-4929-ae3b-32187ba26935">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Текстовий рядок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Повний текст строкового додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="64cd89a9-a9a3-4230-a2c5-812858ddf983">
+    <name>ПФ_MXL_ОтчетОМатериалах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о материалах</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про матеріали</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

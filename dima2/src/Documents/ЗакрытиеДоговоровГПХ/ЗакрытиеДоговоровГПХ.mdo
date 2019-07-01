@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f978f225-af99-4281-8bfb-441e9ae804b7">
+  <producedTypes>
+    <objectType typeId="017ac94b-5a1f-4c54-87de-3a23bba87702" valueTypeId="0a4e3cc5-aaf8-4f96-bf3a-f002a54e02e2"/>
+    <refType typeId="5b805218-1bbd-4dc4-8609-3114425ec755" valueTypeId="c28ab9fe-302d-4602-be40-1618faffdfc3"/>
+    <selectionType typeId="0e5b5f15-18c9-41b5-9d6a-81d84bca4f24" valueTypeId="bcf19f97-23bc-4430-b73b-95423e32d5d4"/>
+    <listType typeId="b2db1c62-6619-4720-ae83-ba858e4e452f" valueTypeId="d8ad1781-1e96-4cba-aaec-455e594ebbb3"/>
+    <managerType typeId="67764a0e-c023-4d31-bb4f-13b0285eff94" valueTypeId="fc97fd9f-cd66-40fd-ad07-4836d3afe485"/>
+  </producedTypes>
+  <name>ЗакрытиеДоговоровГПХ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие договоров ГПХ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Закриття договорів ЦПХ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗакрытиеДоговоровГПХ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ДоговорРаботыУслуги</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Закрытие договора ГПХ</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>uk</key>
+    <value>Закриття договору ЦПХ</value>
+  </extendedObjectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

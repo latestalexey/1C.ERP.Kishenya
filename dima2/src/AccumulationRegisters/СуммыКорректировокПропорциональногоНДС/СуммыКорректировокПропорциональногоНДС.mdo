@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="284d9cbe-e1e7-4271-bd16-3b57c700ef19">
+  <producedTypes>
+    <selectionType typeId="751ae83c-1896-4fed-91c2-754fd4c45df4" valueTypeId="177872fe-ad9a-4e42-a208-511469ecc29d"/>
+    <listType typeId="dfc53e8d-4a96-4b47-97da-e9ed5ee6e29d" valueTypeId="039ccb7e-ac09-4e14-8e74-8670560ca812"/>
+    <managerType typeId="3d269f11-3625-48ed-a3cd-56d250ac4fe3" valueTypeId="47cd306b-9c36-471d-a572-c921dd47451a"/>
+    <recordSetType typeId="faba2e45-683a-4e51-b0b7-4cc380590d5f" valueTypeId="4e4377ab-8083-40b3-a1c8-4ee9959369aa"/>
+    <recordKeyType typeId="59315070-4b6e-4883-b470-f1f58458eb8f" valueTypeId="17a32a8a-39c4-49ee-b3d6-5a4f524847e8"/>
+    <recordType typeId="713e5dd7-3915-4284-8ebc-81924e28104b" valueTypeId="cf642b63-fac6-43f7-9100-d3691302ecdf"/>
+  </producedTypes>
+  <name>СуммыКорректировокПропорциональногоНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Суммы корректировок пропорционального НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Суми коригувань пропорційного ПДВ</value>
+  </synonym>
+  <defaultListForm>AccumulationRegister.СуммыКорректировокПропорциональногоНДС.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="63507e1d-78d9-425a-86d3-1670d5f6a2b0">
+    <name>СуммаКорректировкиНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма корректировки НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума коригування ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7a240962-fc7c-4489-a9ec-78ef0185e4ed">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f9bbf8ee-7304-415d-914f-d9a7bc0cf9f0">
+    <name>ВидУсловнойПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид условной продажи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид умовного продажу</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидУсловнойПродажи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e8d6132a-c86a-4f82-b9c6-d3e0c78042b1">
+    <name>СпецРежимНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец режим налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спец режим оподаткування</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="eef2ae00-13d5-4600-8202-796803fbd176">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

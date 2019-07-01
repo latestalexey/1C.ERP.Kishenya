@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1af7f310-9f1b-4ec6-9c25-6df203d91425">
+  <producedTypes>
+    <selectionType typeId="0a987338-7922-434f-9a12-0cbbf140127a" valueTypeId="f621fc58-f491-45a4-9af4-57845f3ae28d"/>
+    <listType typeId="52b93b4f-365c-4d76-b6de-eeaaa056ec3a" valueTypeId="3742abef-b65f-418d-a53e-149f4264385a"/>
+    <managerType typeId="780400f5-592f-4daf-b6d3-7c5d1826b3d2" valueTypeId="d5cccb05-f116-4760-b45c-6248bf93393a"/>
+    <recordSetType typeId="5dc6dba0-0732-4005-93cd-c7de4dc4452c" valueTypeId="76caff4b-1dfa-4569-9b2c-544e5e9c018c"/>
+    <recordKeyType typeId="bf8c7611-fd31-4ccf-ac3c-a9d3a145071d" valueTypeId="a6f25e84-0da8-4061-8746-443bb09ff5d8"/>
+    <recordType typeId="b9c09017-6c8c-404d-828e-eebea24de76e" valueTypeId="73efc1e0-8b8c-4803-b551-0f13b1886447"/>
+    <recordManagerType typeId="98788ef8-fe05-4923-9551-0acde5b93c53" valueTypeId="361a390d-9bda-42bc-9742-27f9d71284ad"/>
+  </producedTypes>
+  <name>МестонахождениеНМАБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местонахождение НМА (бухгалтерский учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Місцезнаходження НМА (бухгалтерський облік)</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="239c412c-add8-4368-b415-20afda6bd375">
+    <name>МОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>МВО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="608a01e9-4942-4946-a188-ec34b8985139">
+    <name>Местонахождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местонахождение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місцезнаходження</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa946c51-dc2a-405a-adbc-3566a2d32daf">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ebba2567-2629-4606-8b41-4573d72e8303">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Артикул</dataPath>
+			<field>Артикул</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыпуска</dataPath>
+			<field>ДатаВыпуска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выпуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата випуску</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВПланах</dataPath>
+			<field>КоличествоВПланах</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество в планах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість в планах</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачалоПериодаВыпуска</dataPath>
+			<field>НачалоПериодаВыпуска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало периода выпуска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Початок періоду випуску</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикиИспользуются</dataPath>
+			<field>ХарактеристикиИспользуются</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристики используются</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Характеристики використовуються</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СегментНоменклатуры</dataPath>
+			<field>СегментНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегмент номенклатуры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сегмент номенклатури</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спецификация</dataPath>
+			<field>Спецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спецификация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Специфікація</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗаказах</dataPath>
+			<field>КоличествоВЗаказах</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество в заказах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість в замовленнях</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоУпаковок</dataPath>
+			<field>КоличествоУпаковок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество упаковок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість упаковок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	Сегменты.Номенклатура КАК Номенклатура,
+	Сегменты.Характеристика КАК Характеристика,
+	ИСТИНА КАК ИспользуетсяОтборПоСегментуНоменклатуры
+ПОМЕСТИТЬ ОтборПоСегментуНоменклатуры
+ИЗ
+	РегистрСведений.НоменклатураСегмента КАК Сегменты
+{ГДЕ
+	Сегменты.Сегмент.* КАК СегментНоменклатуры,
+	Сегменты.Номенклатура.* КАК Номенклатура,
+	Сегменты.Характеристика.* КАК Характеристика}
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодНеделя, НЕДЕЛЯ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодДекада, ДЕКАДА)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодМесяц, МЕСЯЦ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодКвартал, КВАРТАЛ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодПолугодие, ПОЛУГОДИЕ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодГод, ГОД)
+		ИНАЧЕ КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодДень, ДЕНЬ)
+	КОНЕЦ КАК ДатаВыпуска,
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА ПланыПроизводстваОбороты.ПериодНеделя
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА ПланыПроизводстваОбороты.ПериодДекада
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА ПланыПроизводстваОбороты.ПериодМесяц
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА ПланыПроизводстваОбороты.ПериодКвартал
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА ПланыПроизводстваОбороты.ПериодПолугодие
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА ПланыПроизводстваОбороты.ПериодГод
+		ИНАЧЕ ПланыПроизводстваОбороты.ПериодДень
+	КОНЕЦ КАК НачалоПериодаВыпуска,
+	ПланыПроизводстваОбороты.Номенклатура КАК Номенклатура,
+	ПланыПроизводстваОбороты.Характеристика КАК Характеристика,
+	СУММА(ПланыПроизводстваОбороты.КоличествоОборот) КАК КоличествоВПланах,
+	ПланыПроизводстваОбороты.Подразделение,
+	ПланыПроизводстваОбороты.Спецификация
+ПОМЕСТИТЬ ТаблицаПланов
+ИЗ
+	РегистрНакопления.ПланыПроизводства.Обороты(
+			&amp;НачалоПериода,
+			&amp;ОкончаниеПериода,
+			Авто,
+			Сценарий = &amp;Сценарий
+				И Подразделение = &amp;Подразделение {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика, (Спецификация).* КАК Спецификация, ((Номенклатура, Характеристика) В
+			    (ВЫБРАТЬ
+			        ОтборПоСегментуНоменклатуры.Номенклатура,
+			        ОтборПоСегментуНоменклатуры.Характеристика
+			    ИЗ
+			        ОтборПоСегментуНоменклатуры КАК ОтборПоСегментуНоменклатуры
+			    ГДЕ
+			        ОтборПоСегментуНоменклатуры.ИспользуетсяОтборПоСегментуНоменклатуры = &amp;ИспользуетсяОтборПоСегментуНоменклатуры))}) КАК ПланыПроизводстваОбороты
+
+СГРУППИРОВАТЬ ПО
+	ПланыПроизводстваОбороты.Подразделение,
+	ПланыПроизводстваОбороты.Спецификация,
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодНеделя, НЕДЕЛЯ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодДекада, ДЕКАДА)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодМесяц, МЕСЯЦ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодКвартал, КВАРТАЛ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодПолугодие, ПОЛУГОДИЕ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодГод, ГОД)
+		ИНАЧЕ КОНЕЦПЕРИОДА(ПланыПроизводстваОбороты.ПериодДень, ДЕНЬ)
+	КОНЕЦ,
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА ПланыПроизводстваОбороты.ПериодНеделя
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА ПланыПроизводстваОбороты.ПериодДекада
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА ПланыПроизводстваОбороты.ПериодМесяц
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА ПланыПроизводстваОбороты.ПериодКвартал
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА ПланыПроизводстваОбороты.ПериодПолугодие
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА ПланыПроизводстваОбороты.ПериодГод
+		ИНАЧЕ ПланыПроизводстваОбороты.ПериодДень
+	КОНЕЦ,
+	ПланыПроизводстваОбороты.Номенклатура,
+	ПланыПроизводстваОбороты.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, НЕДЕЛЯ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ДЕКАДА)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, МЕСЯЦ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, КВАРТАЛ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ПОЛУГОДИЕ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ГОД)
+		ИНАЧЕ КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ДЕНЬ)
+	КОНЕЦ КАК ДатаПотребности,
+	ЗаказНаПроизводствоПродукция.Номенклатура КАК Номенклатура,
+	ЗаказНаПроизводствоПродукция.Характеристика КАК Характеристика,
+	ЗаказНаПроизводствоПродукция.Спецификация КАК Спецификация,
+	СУММА(ЗаказНаПроизводствоПродукция.Количество) КАК Количество
+ПОМЕСТИТЬ Заказы
+ИЗ
+	Документ.ЗаказНаПроизводство.Продукция КАК ЗаказНаПроизводствоПродукция
+		{ЛЕВОЕ СОЕДИНЕНИЕ ОтборПоСегментуНоменклатуры КАК ОтборПоСегментуНоменклатуры
+		ПО ЗаказНаПроизводствоПродукция.Номенклатура = ОтборПоСегментуНоменклатуры.Номенклатура
+			И ЗаказНаПроизводствоПродукция.Характеристика = ОтборПоСегментуНоменклатуры.Характеристика}
+ГДЕ
+	ЗаказНаПроизводствоПродукция.Ссылка.Проведен
+	И ВЫБОР
+			КОГДА &amp;Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЗаказНаПроизводствоПродукция.Ссылка.Подразделение = &amp;Подразделение
+		КОНЕЦ
+	И ЗаказНаПроизводствоПродукция.ДатаПотребности МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+	И ЗаказНаПроизводствоПродукция.Ссылка.Статус &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыЗаказовНаПроизводство.Создан)
+{ГДЕ
+	(ОтборПоСегментуНоменклатуры.ИспользуетсяОтборПоСегментуНоменклатуры = &amp;ИспользуетсяОтборПоСегментуНоменклатуры),
+	ЗаказНаПроизводствоПродукция.Спецификация.*,
+	ЗаказНаПроизводствоПродукция.Номенклатура.*,
+	ЗаказНаПроизводствоПродукция.Характеристика.*}
+
+СГРУППИРОВАТЬ ПО
+	ЗаказНаПроизводствоПродукция.Номенклатура,
+	ЗаказНаПроизводствоПродукция.Характеристика,
+	ЗаказНаПроизводствоПродукция.Спецификация,
+	ВЫБОР ВЫРАЗИТЬ(&amp;Сценарий КАК Справочник.СценарииТоварногоПланирования).Периодичность
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Неделя)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, НЕДЕЛЯ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Декада)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ДЕКАДА)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, МЕСЯЦ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Квартал)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, КВАРТАЛ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Полугодие)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ПОЛУГОДИЕ)
+		КОГДА ЗНАЧЕНИЕ(Перечисление.Периодичность.Год)
+			ТОГДА КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ГОД)
+		ИНАЧЕ КОНЕЦПЕРИОДА(ЗаказНаПроизводствоПродукция.ДатаПотребности, ДЕНЬ)
+	КОНЕЦ
+
+ИНДЕКСИРОВАТЬ ПО
+	ДатаПотребности,
+	Номенклатура,
+	Характеристика,
+	Спецификация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПланов.Номенклатура КАК Номенклатура,
+	ТаблицаПланов.Характеристика КАК Характеристика,
+	МАКСИМУМ(СпрНоменклатура.Код) КАК Код,
+	МАКСИМУМ(СпрНоменклатура.Артикул) КАК Артикул,
+	ТаблицаПланов.НачалоПериодаВыпуска КАК НачалоПериодаВыпуска,
+	МАКСИМУМ(ТаблицаПланов.ДатаВыпуска) КАК ДатаВыпуска,
+	МАКСИМУМ(ТаблицаПланов.КоличествоВПланах) КАК КоличествоВПланах,
+	ЕСТЬNULL(СУММА(Заказы.Количество), 0) КАК КоличествоВЗаказах,
+	МАКСИМУМ(ТаблицаПланов.КоличествоВПланах) - ЕСТЬNULL(СУММА(Заказы.Количество), 0) КАК КоличествоУпаковок,
+	МАКСИМУМ(ТаблицаПланов.КоличествоВПланах) - ЕСТЬNULL(СУММА(Заказы.Количество), 0) КАК Количество,
+	МАКСИМУМ(ВЫБОР
+			КОГДА СпрНоменклатура.ИспользованиеХарактеристик = ЗНАЧЕНИЕ(Перечисление.ВариантыИспользованияХарактеристикНоменклатуры.ОбщиеДляВидаНоменклатуры)
+					ИЛИ СпрНоменклатура.ИспользованиеХарактеристик = ЗНАЧЕНИЕ(Перечисление.ВариантыИспользованияХарактеристикНоменклатуры.ИндивидуальныеДляНоменклатуры)
+					ИЛИ СпрНоменклатура.ИспользованиеХарактеристик = ЗНАЧЕНИЕ(Перечисление.ВариантыИспользованияХарактеристикНоменклатуры.ОбщиеСДругимВидомНоменклатуры)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ХарактеристикиИспользуются,
+	ТаблицаПланов.Спецификация КАК Спецификация
+{ВЫБРАТЬ
+	Номенклатура.*,
+	Характеристика.*,
+	КоличествоУпаковок,
+	Количество,
+	Артикул,
+	НачалоПериодаВыпуска,
+	ДатаВыпуска,
+	КоличествоВПланах,
+	КоличествоВЗаказах,
+	ХарактеристикиИспользуются,
+	Код,
+	Спецификация.*}
+ИЗ
+	ТаблицаПланов КАК ТаблицаПланов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК СпрНоменклатура
+		ПО ТаблицаПланов.Номенклатура = СпрНоменклатура.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Заказы КАК Заказы
+		ПО ТаблицаПланов.ДатаВыпуска = Заказы.ДатаПотребности
+			И ТаблицаПланов.Номенклатура = Заказы.Номенклатура
+			И ТаблицаПланов.Характеристика = Заказы.Характеристика
+			И (ВЫБОР
+				КОГДА ТаблицаПланов.Спецификация = ЗНАЧЕНИЕ(Справочник.РесурсныеСпецификации.ПустаяСсылка)
+					ТОГДА ИСТИНА
+				ИНАЧЕ ТаблицаПланов.Спецификация = Заказы.Спецификация
+			КОНЕЦ)
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаПланов.НачалоПериодаВыпуска,
+	ТаблицаПланов.Номенклатура,
+	ТаблицаПланов.Характеристика,
+	ТаблицаПланов.Спецификация
+
+УПОРЯДОЧИТЬ ПО
+	Номенклатура,
+	Характеристика,
+	НачалоПериодаВыпуска</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Початок періоду</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОкончаниеПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Закінчення періоду</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Периодичность</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Периодичность</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Періодичність</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.Периодичность</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Подразделение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подразделение</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Підрозділ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураПредприятия</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Сценарий</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сценарий</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Сценарій</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ИспользуетсяОтборПоСегментуНоменклатуры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Используется отбор по сегменту номенклатуры</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Використовується відбір за сегментом номенклатури</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Основний</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Артикул</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаВыпуска</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоУпаковок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВЗаказах</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВПланах</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачалоПериодаВыпуска</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикиИспользуются</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Спецификация</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>15d61b6b-f523-409f-9b90-b22bc99b4c0f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СегментНоменклатуры</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>8786fd2b-143e-4cbe-87fc-cd1f8134ab97</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:userSettingID>8d3cf343-e5d2-4767-846c-333115db71cb</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Артикул</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

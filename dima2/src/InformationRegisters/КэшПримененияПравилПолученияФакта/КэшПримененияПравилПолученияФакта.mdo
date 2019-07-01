@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a54f1477-7380-4229-b4ec-82183821b36c">
+  <producedTypes>
+    <selectionType typeId="a7b47855-74cc-4294-916a-fdcf0af47c60" valueTypeId="addc23b1-6fd5-4c42-9fbb-6477a2edd42d"/>
+    <listType typeId="20120e78-a788-46d3-a496-f9d3de5097c4" valueTypeId="e5b1658b-0256-4a99-81be-e0c612948c6b"/>
+    <managerType typeId="1fc794dc-0c8e-4458-b4fd-786f58548fcf" valueTypeId="1e253dc6-106b-4487-a42e-873325427fdd"/>
+    <recordSetType typeId="b6acf9f6-1e4c-4afd-96a2-f41758e7036b" valueTypeId="13833557-777e-4140-bb86-ef23c2aa1122"/>
+    <recordKeyType typeId="6253ed8d-d1bc-42e8-b72a-2b76ec279151" valueTypeId="bc5bd84b-76d2-410d-89e0-54288b3a49fc"/>
+    <recordType typeId="6e126b6a-6bfd-46ce-aee9-33e625e1f9d7" valueTypeId="ed24fe02-1b7f-4a3d-8839-dbd0cd90209d"/>
+    <recordManagerType typeId="a0c4e1d7-48f6-45c1-853e-4cf96767e955" valueTypeId="ed1a3963-cb63-4276-9092-ce1e1b31f616"/>
+  </producedTypes>
+  <name>КэшПримененияПравилПолученияФакта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кэш применения правил получения факта</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Кеш застосування правил факту отримання</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8dbfb053-2ddd-46e8-bca7-7a78430fbb37">
+    <name>СтатьяБюджета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья бюджета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття бюджету</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиБюджетов</types>
+      <types>CatalogRef.ПоказателиБюджетов</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a2f09292-f932-4241-8133-46ccca8dbd9e">
+    <name>ЗаявкаНаРасходованиеСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на расходование средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заявка на витрачання коштів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cde4ff3d-02b3-4006-ad5b-c04ba26a9821">
+    <name>Правило</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правило</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПравилаПолученияФактаПоПоказателямБюджетов</types>
+      <types>CatalogRef.ПравилаПолученияФактаПоСтатьямБюджетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
